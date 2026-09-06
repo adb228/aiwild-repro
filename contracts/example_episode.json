@@ -1,0 +1,112 @@
+{
+  "run_id": "example-task-P1-r1",
+  "task_id": "example-task",
+  "task_set": "development",
+  "condition": "P1",
+  "protocol_version": "0.3",
+  "replicate": 1,
+  "started_at": "2026-09-02T22:00:00Z",
+  "completed_at": "2026-09-02T22:05:00Z",
+  "reproducibility": {
+    "schema_git_commit": "uncommitted",
+    "benchmark_git_commit": "<commit>",
+    "dataset_archive_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "docker_image_digest": "sha256:pending",
+    "worker_model": "claude-sonnet-4-5-20250929",
+    "parent_model": "claude-sonnet-4-5-20250929",
+    "temperature": 0.0,
+    "git_dirty": false,
+    "workspace_header_used": false,
+    "worker_prompt_hash": "1111111111111111111111111111111111111111111111111111111111111111",
+    "parent_prompt_hash": "2222222222222222222222222222222222222222222222222222222222222222",
+    "libreoffice_version": "26.8.0.3",
+    "task_selection_package": "config/task_selection_v03",
+    "selection_sha256": "cf818c1c9be7568223245e89a705d94d64aa7d99e4341604414378571f11752d"
+  },
+  "budgets": {
+    "worker": {
+      "max_turns": 12,
+      "max_tool_calls": 30,
+      "max_wall_seconds": 1200,
+      "max_tokens": 8192,
+      "max_output_tokens_total": 64000,
+      "max_input_tokens_safety": 1500000
+    },
+    "parent": {
+      "max_turns": 12,
+      "max_tool_calls": 30,
+      "max_wall_seconds": 1200,
+      "max_tokens": 8192,
+      "max_output_tokens_total": 64000,
+      "max_input_tokens_safety": 1500000
+    }
+  },
+  "usage": {
+    "worker": {
+      "input_tokens": 100,
+      "output_tokens": 50,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "model_calls": 2,
+      "tool_calls": 3,
+      "validation_cycles": 1,
+      "wall_seconds": 30.0,
+      "budget_exhausted": false,
+      "budget_exhausted_on": null,
+      "safety_exhausted": false,
+      "safety_exhausted_on": null
+    },
+    "parent": {
+      "input_tokens": 120,
+      "output_tokens": 60,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "model_calls": 2,
+      "tool_calls": 2,
+      "validation_cycles": 1,
+      "wall_seconds": 25.0,
+      "budget_exhausted": false,
+      "budget_exhausted_on": null,
+      "safety_exhausted": false,
+      "safety_exhausted_on": null
+    }
+  },
+  "handoff": {
+    "memo_path": "example_artifacts/memo.json",
+    "memo_sha256": "16b5e72204e6e3e998bc1a92991e82fe274c17a7ddaba354179f8d16bfc4210f",
+    "candidate_script_path": "example_artifacts/solution.py",
+    "candidate_script_sha256": "bcf6a21de9633a3e8c36bea31408bebb0a506c64d2af6ae205b1b27361dcdf7c",
+    "worker_submitted_memo": true,
+    "worker_submitted_candidate": true
+  },
+  "worker_outcome": {
+    "evaluator_status": "ok",
+    "full_task_success": 1,
+    "target_unit_pass_rate": 1.0,
+    "n_units": 1,
+    "output_path": "example_artifacts/output.xlsx",
+    "evaluator_path": "example_artifacts/evaluator.json"
+  },
+  "final_outcome": {
+    "evaluator_status": "ok",
+    "full_task_success": 1,
+    "target_unit_pass_rate": 1.0,
+    "n_units": 1,
+    "output_path": "example_artifacts/output.xlsx",
+    "evaluator_path": "example_artifacts/evaluator.json"
+  },
+  "unsealed_last_script_score": null,
+  "final_script_path": "example_artifacts/solution.py",
+  "final_script_sha256": "bcf6a21de9633a3e8c36bea31408bebb0a506c64d2af6ae205b1b27361dcdf7c",
+  "accepted_unchanged": true,
+  "failures": [],
+  "compliance": {
+    "artifact_crossed_handoff": true,
+    "worker_feedback_calls": 1,
+    "parent_finalized": true,
+    "worker_scratch_destroyed": true
+  },
+  "status": "complete",
+  "analysis_included": true,
+  "analysis_inclusion_reason": "Structurally valid development episode; included for schema contract illustration."
+}

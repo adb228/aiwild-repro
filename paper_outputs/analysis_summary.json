@@ -1,0 +1,130 @@
+{
+  "bootstrap": {
+    "delta_ci": [
+      -0.12,
+      0.2
+    ],
+    "delta_se": 0.08926169470166977,
+    "tau0_ci": [
+      -0.16,
+      0.16
+    ],
+    "tau0_se": 0.07977185630851202,
+    "tau1_ci": [
+      0.0,
+      0.12
+    ],
+    "tau1_se": 0.03934442759017139
+  },
+  "draws": 10000,
+  "estimates": {
+    "delta": 0.04,
+    "tau0": 0.0,
+    "tau1": 0.04
+  },
+  "fig3_generated": false,
+  "fig3_reason": "omitted deterministically: no stock records",
+  "hard_supplement_exclusions": [
+    {
+      "condition": "A1",
+      "reason": "evaluator_failure: no valid hard-supplement outcome",
+      "run_id": "9f011bcf-c568-4ec6-b394-5b235280c085",
+      "task_id": "60-7"
+    },
+    {
+      "condition": "A0",
+      "reason": "evaluator_failure: no valid hard-supplement outcome",
+      "run_id": "a57378b5-7099-4178-baf2-d7a712bc05a1",
+      "task_id": "60-7"
+    },
+    {
+      "condition": "SOLO",
+      "reason": "evaluator_failure: no valid hard-supplement outcome",
+      "run_id": "b3f49408-2008-4f07-b7b8-fe5d8c2b88fe",
+      "task_id": "60-7"
+    },
+    {
+      "condition": "P0",
+      "reason": "evaluator_failure: no valid hard-supplement outcome",
+      "run_id": "db666772-3809-4a40-9ca9-299d9a9fb44f",
+      "task_id": "60-7"
+    },
+    {
+      "condition": "P1",
+      "reason": "evaluator_failure: no valid hard-supplement outcome",
+      "run_id": "f8f35409-ea2c-4045-abb1-4a017fe1973f",
+      "task_id": "60-7"
+    }
+  ],
+  "n_analysis_included": 150,
+  "n_hard": 25,
+  "n_hard_valid": 20,
+  "n_main": 125,
+  "n_records": 150,
+  "n_solo": 25,
+  "protocol_version": "0.3",
+  "qc_report": {
+    "flag_counts": {
+      "advisory_artifact_leak": 0,
+      "advisory_scratch_retained": 0,
+      "invalid_candidate": 4,
+      "parent_not_finalized": 2,
+      "production_missing_artifact": 1,
+      "withheld_feedback_call": 0,
+      "worker_timeout": 0
+    },
+    "flag_counts_by_condition": {
+      "A0": {
+        "advisory_artifact_leak": 0,
+        "advisory_scratch_retained": 0,
+        "invalid_candidate": 0,
+        "parent_not_finalized": 1,
+        "production_missing_artifact": 0,
+        "withheld_feedback_call": 0,
+        "worker_timeout": 0
+      },
+      "A1": {
+        "advisory_artifact_leak": 0,
+        "advisory_scratch_retained": 0,
+        "invalid_candidate": 0,
+        "parent_not_finalized": 0,
+        "production_missing_artifact": 0,
+        "withheld_feedback_call": 0,
+        "worker_timeout": 0
+      },
+      "P0": {
+        "advisory_artifact_leak": 0,
+        "advisory_scratch_retained": 0,
+        "invalid_candidate": 3,
+        "parent_not_finalized": 0,
+        "production_missing_artifact": 0,
+        "withheld_feedback_call": 0,
+        "worker_timeout": 0
+      },
+      "P1": {
+        "advisory_artifact_leak": 0,
+        "advisory_scratch_retained": 0,
+        "invalid_candidate": 1,
+        "parent_not_finalized": 0,
+        "production_missing_artifact": 1,
+        "withheld_feedback_call": 0,
+        "worker_timeout": 0
+      }
+    },
+    "n_agent_failures": 3,
+    "n_analysis_included": 150,
+    "n_episodes_total": 150,
+    "n_evaluator_failure": 5,
+    "n_infra_failures": 0,
+    "n_qc_flagged": 7
+  },
+  "record_source": "explicit episode records",
+  "runs_dir": "<REPO>",
+  "seed": 20260902,
+  "solo_summary": {
+    "four_cell_grand_mean": 0.85,
+    "n_solo_tasks": 25,
+    "solo_grand_mean": 0.76
+  },
+  "task_set_scope": "all"
+}

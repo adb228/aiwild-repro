@@ -1,0 +1,68 @@
+protocol_version: "0.4.1"
+prompt_caching: true
+task_selection_package: config/task_selection_v03
+
+benchmark:
+  repository: https://github.com/RUCKBReasoning/SpreadsheetBench.git
+  git_commit: <commit>
+  dataset: KAKA22/SpreadsheetBench
+  archive: spreadsheetbench_verified_400.tar.gz
+  archive_sha256: 10ef893dd29cb13ab97143ea787e68cdc9574a13873ab9a54e50b31dc03fc949
+
+models:
+  worker: claude-sonnet-4-5-20250929
+  parent: claude-sonnet-4-5-20250929
+  temperature: 0.0
+
+budgets:
+  worker:
+    max_turns: 40
+    max_tool_calls: 100
+    max_wall_seconds: 1200
+    max_tokens: 8192
+    # Non-budget emergency ceiling; cumulative input remains an observed measure
+    max_input_tokens_safety: 1500000
+    max_output_tokens_total: 64000
+  parent:
+    max_turns: 40
+    max_tool_calls: 100
+    max_wall_seconds: 1200
+    max_tokens: 8192
+    # Non-budget emergency ceiling; cumulative input remains an observed measure
+    max_input_tokens_safety: 1500000
+    max_output_tokens_total: 64000
+
+sandbox:
+  image: spreadsheet-exec:protocol-v01
+  image_digest: sha256:8c861ae2b9511d19225f4f2433f4366311a32a55ad13dc29735a76c6fd165ffb
+  user: nobody
+  network: none
+  cpus: 2
+  memory: 2g
+  pids_limit: 128
+
+recalculation:
+  backend: libreoffice
+  executable: /Applications/LibreOffice.app/Contents/MacOS/soffice
+  libreoffice_version: "26.8.0.3"
+  timeout_seconds: 120
+
+# SWE main freeze (swe-0.3.3 runner). Spreadsheet budgets above are unchanged.
+# Caps from usage_for_caps_v6.csv by-role 1.5× max non-truncated, rounded.
+# Overrides: wall=1800s safety ceiling; per-call max_tokens=8192.
+swebench:
+  caps:
+    worker:
+      max_turns: 115
+      max_tool_calls: 110
+      max_wall_seconds: 1800
+      max_tokens: 8192
+      max_input_tokens_safety: 1500000
+      max_output_tokens_total: 36000
+    parent:
+      max_turns: 100
+      max_tool_calls: 100
+      max_wall_seconds: 1800
+      max_tokens: 8192
+      max_input_tokens_safety: 1500000
+      max_output_tokens_total: 41000

@@ -1,0 +1,11 @@
+n_observed,n_wrong,n_correct,candidate_correct_n,candidate_correct_rate,parent_repair_n,parent_repair_rate_among_wrong,parent_damage_n,parent_damage_rate,final_success_n,final_success_rate,net_parent_contribution,n_visible_wrong,n_classified_wrong,visible_wrong_share,model,environment,cell
+25,8,17,17,0.68,5,0.625,0,0.0,22,0.88,0.19999999999999996,5,8,0.625,sonnet,spreadsheet_main_v04,P0
+25,4,21,21,0.84,0,0.0,0,0.0,21,0.84,0.0,0,4,0.0,sonnet,spreadsheet_main_v04,P1
+25,8,17,17,0.68,5,0.625,1,0.058823529411764705,21,0.84,0.15999999999999992,5,8,0.625,sonnet,fixed_artifact:evidence_withheld,P0-origin
+25,4,21,21,0.84,0,0.0,1,0.047619047619047616,20,0.8,-0.039999999999999925,0,4,0.0,sonnet,fixed_artifact:evidence_withheld,P1-origin
+25,8,17,17,0.68,4,0.5,2,0.11764705882352941,19,0.76,0.07999999999999996,5,8,0.625,sonnet,fixed_artifact:evidence_supplied,P0-origin
+25,4,21,21,0.84,0,0.0,0,0.0,21,0.84,0.0,0,4,0.0,sonnet,fixed_artifact:evidence_supplied,P1-origin
+6,4,2,2,0.3333333333333333,0,0.0,0,0.0,2,0.3333333333333333,0.0,0,4,0.0,sonnet,swe_main_v035,P0
+8,4,4,4,0.5,0,0.0,0,0.0,4,0.5,0.0,4,4,1.0,sonnet,swe_main_v035,P1
+4,0,4,4,1.0,0,,0,0.0,4,1.0,0.0,0,0,,sonnet,swe_v3_main,P0
+6,1,5,5,0.8333333333333334,0,0.0,0,0.0,5,0.8333333333333334,0.0,1,1,1.0,sonnet,swe_v3_main,P1

@@ -1,0 +1,9 @@
+{
+  "pilot": [
+    "astropy__astropy-7606",
+    "sympy__sympy-19783",
+    "django__django-13112"
+  ],
+  "seed": 20260905,
+  "source": "first 3 of reserve_in_order"
+}

@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://<host>/analysis/terminal_episode.schema.json",
+  "title": "Analysis-side terminal agent-failure episode",
+  "description": "Extends the shared episode record for a serialized agent_failure. The shared contracts/episode_schema.json status enum cannot name this outcome; do not substitute infrastructure_failure.",
+  "type": "object",
+  "required": [
+    "run_id",
+    "task_id",
+    "task_set",
+    "condition",
+    "status",
+    "run_status",
+    "failure_reason",
+    "analysis_included",
+    "final_outcome",
+    "failures"
+  ],
+  "properties": {
+    "status": {"const": "agent_failure"},
+    "run_status": {"const": "agent_failure"},
+    "failure_reason": {"const": "context_window_exceeded"},
+    "analysis_included": {"const": true},
+    "final_outcome": {
+      "type": "object",
+      "required": ["full_task_success"],
+      "properties": {
+        "full_task_success": {"const": 0},
+        "target_unit_pass_rate": {"type": "number"},
+        "n_units": {"type": "integer", "minimum": 0},
+        "evaluator_status": {"enum": ["not_finalized"]},
+        "output_path": {"type": ["string", "null"]},
+        "evaluator_path": {"type": ["string", "null"]}
+      }
+    },
+    "failures": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["source", "code", "message"],
+        "properties": {
+          "source": {"const": "agent"},
+          "code": {"type": "string", "minLength": 1},
+          "message": {"type": "string"}
+        }
+      }
+    }
+  }
+}

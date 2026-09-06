@@ -1,0 +1,619 @@
+{
+  "benchmark": "swebench",
+  "bootstrap": {
+    "delta_ci": [
+      0.0,
+      0.375
+    ],
+    "n_draws": 10000,
+    "seed": 20260902,
+    "tau0_ci": [
+      -0.375,
+      0.0
+    ],
+    "tau1_ci": [
+      0.0,
+      0.0
+    ]
+  },
+  "cell_success": {
+    "A0": 3,
+    "A1": 4,
+    "P0": 2,
+    "P1": 4
+  },
+  "cell_valid": {
+    "A0": 8,
+    "A1": 8,
+    "P0": 8,
+    "P1": 8
+  },
+  "contingency_triggered": true,
+  "discordant_issues": [
+    {
+      "A0": 1,
+      "A1": 0,
+      "P0": 0,
+      "P1": 0,
+      "discordant_tau0": true,
+      "discordant_tau1": false,
+      "task": "pylint-6386"
+    }
+  ],
+  "disposition_counts": {
+    "accepted_unchanged": 11,
+    "rebuilt": 18,
+    "revised": 3
+  },
+  "disposition_counts_v035": {
+    "rebuilt": 2,
+    "revised": 3,
+    "unchanged": 11
+  },
+  "estimates": {
+    "delta": 0.125,
+    "n_delta": 8,
+    "n_tau0": 8,
+    "n_tau1": 8,
+    "tau0": -0.125,
+    "tau1": 0.0
+  },
+  "itt_policy": "Main ITT: infrastructure_failure and evaluator_failure are missing, never 0; not_finalized / empty-patch None\u21920; \u03c40/\u03c41/\u03b4 use pairwise-complete tasks with n per estimate; all 32 canonical cells listed regardless of analysis_included",
+  "main_report_path": "data/dev/swe/main_report_v035.md",
+  "matrix": {
+    "astropy-8872": {
+      "A0": 0,
+      "A1": 1,
+      "P0": 0,
+      "P1": 1
+    },
+    "django-11292": {
+      "A0": 1,
+      "A1": 1,
+      "P0": 1,
+      "P1": 1
+    },
+    "django-14792": {
+      "A0": 0,
+      "A1": 0,
+      "P0": 0,
+      "P1": 0
+    },
+    "pylint-6386": {
+      "A0": 1,
+      "A1": 0,
+      "P0": 0,
+      "P1": 0
+    },
+    "scikit-learn-14087": {
+      "A0": 0,
+      "A1": 0,
+      "P0": 0,
+      "P1": 0
+    },
+    "sphinx-8593": {
+      "A0": 0,
+      "A1": 1,
+      "P0": 0,
+      "P1": 1
+    },
+    "sympy-12419": {
+      "A0": 1,
+      "A1": 1,
+      "P0": 1,
+      "P1": 1
+    },
+    "sympy-16766": {
+      "A0": 0,
+      "A1": 0,
+      "P0": 0,
+      "P1": 0
+    }
+  },
+  "missing_field_notes": "See missing_field_audit.json and missing_field_audit.md for per-run, per-field missingness details",
+  "n_discordant": 1,
+  "n_evaluator_failure": 0,
+  "n_final_not_resolved": 18,
+  "n_final_resolved": 13,
+  "n_final_resolved_null": 1,
+  "n_infrastructure_failure": 0,
+  "n_not_finalized": 1,
+  "n_parent_finalized": 31,
+  "n_records": 32,
+  "pairwise_n": {
+    "delta": 8,
+    "tau0": 8,
+    "tau1": 8
+  },
+  "paper_outputs": {
+    "paper_disposition": "paper_outputs/swe_main_v035/disposition_by_patch_hash.csv",
+    "paper_memo": "paper_outputs/swe_main_v035/memo_length_by_cell.csv",
+    "paper_parent_effort": "paper_outputs/swe_main_v035/parent_effort_by_cell.csv",
+    "paper_per_task": "paper_outputs/swe_main_v035/per_task_cells.csv",
+    "paper_transitions": "paper_outputs/swe_main_v035/p_cell_worker_final_transitions.csv",
+    "paper_worker_effort": "paper_outputs/swe_main_v035/worker_effort_by_cell.csv"
+  },
+  "pass_fraction_policy": "null + f2p_p2p_null_reason=schema_v2_no_tests_status is valid absence; not malformed",
+  "per_condition": [
+    {
+      "condition": "A0",
+      "n_evaluated": 7,
+      "n_final_not_resolved": 4,
+      "n_final_resolved": 3,
+      "n_final_resolved_null": 1,
+      "n_not_finalized": 1,
+      "n_parent_finalized": 7,
+      "n_runs": 8,
+      "resolved_rate_among_evaluated": 0.42857142857142855
+    },
+    {
+      "condition": "A1",
+      "n_evaluated": 8,
+      "n_final_not_resolved": 4,
+      "n_final_resolved": 4,
+      "n_final_resolved_null": 0,
+      "n_not_finalized": 0,
+      "n_parent_finalized": 8,
+      "n_runs": 8,
+      "resolved_rate_among_evaluated": 0.5
+    },
+    {
+      "condition": "P0",
+      "n_evaluated": 8,
+      "n_final_not_resolved": 6,
+      "n_final_resolved": 2,
+      "n_final_resolved_null": 0,
+      "n_not_finalized": 0,
+      "n_parent_finalized": 8,
+      "n_runs": 8,
+      "resolved_rate_among_evaluated": 0.25
+    },
+    {
+      "condition": "P1",
+      "n_evaluated": 8,
+      "n_final_not_resolved": 4,
+      "n_final_resolved": 4,
+      "n_final_resolved_null": 0,
+      "n_not_finalized": 0,
+      "n_parent_finalized": 8,
+      "n_runs": 8,
+      "resolved_rate_among_evaluated": 0.5
+    }
+  ],
+  "primary_outcome_field": "env_metrics.swebench.final_resolved",
+  "run_ids_loaded": [
+    "00159429-2d17-4e3d-990b-2eb18dcc5a2a",
+    "0a219238-7421-4cdd-8866-91a49a572fe0",
+    "18dba4a9-7f3d-40f2-8101-b3df0e789c2d",
+    "264d2a76-0e5e-4f93-b8da-050ffd128505",
+    "2dd75e38-0260-4d27-909f-773f1f1323f6",
+    "3589a8bd-f6c5-4988-9a0a-e2ab7ea80532",
+    "3a4191d1-8a84-4349-b36f-91d8e7d1d2f0",
+    "403d2aa6-6b60-4991-9bfd-c4fcc0f6e9b1",
+    "43c0fc1e-d30c-416e-8c64-fdca193c22ea",
+    "4832dbb4-69b5-4dcf-8256-ef879ad54a28",
+    "50526ddb-94de-42e6-8e45-451a49ae0ff9",
+    "52ef8f03-d55f-47e2-8ae6-a857dc713886",
+    "5dd77b66-4502-4530-a095-fba2d3a29252",
+    "6899c646-f5c3-4a1c-8587-d88e45f55444",
+    "70009e10-5f47-4d63-af10-883f23e7fc0d",
+    "7400b89a-4cda-4b02-b698-10f083d93463",
+    "82ab0b8d-fb84-48bf-abc2-eefd27fd3a90",
+    "8df1d32f-7356-4726-a1e5-07e254385c64",
+    "94140531-0ae5-46b6-b685-863e063ac36a",
+    "a395a799-29cc-4bf2-b081-e7527ade295d",
+    "be7b5e4b-8c55-430c-ad06-3a9bed11fab9",
+    "bfb2b815-167a-4407-a5d4-342ab676ff36",
+    "c04f1429-d7ae-48c0-952e-7a42ca05a240",
+    "d067c2f7-3b92-4432-b8de-a03679d2602d",
+    "d7140186-b64d-44eb-82a7-3cd1ef653bd4",
+    "e0d6d173-e2f9-4c18-938d-da26ace1c0b1",
+    "ead34336-08cd-47f8-a36d-566f9558b1d5",
+    "ee34d0db-4032-436f-9f34-f935dd49903a",
+    "f56edadd-4f2c-4b93-81c7-b2edac8dc617",
+    "ff6f7735-0657-47df-b113-954b66a961f3",
+    "ff7be46b-7160-46a9-be49-ea498d5be984",
+    "ffa520cb-d535-42d6-b200-4d91eeef54ee"
+  ],
+  "run_ids_requested": [
+    "f56edadd-4f2c-4b93-81c7-b2edac8dc617",
+    "c04f1429-d7ae-48c0-952e-7a42ca05a240",
+    "82ab0b8d-fb84-48bf-abc2-eefd27fd3a90",
+    "3a4191d1-8a84-4349-b36f-91d8e7d1d2f0",
+    "ee34d0db-4032-436f-9f34-f935dd49903a",
+    "ead34336-08cd-47f8-a36d-566f9558b1d5",
+    "ff7be46b-7160-46a9-be49-ea498d5be984",
+    "ffa520cb-d535-42d6-b200-4d91eeef54ee",
+    "43c0fc1e-d30c-416e-8c64-fdca193c22ea",
+    "ff6f7735-0657-47df-b113-954b66a961f3",
+    "403d2aa6-6b60-4991-9bfd-c4fcc0f6e9b1",
+    "8df1d32f-7356-4726-a1e5-07e254385c64",
+    "2dd75e38-0260-4d27-909f-773f1f1323f6",
+    "d067c2f7-3b92-4432-b8de-a03679d2602d",
+    "18dba4a9-7f3d-40f2-8101-b3df0e789c2d",
+    "70009e10-5f47-4d63-af10-883f23e7fc0d",
+    "94140531-0ae5-46b6-b685-863e063ac36a",
+    "4832dbb4-69b5-4dcf-8256-ef879ad54a28",
+    "00159429-2d17-4e3d-990b-2eb18dcc5a2a",
+    "5dd77b66-4502-4530-a095-fba2d3a29252",
+    "d7140186-b64d-44eb-82a7-3cd1ef653bd4",
+    "6899c646-f5c3-4a1c-8587-d88e45f55444",
+    "be7b5e4b-8c55-430c-ad06-3a9bed11fab9",
+    "50526ddb-94de-42e6-8e45-451a49ae0ff9",
+    "3589a8bd-f6c5-4988-9a0a-e2ab7ea80532",
+    "7400b89a-4cda-4b02-b698-10f083d93463",
+    "0a219238-7421-4cdd-8866-91a49a572fe0",
+    "a395a799-29cc-4bf2-b081-e7527ade295d",
+    "e0d6d173-e2f9-4c18-938d-da26ace1c0b1",
+    "264d2a76-0e5e-4f93-b8da-050ffd128505",
+    "52ef8f03-d55f-47e2-8ae6-a857dc713886",
+    "bfb2b815-167a-4407-a5d4-342ab676ff36"
+  ],
+  "run_provenance": {
+    "00159429-2d17-4e3d-990b-2eb18dcc5a2a": {
+      "source_episode_sha256": "a920de41044607ac62d90127defe801e5d0bdb68f79f098da34f73c8047a1687",
+      "source_runs_dir": "<REPO>"
+    },
+    "0a219238-7421-4cdd-8866-91a49a572fe0": {
+      "source_episode_sha256": "7a3ed1a6510374df8aabe981c32e78080459d3bb2707e29ac7cdc896e94311b7",
+      "source_runs_dir": "<REPO>"
+    },
+    "18dba4a9-7f3d-40f2-8101-b3df0e789c2d": {
+      "source_episode_sha256": "e58ea201f9daf85350ab223fff62c906bcf6843a019ccbb7bb637a3622b118e7",
+      "source_runs_dir": "<REPO>"
+    },
+    "264d2a76-0e5e-4f93-b8da-050ffd128505": {
+      "source_episode_sha256": "2e5095406823a3b4c665b2afa8a2a6be597c8fb943e0034be3f4c270058fe1c2",
+      "source_runs_dir": "<REPO>"
+    },
+    "2dd75e38-0260-4d27-909f-773f1f1323f6": {
+      "source_episode_sha256": "917ed80192ee662a7cee27923a8999cc229360472fdd1da3ceb0ffa4dc758d5d",
+      "source_runs_dir": "<REPO>"
+    },
+    "3589a8bd-f6c5-4988-9a0a-e2ab7ea80532": {
+      "source_episode_sha256": "34d4a249511cbcdfc4490e958283c794074428b881928932d1a97122b1796e61",
+      "source_runs_dir": "<REPO>"
+    },
+    "3a4191d1-8a84-4349-b36f-91d8e7d1d2f0": {
+      "source_episode_sha256": "dea8654b923140e663cef62a3be23945fd1d393359ab7015f97c3db759acc11c",
+      "source_runs_dir": "<REPO>"
+    },
+    "403d2aa6-6b60-4991-9bfd-c4fcc0f6e9b1": {
+      "source_episode_sha256": "cc9022173fbad12668b4813f95fa1ea9de2fd28d98a3fa7cfaa0e96f7e9e7625",
+      "source_runs_dir": "<REPO>"
+    },
+    "43c0fc1e-d30c-416e-8c64-fdca193c22ea": {
+      "source_episode_sha256": "2f3947b47e1cda06386f0f89c9ef7d70dfb0a735b174477677cae66a518d81b6",
+      "source_runs_dir": "<REPO>"
+    },
+    "4832dbb4-69b5-4dcf-8256-ef879ad54a28": {
+      "source_episode_sha256": "9cb24ad3fd83f74b350fd6d786addf71d1ae56aaa3446bb4150541299a39eb5c",
+      "source_runs_dir": "<REPO>"
+    },
+    "50526ddb-94de-42e6-8e45-451a49ae0ff9": {
+      "source_episode_sha256": "9ff0f7f06e77e3a27a03ac8cbcc0a636edb6706e79e45ddcc0c0583948e2decd",
+      "source_runs_dir": "<REPO>"
+    },
+    "52ef8f03-d55f-47e2-8ae6-a857dc713886": {
+      "source_episode_sha256": "01d6cb9c7370b2d08a66870ceee2171516301fa36ebce491e58077dff1b626a4",
+      "source_runs_dir": "<REPO>"
+    },
+    "5dd77b66-4502-4530-a095-fba2d3a29252": {
+      "source_episode_sha256": "cd142662c01d03e4aba79e75a13d1eed8f542f95a33ee1b10efb0e447a860499",
+      "source_runs_dir": "<REPO>"
+    },
+    "6899c646-f5c3-4a1c-8587-d88e45f55444": {
+      "source_episode_sha256": "db66793c4e6c4e07bf47f3950cab044e4f0d9b78f7307c5766a2029df0bfe91f",
+      "source_runs_dir": "<REPO>"
+    },
+    "70009e10-5f47-4d63-af10-883f23e7fc0d": {
+      "source_episode_sha256": "a187c80c53e7255171085d0361722c68d79b42d9ddb8a4b42a43aa40e3feaa58",
+      "source_runs_dir": "<REPO>"
+    },
+    "7400b89a-4cda-4b02-b698-10f083d93463": {
+      "source_episode_sha256": "0fbde186311021853404684149987baa1ca5eb082e3442dd4c9af3ad09df0869",
+      "source_runs_dir": "<REPO>"
+    },
+    "82ab0b8d-fb84-48bf-abc2-eefd27fd3a90": {
+      "source_episode_sha256": "e93f9ab3f105fce4a917102589863c724ef35d063e735906148f52b4f12be798",
+      "source_runs_dir": "<REPO>"
+    },
+    "8df1d32f-7356-4726-a1e5-07e254385c64": {
+      "source_episode_sha256": "a202d0be3ed1b19596743eb4609799bd0c837f6b77c30a4c9f0604917f5bf84f",
+      "source_runs_dir": "<REPO>"
+    },
+    "94140531-0ae5-46b6-b685-863e063ac36a": {
+      "source_episode_sha256": "9350c48817c43e1d5d7c5a2db771631eec7e244b73c1234a9a13b4ec6b232ad4",
+      "source_runs_dir": "<REPO>"
+    },
+    "a395a799-29cc-4bf2-b081-e7527ade295d": {
+      "source_episode_sha256": "e85edcab706e4deafcf02ad9d1d24beb800ad1c6cfb0828dfe19abf9d6c0b279",
+      "source_runs_dir": "<REPO>"
+    },
+    "be7b5e4b-8c55-430c-ad06-3a9bed11fab9": {
+      "source_episode_sha256": "ee284d3b3ac6b9bce71bd708abd6ae58e918712c0ee3ae1cc722d9e3cb81c12d",
+      "source_runs_dir": "<REPO>"
+    },
+    "bfb2b815-167a-4407-a5d4-342ab676ff36": {
+      "source_episode_sha256": "b202a40c848e8339fda221543f1524ecfaa62f916e85c355c8017b02b30e7784",
+      "source_runs_dir": "<REPO>"
+    },
+    "c04f1429-d7ae-48c0-952e-7a42ca05a240": {
+      "source_episode_sha256": "115bb91ba98a7d6d0e174fe74534760f8a21b61f7e34069eb214c18572645107",
+      "source_runs_dir": "<REPO>"
+    },
+    "d067c2f7-3b92-4432-b8de-a03679d2602d": {
+      "source_episode_sha256": "6f5373e9ac8a0e881cf26f5a0d3168fe215e5dccaaef999abebb743579471056",
+      "source_runs_dir": "<REPO>"
+    },
+    "d7140186-b64d-44eb-82a7-3cd1ef653bd4": {
+      "source_episode_sha256": "b2e7d534960ce415bbe3c434bc957b711a706db696e82ae115426f43aaf66be3",
+      "source_runs_dir": "<REPO>"
+    },
+    "e0d6d173-e2f9-4c18-938d-da26ace1c0b1": {
+      "source_episode_sha256": "cd20b68e4d11601b6a1a76e0d51e9a25554624667e3b26873e08d2fb0fceea1b",
+      "source_runs_dir": "<REPO>"
+    },
+    "ead34336-08cd-47f8-a36d-566f9558b1d5": {
+      "source_episode_sha256": "18d3bed5ed9f60fc6670c75f9b5f7d6b05ca9d2b7ee997ca21d211ae29688a5e",
+      "source_runs_dir": "<REPO>"
+    },
+    "ee34d0db-4032-436f-9f34-f935dd49903a": {
+      "source_episode_sha256": "0ec777edf9f22ba482fee2788dfae5720b30c4b0383bb1a91b9f1c422bebb807",
+      "source_runs_dir": "<REPO>"
+    },
+    "f56edadd-4f2c-4b93-81c7-b2edac8dc617": {
+      "source_episode_sha256": "3c552aea97bdcac7cb4a27388842e0b3497bb2c3b623a2a9917d0e59b84ee133",
+      "source_runs_dir": "<REPO>"
+    },
+    "ff6f7735-0657-47df-b113-954b66a961f3": {
+      "source_episode_sha256": "58fb4f9e2386b75c6cfd306c06a1ad680aa3985d8d6ee8e2973bd9f1f2feec07",
+      "source_runs_dir": "<REPO>"
+    },
+    "ff7be46b-7160-46a9-be49-ea498d5be984": {
+      "source_episode_sha256": "c1cc7c073914fd8314dfb5615c3b6bfe832f3bfc0d5ac34759e9ee420ee01f32",
+      "source_runs_dir": "<REPO>"
+    },
+    "ffa520cb-d535-42d6-b200-4d91eeef54ee": {
+      "source_episode_sha256": "ac59a20038309a3f1aecfc579826edd07b610efc16526d6b29c34816337832fe",
+      "source_runs_dir": "<REPO>"
+    }
+  },
+  "runs_dirs": [
+    "<REPO>"
+  ],
+  "sidecar_overlay_summary": {
+    "n_missing_sidecar": 32,
+    "n_overlaid": 0,
+    "n_records": 32,
+    "per_run": [
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "00159429-2d17-4e3d-990b-2eb18dcc5a2a",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "0a219238-7421-4cdd-8866-91a49a572fe0",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "18dba4a9-7f3d-40f2-8101-b3df0e789c2d",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "264d2a76-0e5e-4f93-b8da-050ffd128505",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "2dd75e38-0260-4d27-909f-773f1f1323f6",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "3589a8bd-f6c5-4988-9a0a-e2ab7ea80532",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "3a4191d1-8a84-4349-b36f-91d8e7d1d2f0",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "403d2aa6-6b60-4991-9bfd-c4fcc0f6e9b1",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "43c0fc1e-d30c-416e-8c64-fdca193c22ea",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "4832dbb4-69b5-4dcf-8256-ef879ad54a28",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "50526ddb-94de-42e6-8e45-451a49ae0ff9",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "52ef8f03-d55f-47e2-8ae6-a857dc713886",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "5dd77b66-4502-4530-a095-fba2d3a29252",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "6899c646-f5c3-4a1c-8587-d88e45f55444",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "70009e10-5f47-4d63-af10-883f23e7fc0d",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "7400b89a-4cda-4b02-b698-10f083d93463",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "82ab0b8d-fb84-48bf-abc2-eefd27fd3a90",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "8df1d32f-7356-4726-a1e5-07e254385c64",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "94140531-0ae5-46b6-b685-863e063ac36a",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "a395a799-29cc-4bf2-b081-e7527ade295d",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "be7b5e4b-8c55-430c-ad06-3a9bed11fab9",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "bfb2b815-167a-4407-a5d4-342ab676ff36",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "c04f1429-d7ae-48c0-952e-7a42ca05a240",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "d067c2f7-3b92-4432-b8de-a03679d2602d",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "d7140186-b64d-44eb-82a7-3cd1ef653bd4",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "e0d6d173-e2f9-4c18-938d-da26ace1c0b1",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "ead34336-08cd-47f8-a36d-566f9558b1d5",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "ee34d0db-4032-436f-9f34-f935dd49903a",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "f56edadd-4f2c-4b93-81c7-b2edac8dc617",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "ff6f7735-0657-47df-b113-954b66a961f3",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "ff7be46b-7160-46a9-be49-ea498d5be984",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "ffa520cb-d535-42d6-b200-4d91eeef54ee",
+        "sidecar_found": false
+      }
+    ],
+    "sidecar_dir": "data/dev/swe/metric_backfills"
+  },
+  "source_fields": {
+    "any_verification": "parent_tests>0 or parent executed feedback_command",
+    "apply_rate": "env_metrics.swebench.applies_cleanly among P cells with nonempty candidate",
+    "compliance_asst": "events.jsonl model_call.assistant_text or raw_payload_path present",
+    "compliance_end": "swe_protocol_usage.{worker,parent}.end_reason",
+    "compliance_exec": "compliance.worker_feedback_calls",
+    "containers": "env_metrics.swebench.worker_container_id \u2260 parent_container_id",
+    "discordant": "issue where pairwise-complete A0\u2260P0 or A1\u2260P1 on swe_itt_resolved",
+    "disposition": "handoff.candidate_script_sha256 vs final_script_sha256 (flag ignored)",
+    "empty_final": "handoff/final.patch missing or whitespace-only",
+    "f2p_p2p": "env_metrics.swebench.fail_to_pass_fraction / pass_to_pass_fraction; null + f2p_p2p_null_reason",
+    "git_head": "env_metrics.swebench.git_head == reproducibility.benchmark_git_commit",
+    "image_digest": "env_metrics.swebench.image_digest",
+    "itt_matrix": "env_metrics.swebench.final_resolved via swe_itt_resolved (EF/IF missing, not_finalized None\u21920)",
+    "non_finalization": "not compliance.parent_finalized",
+    "nonempty_candidate": "handoff/candidate.patch nonempty bytes (not accepted_unchanged flag)",
+    "pairwise_n": "tasks with both cells of the contrast non-missing",
+    "parent_executions": "events.jsonl parent exec_shell tool_result with executed=true",
+    "parent_tests": "parent pytest invocations (_count_pytest_calls on traces/events)",
+    "patch_distance": "difflib line opcodes on candidate.patch vs final.patch",
+    "raw_candidate_resolution": "env_metrics.swebench.candidate_resolved among non-missing P cells",
+    "revisions": "P disposition from candidate vs final sha256; parent write_file event count",
+    "tau0_tau1_delta": "pairwise P\u2212A / (\u03c41\u2212\u03c40) on swe_itt_resolved; task-clustered bootstrap seed 20260902 n=10000",
+    "tokens_after_handoff": "usage.parent.output_tokens",
+    "transitions": "candidate_resolved \u2192 final_resolved; missing not coerced to 0"
+  },
+  "task_set": "main_v035",
+  "task_set_label": "main_v035",
+  "trace_bundle_dir": null,
+  "transition_counts": {
+    "fail\u2192fail": 8,
+    "missing_candidate": 2,
+    "pass\u2192pass": 6
+  }
+}

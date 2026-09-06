@@ -1,0 +1,239 @@
+{
+  "analysis_only_itt_rows": [],
+  "bootstrap": {
+    "delta_ci": [
+      -0.16,
+      0.16
+    ],
+    "delta_se": 0.08074749799025563,
+    "tau0_ci": [
+      0.0,
+      0.2
+    ],
+    "tau0_se": 0.05456634604977911,
+    "tau1_ci": [
+      0.0,
+      0.2
+    ],
+    "tau1_se": 0.054389634586657166
+  },
+  "condition_summary": [
+    {
+      "condition": "A0",
+      "mean_final_score": 0.8769107142857143,
+      "mean_full_task_success": 0.8,
+      "n_agent_outcome_censored": 2,
+      "n_analysis_only_itt": 0,
+      "n_infrastructure_pre_execution": 0,
+      "n_itt": 25,
+      "n_parent_budget_exhausted": 1,
+      "n_parent_not_finalized": 2,
+      "n_record_serialization_gap": 0,
+      "n_tasks": 25,
+      "parent_model_calls_mean": 10.64,
+      "parent_model_calls_total": 266
+    },
+    {
+      "condition": "A1",
+      "mean_final_score": 0.9102488323080429,
+      "mean_full_task_success": 0.76,
+      "n_agent_outcome_censored": 1,
+      "n_analysis_only_itt": 0,
+      "n_infrastructure_pre_execution": 0,
+      "n_itt": 25,
+      "n_parent_budget_exhausted": 1,
+      "n_parent_not_finalized": 1,
+      "n_record_serialization_gap": 0,
+      "n_tasks": 25,
+      "parent_model_calls_mean": 10.16,
+      "parent_model_calls_total": 254
+    },
+    {
+      "condition": "P0",
+      "mean_final_score": 0.9702434210526314,
+      "mean_full_task_success": 0.88,
+      "n_agent_outcome_censored": 0,
+      "n_analysis_only_itt": 0,
+      "n_infrastructure_pre_execution": 0,
+      "n_itt": 25,
+      "n_parent_budget_exhausted": 0,
+      "n_parent_not_finalized": 0,
+      "n_record_serialization_gap": 0,
+      "n_tasks": 25,
+      "parent_model_calls_mean": 10.2,
+      "parent_model_calls_total": 255
+    },
+    {
+      "condition": "P1",
+      "mean_final_score": 0.9395013575605681,
+      "mean_full_task_success": 0.84,
+      "n_agent_outcome_censored": 0,
+      "n_analysis_only_itt": 0,
+      "n_infrastructure_pre_execution": 0,
+      "n_itt": 25,
+      "n_parent_budget_exhausted": 0,
+      "n_parent_not_finalized": 0,
+      "n_record_serialization_gap": 0,
+      "n_tasks": 25,
+      "parent_model_calls_mean": 6.64,
+      "parent_model_calls_total": 166
+    }
+  ],
+  "cost_summary": {
+    "formula": "(input_tokens*3.00 + output_tokens*15.00 + cache_read_input_tokens*0.30 + cache_creation_input_tokens*3.75) / 1,000,000",
+    "rates_per_million_usd": {
+      "cache_creation_input_tokens": "3.75",
+      "cache_read_input_tokens": "0.30",
+      "input_tokens": "3.00",
+      "output_tokens": "15.00"
+    },
+    "token_totals": {
+      "cache_creation_input_tokens": 2681590,
+      "cache_read_input_tokens": 19306549,
+      "input_tokens": 9901,
+      "output_tokens": 755890
+    },
+    "total_cost_usd_exact": "27.2159802"
+  },
+  "draws": 5000,
+  "estimates": {
+    "delta": 0.0,
+    "tau0": 0.08,
+    "tau1": 0.08
+  },
+  "fig3_generated": false,
+  "fig3_reason": "omitted deterministically: no stock records",
+  "hard_supplement_exclusions": [],
+  "n_analysis_included": 100,
+  "n_hard": 0,
+  "n_hard_valid": 0,
+  "n_main": 100,
+  "n_records": 100,
+  "n_solo": 0,
+  "p0_p1_handoff": {
+    "accepted_unchanged_p1_minus_p0": 0.28,
+    "accepted_unchanged_p1_minus_p0_ci": [
+      0.08,
+      0.48
+    ],
+    "accepted_unchanged_p1_minus_p0_se": 0.10701710690406936,
+    "cells": {
+      "P0": {
+        "accepted_unchanged_n": 17,
+        "accepted_unchanged_rate": 0.68,
+        "candidate_success_n": 17,
+        "candidate_success_rate": 0.68,
+        "n": 25,
+        "parent_cache_creation_input_tokens_total": 341435,
+        "parent_cache_read_input_tokens_total": 2598813,
+        "parent_damage_n": 0,
+        "parent_input_tokens_total": 1309,
+        "parent_model_calls_mean": 10.2,
+        "parent_model_calls_total": 255,
+        "parent_output_tokens_total": 76838,
+        "parent_repair_n": 5,
+        "parent_tool_calls_mean": 12.2,
+        "parent_tool_calls_total": 305,
+        "parent_wall_seconds_mean": 86.12348000000001,
+        "parent_wall_seconds_total": 2153.0870000000004,
+        "revised_n": 8
+      },
+      "P1": {
+        "accepted_unchanged_n": 24,
+        "accepted_unchanged_rate": 0.96,
+        "candidate_success_n": 21,
+        "candidate_success_rate": 0.84,
+        "n": 25,
+        "parent_cache_creation_input_tokens_total": 209607,
+        "parent_cache_read_input_tokens_total": 887979,
+        "parent_damage_n": 0,
+        "parent_input_tokens_total": 852,
+        "parent_model_calls_mean": 6.64,
+        "parent_model_calls_total": 166,
+        "parent_output_tokens_total": 32485,
+        "parent_repair_n": 0,
+        "parent_tool_calls_mean": 8.16,
+        "parent_tool_calls_total": 204,
+        "parent_wall_seconds_mean": 39.05228,
+        "parent_wall_seconds_total": 976.307,
+        "revised_n": 1
+      }
+    },
+    "convention": "study bootstrap seed 20260902, B=10000; no prior accepted-unchanged contrast convention existed in analyze.py",
+    "draws": 10000,
+    "n_tasks": 25,
+    "seed": 20260902,
+    "task_set": "main_v04"
+  },
+  "protocol_version": "0.4.1",
+  "qc_report": {
+    "flag_counts": {
+      "advisory_artifact_leak": 0,
+      "advisory_scratch_retained": 0,
+      "agent_outcome_censored": 1,
+      "invalid_candidate": 0,
+      "parent_not_finalized": 2,
+      "production_missing_artifact": 0,
+      "record_serialization_gap": 0,
+      "withheld_feedback_call": 0,
+      "worker_timeout": 0
+    },
+    "flag_counts_by_condition": {
+      "A0": {
+        "advisory_artifact_leak": 0,
+        "advisory_scratch_retained": 0,
+        "agent_outcome_censored": 1,
+        "invalid_candidate": 0,
+        "parent_not_finalized": 1,
+        "production_missing_artifact": 0,
+        "record_serialization_gap": 0,
+        "withheld_feedback_call": 0,
+        "worker_timeout": 0
+      },
+      "A1": {
+        "advisory_artifact_leak": 0,
+        "advisory_scratch_retained": 0,
+        "agent_outcome_censored": 0,
+        "invalid_candidate": 0,
+        "parent_not_finalized": 1,
+        "production_missing_artifact": 0,
+        "record_serialization_gap": 0,
+        "withheld_feedback_call": 0,
+        "worker_timeout": 0
+      },
+      "P0": {
+        "advisory_artifact_leak": 0,
+        "advisory_scratch_retained": 0,
+        "agent_outcome_censored": 0,
+        "invalid_candidate": 0,
+        "parent_not_finalized": 0,
+        "production_missing_artifact": 0,
+        "record_serialization_gap": 0,
+        "withheld_feedback_call": 0,
+        "worker_timeout": 0
+      },
+      "P1": {
+        "advisory_artifact_leak": 0,
+        "advisory_scratch_retained": 0,
+        "agent_outcome_censored": 0,
+        "invalid_candidate": 0,
+        "parent_not_finalized": 0,
+        "production_missing_artifact": 0,
+        "record_serialization_gap": 0,
+        "withheld_feedback_call": 0,
+        "worker_timeout": 0
+      }
+    },
+    "n_agent_failures": 3,
+    "n_analysis_included": 100,
+    "n_episodes_total": 100,
+    "n_evaluator_failure": 0,
+    "n_infra_failures": 0,
+    "n_qc_flagged": 3
+  },
+  "record_source": "explicit episode records",
+  "runs_dir": "<REPO>",
+  "seed": 0,
+  "solo_summary": {},
+  "task_set_scope": "main_v04"
+}

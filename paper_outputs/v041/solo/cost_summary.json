@@ -1,0 +1,16 @@
+{
+  "formula": "(input_tokens*3.00 + output_tokens*15.00 + cache_read_input_tokens*0.30 + cache_creation_input_tokens*3.75) / 1,000,000",
+  "rates_per_million_usd": {
+    "cache_creation_input_tokens": "3.75",
+    "cache_read_input_tokens": "0.30",
+    "input_tokens": "3.00",
+    "output_tokens": "15.00"
+  },
+  "token_totals": {
+    "cache_creation_input_tokens": 393958,
+    "cache_read_input_tokens": 3012818,
+    "input_tokens": 1353,
+    "output_tokens": 92702
+  },
+  "total_cost_usd_exact": "3.7757769"
+}

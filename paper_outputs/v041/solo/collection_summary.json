@@ -1,0 +1,12 @@
+{
+  "analysis_included_records": 25,
+  "analysis_only_itt_rows": 0,
+  "analysis_rows": 25,
+  "outside_scope_records": "not enumerated",
+  "runs_dir": "<REPO>",
+  "selected_by_task_set": {
+    "solo_v04": 25
+  },
+  "selected_episode_records": 25,
+  "task_set_scope": "solo_v04"
+}

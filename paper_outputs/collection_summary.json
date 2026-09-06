@@ -1,0 +1,44 @@
+{
+  "analysis_included_records": 150,
+  "episode_files_seen": 192,
+  "excluded_outside_explicit_scope": 42,
+  "hard_supplement_exclusions": [
+    {
+      "condition": "A1",
+      "reason": "evaluator_failure: no valid hard-supplement outcome",
+      "run_id": "9f011bcf-c568-4ec6-b394-5b235280c085",
+      "task_id": "60-7"
+    },
+    {
+      "condition": "A0",
+      "reason": "evaluator_failure: no valid hard-supplement outcome",
+      "run_id": "a57378b5-7099-4178-baf2-d7a712bc05a1",
+      "task_id": "60-7"
+    },
+    {
+      "condition": "SOLO",
+      "reason": "evaluator_failure: no valid hard-supplement outcome",
+      "run_id": "b3f49408-2008-4f07-b7b8-fe5d8c2b88fe",
+      "task_id": "60-7"
+    },
+    {
+      "condition": "P0",
+      "reason": "evaluator_failure: no valid hard-supplement outcome",
+      "run_id": "db666772-3809-4a40-9ca9-299d9a9fb44f",
+      "task_id": "60-7"
+    },
+    {
+      "condition": "P1",
+      "reason": "evaluator_failure: no valid hard-supplement outcome",
+      "run_id": "f8f35409-ea2c-4045-abb1-4a017fe1973f",
+      "task_id": "60-7"
+    }
+  ],
+  "runs_dir": "<REPO>",
+  "selected_by_task_set": {
+    "hard": 25,
+    "main": 125
+  },
+  "selected_records": 150,
+  "task_set_scope": "all"
+}

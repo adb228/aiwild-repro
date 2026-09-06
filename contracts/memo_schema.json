@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://<host>/contracts/memo_schema.json",
+  "title": "Common worker handoff memo",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "task_understanding",
+    "target_locations",
+    "proposed_approach",
+    "assumptions",
+    "observed_feedback",
+    "known_risks",
+    "validation_plan"
+  ],
+  "properties": {
+    "task_understanding": {"type": "string"},
+    "target_locations": {"type": "array", "items": {"type": "string"}},
+    "proposed_approach": {"type": "array", "items": {"type": "string"}},
+    "assumptions": {"type": "array", "items": {"type": "string"}},
+    "observed_feedback": {"type": "array", "items": {"type": "string"}},
+    "known_risks": {"type": "array", "items": {"type": "string"}},
+    "validation_plan": {"type": "array", "items": {"type": "string"}}
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "run_id": "d7140186-b64d-44eb-82a7-3cd1ef653bd4",
+  "task_id": "pylint-dev__pylint-6386",
+  "task_set": "main_v035",
+  "condition": "A0",
+  "protocol_version": "swe-0.3.5",
+  "replicate": 1,
+  "started_at": "2026-09-05T03:10:34.781543+00:00",
+  "completed_at": "2026-09-05T03:18:26.737357+00:00",
+  "benchmark": "swebench",
+  "reproducibility": {
+    "schema_git_commit": "<commit>",
+    "benchmark_git_commit": "<commit>",
+    "dataset_archive_sha256": "e426590d9e9342af60ab48c5e3ddb174a73fbdfb05de5fff7ffb7d348752f0be",
+    "docker_image_digest": "sha256:fda08a7a0a711af33163d53ed09b8401d84b7c9bb76b31e25a81357c98e6aeed",
+    "worker_model": "claude-sonnet-4-5-20250929",
+    "parent_model": "claude-sonnet-4-5-20250929",
+    "temperature": 0.0,
+    "git_dirty": true,
+    "workspace_header_used": false,
+    "worker_prompt_hash": "e0dceb9647c2126f4f2ea7f94f8f96c1d8636da88cb860b7637e1202b1c61b25",
+    "parent_prompt_hash": "40bad821917eaa14773a241ddbdd117e24e370587112db72925cbcab539c1d1d",
+    "libreoffice_version": null,
+    "task_selection_package": "config/task_selection_swe_v3",
+    "selection_sha256": "e426590d9e9342af60ab48c5e3ddb174a73fbdfb05de5fff7ffb7d348752f0be"
+  },
+  "budgets": {
+    "worker": {
+      "max_turns": 115,
+      "max_tool_calls": 110,
+      "max_wall_seconds": 1800,
+      "max_tokens": 8192,
+      "max_input_tokens_safety": 1500000,
+      "max_output_tokens_total": 36000
+    },
+    "parent": {
+      "max_turns": 100,
+      "max_tool_calls": 100,
+      "max_wall_seconds": 1800,
+      "max_tokens": 8192,
+      "max_input_tokens_safety": 1500000,
+      "max_output_tokens_total": 41000
+    }
+  },
+  "usage": {
+    "worker": {
+      "model_calls": 46,
+      "input_tokens": 228,
+      "output_tokens": 13055,
+      "cache_read_input_tokens": 2033347,
+      "cache_creation_input_tokens": 96902,
+      "tool_calls": 45,
+      "validation_cycles": 0,
+      "wall_seconds": 211.86,
+      "budget_exhausted": false,
+      "budget_exhausted_on": null,
+      "safety_exhausted": false,
+      "safety_exhausted_on": null
+    },
+    "parent": {
+      "model_calls": 44,
+      "input_tokens": 218,
+      "output_tokens": 13476,
+      "cache_read_input_tokens": 1521804,
+      "cache_creation_input_tokens": 63910,
+      "tool_calls": 43,
+      "validation_cycles": 0,
+      "wall_seconds": 226.41,
+      "budget_exhausted": false,
+      "budget_exhausted_on": null,
+      "safety_exhausted": false,
+      "safety_exhausted_on": null
+    }
+  },
+  "handoff": {
+    "memo_path": "<REPO>",
+    "memo_sha256": "0dd227b0a8b06e0e9312aa9e54cea8cb7c369db87ad3bed0596a0e0835d82856",
+    "candidate_script_path": null,
+    "candidate_script_sha256": null,
+    "worker_submitted_memo": true,
+    "worker_submitted_candidate": false
+  },
+  "worker_outcome": null,
+  "final_outcome": {
+    "evaluator_status": "ok",
+    "full_task_success": 1,
+    "target_unit_pass_rate": 1.0,
+    "n_units": 1,
+    "output_path": "<REPO>",
+    "evaluator_path": "<REPO>",
+    "output_sha256": "cb987100db83d32d6b6cbb008c9fa21c206e6ace70ba40ecad439cd656f72306"
+  },
+  "unsealed_last_script_score": null,
+  "failures": [],
+  "compliance": {
+    "artifact_crossed_handoff": false,
+    "worker_feedback_calls": 0,
+    "parent_finalized": true,
+    "worker_scratch_destroyed": true,
+    "worker_submitted": false
+  },
+  "swe_protocol_usage": {
+    "worker": {
+      "reprompted_on_end_turn": 0,
+      "end_reason": "natural_end_turn_sealed",
+      "seal_source": "natural_end_turn_sealed",
+      "memo_source": "terminal_text",
+      "sealed_after_reprompt": false,
+      "continued_on_max_tokens": 0,
+      "unexpected_stop_reason": null
+    },
+    "parent": {
+      "reprompted_on_end_turn": 0,
+      "end_reason": "natural_end_turn_sealed",
+      "seal_source": "natural_end_turn_sealed",
+      "sealed_after_reprompt": false,
+      "continued_on_max_tokens": 0,
+      "unexpected_stop_reason": null
+    },
+    "caps_loosened": true,
+    "prior_swe02_max_turns": 40,
+    "prior_swe02_max_tool_calls": 100,
+    "production_artifact_missing": false
+  },
+  "final_script_path": "<REPO>",
+  "final_script_sha256": "a564ea2b9fe68465165239d2f61ff38fd6facb040675b21abaf74b74f2b0441b",
+  "accepted_unchanged": false,
+  "status": "complete",
+  "analysis_included": false,
+  "analysis_inclusion_reason": "benchmark=swebench",
+  "env_metrics": {
+    "swebench": {
+      "fail_to_pass_fraction": null,
+      "pass_to_pass_fraction": null,
+      "f2p_numerator": null,
+      "f2p_denominator": null,
+      "p2p_numerator": null,
+      "p2p_denominator": null,
+      "f2p_p2p_null_reason": "schema_v2_no_tests_status",
+      "applies_cleanly": false,
+      "candidate_resolved": null,
+      "final_resolved": 1,
+      "candidate_harness_seconds": null,
+      "final_harness_seconds": 30.23,
+      "candidate_report_sha256": null,
+      "final_report_sha256": "cb987100db83d32d",
+      "candidate_f2p_fraction": null,
+      "candidate_p2p_fraction": null,
+      "image_tag": "swebench/sweb.eval.x86_64.pylint-dev_1776_pylint-6386:latest",
+      "image_digest": "sha256:fda08a7a0a711af33163d53ed09b8401d84b7c9bb76b31e25a81357c98e6aeed",
+      "git_head": "<commit>",
+      "git_remote": "(no remotes; task_repo=pylint-dev/pylint)",
+      "task_repo": "pylint-dev/pylint",
+      "clean_tree": true,
+      "worker_container_id": "<container_id>",
+      "parent_container_id": "<container_id>",
+      "worker_start_commit": "<commit>",
+      "parent_start_commit": "<commit>",
+      "worker_start_clean": true,
+      "parent_start_clean": true,
+      "worker_start_remote": "",
+      "parent_start_remote": ""
+    }
+  }
+}

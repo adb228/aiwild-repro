@@ -1,0 +1,5 @@
+condition,n,executions_mean,executions_median,inspections_mean,inspections_median,revisions_mean,revisions_median,tokens_after_handoff_mean,tokens_after_handoff_median,any_verification,any_verification_n
+A0,8,0.0,0.0,5.375,5.0,15.25,12.0,23669.125,21840.0,1.0,8
+A1,8,0.125,0.0,4.75,4.5,12.625,13.0,19170.5,17976.0,1.0,8
+P0,8,0.0,0.0,4.75,5.0,18.75,13.5,22531.75,23721.0,0.875,7
+P1,8,0.0,0.0,3.875,4.0,9.25,8.0,17724.375,15031.5,1.0,8

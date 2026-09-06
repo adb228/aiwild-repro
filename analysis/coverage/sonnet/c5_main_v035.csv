@@ -1,0 +1,17 @@
+model,environment,task_set,cell,task_id,run_id,arm,source_run_id,candidate_success,final_success,error_class,class_source,executions,read_output_range_explicit,inspections_auto,ran_candidate,hash_revised,ast_revised,disposition,parent_finalized,repaired,damaged
+sonnet,swe,main_v035,P0,pylint-dev__pylint-6386,70009e10-5f47-4d63-af10-883f23e7fc0d,,,0.0,0.0,tests_fail_silent,stored_harness_and_logs,0,5,0,False,False,,accepted_unchanged,True,False,False
+sonnet,swe,main_v035,P1,pylint-dev__pylint-6386,ead34336-08cd-47f8-a36d-566f9558b1d5,,,0.0,0.0,tests_fail_loud,stored_harness_and_logs,0,8,0,False,False,,accepted_unchanged,True,False,False
+sonnet,swe,main_v035,P0,sphinx-doc__sphinx-8593,8df1d32f-7356-4726-a1e5-07e254385c64,,,0.0,0.0,tests_fail_silent,stored_harness_and_logs,0,8,0,False,True,,revised,True,False,False
+sonnet,swe,main_v035,P1,sphinx-doc__sphinx-8593,3589a8bd-f6c5-4988-9a0a-e2ab7ea80532,,,1.0,1.0,,,0,5,0,False,False,,accepted_unchanged,True,False,False
+sonnet,swe,main_v035,P0,sympy__sympy-12419,94140531-0ae5-46b6-b685-863e063ac36a,,,1.0,1.0,,,0,2,0,False,False,,accepted_unchanged,True,False,False
+sonnet,swe,main_v035,P1,sympy__sympy-12419,7400b89a-4cda-4b02-b698-10f083d93463,,,1.0,1.0,,,0,4,0,False,False,,accepted_unchanged,True,False,False
+sonnet,swe,main_v035,P0,django__django-14792,18dba4a9-7f3d-40f2-8101-b3df0e789c2d,,,0.0,0.0,tests_fail_silent,stored_harness_and_logs,0,6,0,False,False,,accepted_unchanged,True,False,False
+sonnet,swe,main_v035,P1,django__django-14792,00159429-2d17-4e3d-990b-2eb18dcc5a2a,,,0.0,0.0,tests_fail_loud,stored_harness_and_logs,0,6,0,False,True,,revised,True,False,False
+sonnet,swe,main_v035,P0,sympy__sympy-16766,d067c2f7-3b92-4432-b8de-a03679d2602d,,,,0.0,no_patch,stored_harness_and_logs,0,9,0,False,False,,rebuilt,True,False,False
+sonnet,swe,main_v035,P1,sympy__sympy-16766,82ab0b8d-fb84-48bf-abc2-eefd27fd3a90,,,0.0,0.0,tests_fail_loud,stored_harness_and_logs,0,4,0,False,True,,revised,True,False,False
+sonnet,swe,main_v035,P0,scikit-learn__scikit-learn-14087,52ef8f03-d55f-47e2-8ae6-a857dc713886,,,,0.0,no_patch,stored_harness_and_logs,0,5,0,False,False,,rebuilt,True,False,False
+sonnet,swe,main_v035,P1,scikit-learn__scikit-learn-14087,264d2a76-0e5e-4f93-b8da-050ffd128505,,,0.0,0.0,tests_fail_loud,stored_harness_and_logs,0,1,0,False,False,,accepted_unchanged,True,False,False
+sonnet,swe,main_v035,P0,astropy__astropy-8872,43c0fc1e-d30c-416e-8c64-fdca193c22ea,,,0.0,0.0,tests_fail_silent,stored_harness_and_logs,0,0,0,False,False,,accepted_unchanged,True,False,False
+sonnet,swe,main_v035,P1,astropy__astropy-8872,50526ddb-94de-42e6-8e45-451a49ae0ff9,,,1.0,1.0,,,0,2,0,False,False,,accepted_unchanged,True,False,False
+sonnet,swe,main_v035,P0,django__django-11292,c04f1429-d7ae-48c0-952e-7a42ca05a240,,,1.0,1.0,,,0,3,0,False,False,,accepted_unchanged,True,False,False
+sonnet,swe,main_v035,P1,django__django-11292,f56edadd-4f2c-4b93-81c7-b2edac8dc617,,,1.0,1.0,,,0,1,0,False,False,,accepted_unchanged,True,False,False

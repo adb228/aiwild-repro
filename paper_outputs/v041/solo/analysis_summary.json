@@ -1,0 +1,75 @@
+{
+  "condition_summary": {
+    "condition": "SOLO",
+    "full_task_success_numerator": 22,
+    "full_task_success_rate": 0.88,
+    "mean_target_unit_pass_rate": 0.8982857142857142,
+    "n": 25,
+    "n_agent_failures": 1,
+    "n_nonfinalized": 1,
+    "n_parent_budget_exhausted": 0,
+    "parent_model_calls_mean": 10.68,
+    "parent_model_calls_total": 267,
+    "parent_output_tokens_mean": 3708.08,
+    "parent_output_tokens_total": 92702,
+    "parent_run_events_total": 58,
+    "parent_runs_without_auto_observation": 0,
+    "parent_tool_calls_mean": 12.08,
+    "parent_tool_calls_total": 302,
+    "parent_wall_seconds_mean": 76.09324,
+    "parent_wall_seconds_total": 1902.331
+  },
+  "cost_summary": {
+    "formula": "(input_tokens*3.00 + output_tokens*15.00 + cache_read_input_tokens*0.30 + cache_creation_input_tokens*3.75) / 1,000,000",
+    "rates_per_million_usd": {
+      "cache_creation_input_tokens": "3.75",
+      "cache_read_input_tokens": "0.30",
+      "input_tokens": "3.00",
+      "output_tokens": "15.00"
+    },
+    "token_totals": {
+      "cache_creation_input_tokens": 393958,
+      "cache_read_input_tokens": 3012818,
+      "input_tokens": 1353,
+      "output_tokens": 92702
+    },
+    "total_cost_usd_exact": "3.7757769"
+  },
+  "protocol_version": "0.4.1",
+  "qc_report": {
+    "flag_counts": {
+      "advisory_artifact_leak": 0,
+      "advisory_scratch_retained": 0,
+      "agent_outcome_censored": 0,
+      "invalid_candidate": 0,
+      "parent_not_finalized": 1,
+      "production_missing_artifact": 0,
+      "record_serialization_gap": 0,
+      "withheld_feedback_call": 0,
+      "worker_timeout": 0
+    },
+    "flag_counts_by_condition": {
+      "SOLO": {
+        "advisory_artifact_leak": 0,
+        "advisory_scratch_retained": 0,
+        "agent_outcome_censored": 0,
+        "invalid_candidate": 0,
+        "parent_not_finalized": 1,
+        "production_missing_artifact": 0,
+        "record_serialization_gap": 0,
+        "withheld_feedback_call": 0,
+        "worker_timeout": 0
+      }
+    },
+    "n_agent_failures": 1,
+    "n_analysis_included": 25,
+    "n_episodes_total": 25,
+    "n_evaluator_failure": 0,
+    "n_infra_failures": 0,
+    "n_qc_flagged": 1
+  },
+  "record_source": "explicit episode records",
+  "runs_dir": "<REPO>",
+  "separate_from_factorial_effects": true,
+  "task_set_scope": "solo_v04"
+}

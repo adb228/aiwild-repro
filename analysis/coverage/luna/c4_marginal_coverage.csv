@@ -1,0 +1,5 @@
+n_observed,n_wrong,n_correct,candidate_correct_n,candidate_correct_rate,parent_repair_n,parent_repair_rate_among_wrong,parent_damage_n,parent_damage_rate,final_success_n,final_success_rate,net_parent_contribution,n_visible_wrong,n_classified_wrong,visible_wrong_share,model,environment,cell
+25,4,21,21,0.84,2,0.5,0,0.0,23,0.92,0.08000000000000007,2,4,0.5,luna,spreadsheet_main_v04_m2,P0
+23,2,21,21,0.9130434782608695,0,0.0,0,0.0,21,0.9130434782608695,0.0,0,2,0.0,luna,spreadsheet_main_v04_m2,P1
+8,3,5,5,0.625,1,0.3333333333333333,0,0.0,6,0.75,0.125,1,3,0.3333333333333333,luna,swe_main_m2,P0
+8,2,6,6,0.75,0,0.0,0,0.0,6,0.75,0.0,2,2,1.0,luna,swe_main_m2,P1

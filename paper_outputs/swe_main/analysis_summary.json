@@ -1,0 +1,569 @@
+{
+  "benchmark": "swebench",
+  "bootstrap": {
+    "delta_ci": [
+      0.0,
+      0.0
+    ],
+    "n_draws": 10000,
+    "seed": 20260902,
+    "tau0_ci": [
+      0.0,
+      0.0
+    ],
+    "tau1_ci": [
+      0.0,
+      0.0
+    ]
+  },
+  "cell_success": {
+    "A0": 4,
+    "A1": 5,
+    "P0": 4,
+    "P1": 5
+  },
+  "cell_valid": {
+    "A0": 8,
+    "A1": 6,
+    "P0": 8,
+    "P1": 7
+  },
+  "disposition_counts": {
+    "accepted_unchanged": 8,
+    "no_candidate": 4,
+    "rebuilt": 17,
+    "revised": 3
+  },
+  "estimates": {
+    "delta": 0.0,
+    "tau0": 0.0,
+    "tau1": 0.0
+  },
+  "itt_policy": "Main ITT: infrastructure_failure and not_finalized None\u21920; evaluator_failure (harness tests_timed_out) excluded from binary 0/1; \u03c40/\u03c41/\u03b4 use pairwise-complete tasks; all 32 canonical cells listed regardless of analysis_included",
+  "main_report_path": "data/dev/swe/main_report.md",
+  "matrix": {
+    "django-13297": {
+      "A0": 1,
+      "A1": 1,
+      "P0": 1,
+      "P1": 1
+    },
+    "django-14855": {
+      "A0": 1,
+      "A1": 1,
+      "P0": 1,
+      "P1": 1
+    },
+    "matplotlib-24149": {
+      "A0": 0,
+      "A1": null,
+      "P0": 0,
+      "P1": 0
+    },
+    "matplotlib-25332": {
+      "A0": 0,
+      "A1": null,
+      "P0": 0,
+      "P1": null
+    },
+    "pytest-10081": {
+      "A0": 1,
+      "A1": 1,
+      "P0": 1,
+      "P1": 1
+    },
+    "scikit-learn-13496": {
+      "A0": 1,
+      "A1": 1,
+      "P0": 1,
+      "P1": 1
+    },
+    "sympy-12481": {
+      "A0": 0,
+      "A1": 1,
+      "P0": 0,
+      "P1": 1
+    },
+    "sympy-24562": {
+      "A0": 0,
+      "A1": 0,
+      "P0": 0,
+      "P1": 0
+    }
+  },
+  "missing_field_notes": "See missing_field_audit.json and missing_field_audit.md for per-run, per-field missingness details",
+  "n_evaluator_failure": 3,
+  "n_final_not_resolved": 6,
+  "n_final_resolved": 18,
+  "n_final_resolved_null": 8,
+  "n_infrastructure_failure": 4,
+  "n_not_finalized": 9,
+  "n_parent_finalized": 23,
+  "n_records": 32,
+  "pairwise_n": {
+    "delta": 6,
+    "tau0": 8,
+    "tau1": 6
+  },
+  "paper_outputs": {
+    "disposition": "paper_outputs/swe_main/disposition_by_patch_hash.csv",
+    "memo": "paper_outputs/swe_main/memo_length_by_cell.csv",
+    "parent_effort": "paper_outputs/swe_main/parent_effort_by_cell.csv",
+    "per_task": "paper_outputs/swe_main/per_task_cells.csv",
+    "transitions": "paper_outputs/swe_main/p_cell_worker_final_transitions.csv",
+    "worker_effort": "paper_outputs/swe_main/worker_effort_by_cell.csv"
+  },
+  "pass_fraction_policy": "null + f2p_p2p_null_reason=schema_v2_no_tests_status is valid absence; not malformed",
+  "per_condition": [
+    {
+      "condition": "A0",
+      "n_evaluated": 5,
+      "n_final_not_resolved": 1,
+      "n_final_resolved": 4,
+      "n_final_resolved_null": 3,
+      "n_not_finalized": 4,
+      "n_parent_finalized": 4,
+      "n_runs": 8,
+      "resolved_rate_among_evaluated": 0.8
+    },
+    {
+      "condition": "A1",
+      "n_evaluated": 6,
+      "n_final_not_resolved": 1,
+      "n_final_resolved": 5,
+      "n_final_resolved_null": 2,
+      "n_not_finalized": 0,
+      "n_parent_finalized": 8,
+      "n_runs": 8,
+      "resolved_rate_among_evaluated": 0.8333333333333334
+    },
+    {
+      "condition": "P0",
+      "n_evaluated": 6,
+      "n_final_not_resolved": 2,
+      "n_final_resolved": 4,
+      "n_final_resolved_null": 2,
+      "n_not_finalized": 4,
+      "n_parent_finalized": 4,
+      "n_runs": 8,
+      "resolved_rate_among_evaluated": 0.6666666666666666
+    },
+    {
+      "condition": "P1",
+      "n_evaluated": 7,
+      "n_final_not_resolved": 2,
+      "n_final_resolved": 5,
+      "n_final_resolved_null": 1,
+      "n_not_finalized": 1,
+      "n_parent_finalized": 7,
+      "n_runs": 8,
+      "resolved_rate_among_evaluated": 0.7142857142857143
+    }
+  ],
+  "primary_outcome_field": "env_metrics.swebench.final_resolved",
+  "run_ids_loaded": [
+    "04d21205-9e5b-4f5a-87d0-156c092b1d6d",
+    "0a8eef47-5256-4114-945c-a7ad9c71f4bb",
+    "0f4b39ea-9656-4b4d-a966-3b5ac19d01c3",
+    "15c51462-4b7c-47c1-9367-894e11f504bf",
+    "16bf4093-11ce-49e2-bf29-eb0b8a271394",
+    "18593dbf-172f-470e-aff7-6e5e599531b5",
+    "1a11a33d-59cd-43a1-8c65-c422241f4c20",
+    "1a8a8e41-fbdf-461b-a7e3-595ccd73b3ad",
+    "2389d180-0479-4c13-8da1-512f781a49ca",
+    "40a7ca7f-6d28-45c9-8e39-07fe378ac439",
+    "43b42f06-2d24-44de-b98e-746faf60c9a7",
+    "49235be6-4b58-4849-bfcb-73e4f715606c",
+    "4ceea1cb-40a6-4f4b-9e45-9e84d8b85f96",
+    "4e2322d6-3b82-4e59-b46b-8e9fe286dd52",
+    "597a740c-1070-41df-b349-06714cb47023",
+    "642b6af7-866f-4fe9-abce-b8be0949ae20",
+    "76c3b54a-4d43-4640-b538-367797b5e715",
+    "88e194e8-a559-4210-bd0c-0868120475e1",
+    "9720426a-d426-4e43-a5e1-22806b2ae87d",
+    "9b42f0c2-6f43-4f78-b445-031a51c87c28",
+    "a52f955c-ef7e-4f9a-8ac8-7615417e0e8f",
+    "abf97d78-81f1-4d4e-a394-09dc4d0f5099",
+    "ac75cce9-144a-4aac-a38d-66c62dc06fe7",
+    "af57623f-ea5d-4746-9d63-ffff0d497fa6",
+    "b6f76590-5419-44ad-b571-4f01b9f91c16",
+    "bbf637ad-672b-4c4c-8088-4fbd17194047",
+    "dbd8ebdf-f0f5-4209-92bb-ff01e70954a4",
+    "e8fe1e00-30f0-4926-97e6-5d8eae5471ed",
+    "eefd66c8-7889-4202-afb8-f74026d94a94",
+    "f243d8bf-42b8-47ce-bdb5-c029d84409f4",
+    "f396d0e3-3111-499c-ae4c-8b86d2a540d0",
+    "fc0842ef-2db4-4755-b0b4-97794855be83"
+  ],
+  "run_ids_requested": [
+    "15c51462-4b7c-47c1-9367-894e11f504bf",
+    "abf97d78-81f1-4d4e-a394-09dc4d0f5099",
+    "4ceea1cb-40a6-4f4b-9e45-9e84d8b85f96",
+    "2389d180-0479-4c13-8da1-512f781a49ca",
+    "af57623f-ea5d-4746-9d63-ffff0d497fa6",
+    "4e2322d6-3b82-4e59-b46b-8e9fe286dd52",
+    "76c3b54a-4d43-4640-b538-367797b5e715",
+    "e8fe1e00-30f0-4926-97e6-5d8eae5471ed",
+    "ac75cce9-144a-4aac-a38d-66c62dc06fe7",
+    "f243d8bf-42b8-47ce-bdb5-c029d84409f4",
+    "dbd8ebdf-f0f5-4209-92bb-ff01e70954a4",
+    "1a11a33d-59cd-43a1-8c65-c422241f4c20",
+    "49235be6-4b58-4849-bfcb-73e4f715606c",
+    "16bf4093-11ce-49e2-bf29-eb0b8a271394",
+    "bbf637ad-672b-4c4c-8088-4fbd17194047",
+    "88e194e8-a559-4210-bd0c-0868120475e1",
+    "9720426a-d426-4e43-a5e1-22806b2ae87d",
+    "eefd66c8-7889-4202-afb8-f74026d94a94",
+    "f396d0e3-3111-499c-ae4c-8b86d2a540d0",
+    "a52f955c-ef7e-4f9a-8ac8-7615417e0e8f",
+    "9b42f0c2-6f43-4f78-b445-031a51c87c28",
+    "1a8a8e41-fbdf-461b-a7e3-595ccd73b3ad",
+    "fc0842ef-2db4-4755-b0b4-97794855be83",
+    "40a7ca7f-6d28-45c9-8e39-07fe378ac439",
+    "0f4b39ea-9656-4b4d-a966-3b5ac19d01c3",
+    "642b6af7-866f-4fe9-abce-b8be0949ae20",
+    "597a740c-1070-41df-b349-06714cb47023",
+    "04d21205-9e5b-4f5a-87d0-156c092b1d6d",
+    "b6f76590-5419-44ad-b571-4f01b9f91c16",
+    "18593dbf-172f-470e-aff7-6e5e599531b5",
+    "0a8eef47-5256-4114-945c-a7ad9c71f4bb",
+    "43b42f06-2d24-44de-b98e-746faf60c9a7"
+  ],
+  "run_provenance": {
+    "04d21205-9e5b-4f5a-87d0-156c092b1d6d": {
+      "source_episode_sha256": "143658a7b39e3c209002d2d6687146e56538dcb888ac3aa65a96a8e47a896a6f",
+      "source_runs_dir": "<REPO>"
+    },
+    "0a8eef47-5256-4114-945c-a7ad9c71f4bb": {
+      "source_episode_sha256": "5e448accb1e062bf3d986a810a44f9273128db4b84661017eb87e6b2005f85a1",
+      "source_runs_dir": "<REPO>"
+    },
+    "0f4b39ea-9656-4b4d-a966-3b5ac19d01c3": {
+      "source_episode_sha256": "7b6b438c5433b232ef2c1c87dbc08bc0ce4f740469819f0251365cd882d3cc63",
+      "source_runs_dir": "<REPO>"
+    },
+    "15c51462-4b7c-47c1-9367-894e11f504bf": {
+      "source_episode_sha256": "9ebb97964f719b2a27e307de9bc5a882a8f4c9ded823731f7c5381ce0720baba",
+      "source_runs_dir": "<REPO>"
+    },
+    "16bf4093-11ce-49e2-bf29-eb0b8a271394": {
+      "source_episode_sha256": "a154bcb2595da626034375b723266466ca58a56d92c5353ec5793a0d8f134f92",
+      "source_runs_dir": "<REPO>"
+    },
+    "18593dbf-172f-470e-aff7-6e5e599531b5": {
+      "source_episode_sha256": "2eeca20d396122db21b0a69ceee0fa7a4b33c51cb72f277a9ae608cf9ac552e3",
+      "source_runs_dir": "<REPO>"
+    },
+    "1a11a33d-59cd-43a1-8c65-c422241f4c20": {
+      "source_episode_sha256": "315f44b1c29e8bdb0b2cb2a24fcbd6fb9bbd7092cfbe99071796bce35a8783de",
+      "source_runs_dir": "<REPO>"
+    },
+    "1a8a8e41-fbdf-461b-a7e3-595ccd73b3ad": {
+      "source_episode_sha256": "8b08068c8220367f99b8c1fc5edc703991e274ab1217b004c65686a6af585b77",
+      "source_runs_dir": "<REPO>"
+    },
+    "2389d180-0479-4c13-8da1-512f781a49ca": {
+      "source_episode_sha256": "c17b4e09a221008c8e9f040a0e02fc5740e17d52e5f3992effd30cc57f30b081",
+      "source_runs_dir": "<REPO>"
+    },
+    "40a7ca7f-6d28-45c9-8e39-07fe378ac439": {
+      "source_episode_sha256": "2e659e42aaaa46e2257fa8589f15756c7b083d5a6d2f60872821d0a167a069b1",
+      "source_runs_dir": "<REPO>"
+    },
+    "43b42f06-2d24-44de-b98e-746faf60c9a7": {
+      "source_episode_sha256": "c90c0ba646a1e8c946a0d54ba228e75d0e37541c645537eab5047e9f4d83ab0f",
+      "source_runs_dir": "<REPO>"
+    },
+    "49235be6-4b58-4849-bfcb-73e4f715606c": {
+      "source_episode_sha256": "f784302e442f6bec89ae057bc634ad6c12fcf4360166d0b68cb8f1be32ffbfae",
+      "source_runs_dir": "<REPO>"
+    },
+    "4ceea1cb-40a6-4f4b-9e45-9e84d8b85f96": {
+      "source_episode_sha256": "320da6162d3c454f9205e09e723bc355054b17fd087f465e0d5049c4f64d2bbf",
+      "source_runs_dir": "<REPO>"
+    },
+    "4e2322d6-3b82-4e59-b46b-8e9fe286dd52": {
+      "source_episode_sha256": "1b761257f79c5ae36000924255038f21c614cc6da2a40b83f5efe00c5d6d24d4",
+      "source_runs_dir": "<REPO>"
+    },
+    "597a740c-1070-41df-b349-06714cb47023": {
+      "source_episode_sha256": "771cc35c637cfcae50437094e1e00ea078e8ea9ae9a4029dcb0ddb39925d4851",
+      "source_runs_dir": "<REPO>"
+    },
+    "642b6af7-866f-4fe9-abce-b8be0949ae20": {
+      "source_episode_sha256": "8e564554ff4dbd7b924dec6199163ff2b34d77afdf820d11a0bb62993bbbf96d",
+      "source_runs_dir": "<REPO>"
+    },
+    "76c3b54a-4d43-4640-b538-367797b5e715": {
+      "source_episode_sha256": "94f924b4e31298ff269833845c496c3d408a022ba11eaf6e225eea358ce451dc",
+      "source_runs_dir": "<REPO>"
+    },
+    "88e194e8-a559-4210-bd0c-0868120475e1": {
+      "source_episode_sha256": "d8a08e59f14b4a8baed0d259fdc9abbc22cff2f8f7ecd282e5fd6268c624b516",
+      "source_runs_dir": "<REPO>"
+    },
+    "9720426a-d426-4e43-a5e1-22806b2ae87d": {
+      "source_episode_sha256": "2fc611eac091536b2fe061f0c3c1889dde477acfd069c76de25430c274707133",
+      "source_runs_dir": "<REPO>"
+    },
+    "9b42f0c2-6f43-4f78-b445-031a51c87c28": {
+      "source_episode_sha256": "802260afb5a6583b6bf19daee2e6a8dbeec70437a1712dc97afa2ed9cce1ec9d",
+      "source_runs_dir": "<REPO>"
+    },
+    "a52f955c-ef7e-4f9a-8ac8-7615417e0e8f": {
+      "source_episode_sha256": "2af5ce10664bd9063e2b8a75157d1832ca4f0c64a636baaa271215ea5eb85f5e",
+      "source_runs_dir": "<REPO>"
+    },
+    "abf97d78-81f1-4d4e-a394-09dc4d0f5099": {
+      "source_episode_sha256": "f8d1ffc78cf2dd9f5e4d1e429614116484ad7d97864f8f690493c08d74e9aa7b",
+      "source_runs_dir": "<REPO>"
+    },
+    "ac75cce9-144a-4aac-a38d-66c62dc06fe7": {
+      "source_episode_sha256": "a4faa6f3e98e9de4791258ebd991c674c1362e68866330604755c12dd14d3b1f",
+      "source_runs_dir": "<REPO>"
+    },
+    "af57623f-ea5d-4746-9d63-ffff0d497fa6": {
+      "source_episode_sha256": "2701be7b23a646528d5baf1a6c305fc377e32d5835c2264fe5754f1facc412e7",
+      "source_runs_dir": "<REPO>"
+    },
+    "b6f76590-5419-44ad-b571-4f01b9f91c16": {
+      "source_episode_sha256": "4df5d71bfd292a40f5b956b7a903ca667fc99a099d380e54e5145beae6e8b82a",
+      "source_runs_dir": "<REPO>"
+    },
+    "bbf637ad-672b-4c4c-8088-4fbd17194047": {
+      "source_episode_sha256": "5aa7d2e06f11085d46cb28626881e07c4f7ffd6d02cb35ce6b9c662dee02d685",
+      "source_runs_dir": "<REPO>"
+    },
+    "dbd8ebdf-f0f5-4209-92bb-ff01e70954a4": {
+      "source_episode_sha256": "0bf9941938e2b8f060b62606f55fa95eb223236b7c90ba5f4245e08808abe5fa",
+      "source_runs_dir": "<REPO>"
+    },
+    "e8fe1e00-30f0-4926-97e6-5d8eae5471ed": {
+      "source_episode_sha256": "f059e73f89fc545bf3dd85b5477f6bc7cb823da6574274c4ee8bda9e53cf4ab1",
+      "source_runs_dir": "<REPO>"
+    },
+    "eefd66c8-7889-4202-afb8-f74026d94a94": {
+      "source_episode_sha256": "5336197883a1817600cd6bc0bfd550acd138426185e28c851e91d8534936e2b8",
+      "source_runs_dir": "<REPO>"
+    },
+    "f243d8bf-42b8-47ce-bdb5-c029d84409f4": {
+      "source_episode_sha256": "9fd9e9c57cbe68cf2422307183c146c9ca9574aafc1951db3429e8971069c059",
+      "source_runs_dir": "<REPO>"
+    },
+    "f396d0e3-3111-499c-ae4c-8b86d2a540d0": {
+      "source_episode_sha256": "d0189038166a3ef90305ef730a7ffe27ba51a79d9562f1dcc8f6f94fa8c0c972",
+      "source_runs_dir": "<REPO>"
+    },
+    "fc0842ef-2db4-4755-b0b4-97794855be83": {
+      "source_episode_sha256": "d404ab42387fef8c1ca571f9cdccbb5cbc0be0502d269640a40dcf204d48f37a",
+      "source_runs_dir": "<REPO>"
+    }
+  },
+  "runs_dirs": [
+    "<REPO>"
+  ],
+  "sidecar_overlay_summary": {
+    "n_missing_sidecar": 32,
+    "n_overlaid": 0,
+    "n_records": 32,
+    "per_run": [
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "04d21205-9e5b-4f5a-87d0-156c092b1d6d",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "0a8eef47-5256-4114-945c-a7ad9c71f4bb",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "0f4b39ea-9656-4b4d-a966-3b5ac19d01c3",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "15c51462-4b7c-47c1-9367-894e11f504bf",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "16bf4093-11ce-49e2-bf29-eb0b8a271394",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "18593dbf-172f-470e-aff7-6e5e599531b5",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "1a11a33d-59cd-43a1-8c65-c422241f4c20",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "1a8a8e41-fbdf-461b-a7e3-595ccd73b3ad",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "2389d180-0479-4c13-8da1-512f781a49ca",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "40a7ca7f-6d28-45c9-8e39-07fe378ac439",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "43b42f06-2d24-44de-b98e-746faf60c9a7",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "49235be6-4b58-4849-bfcb-73e4f715606c",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "4ceea1cb-40a6-4f4b-9e45-9e84d8b85f96",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "4e2322d6-3b82-4e59-b46b-8e9fe286dd52",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "597a740c-1070-41df-b349-06714cb47023",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "642b6af7-866f-4fe9-abce-b8be0949ae20",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "76c3b54a-4d43-4640-b538-367797b5e715",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "88e194e8-a559-4210-bd0c-0868120475e1",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "9720426a-d426-4e43-a5e1-22806b2ae87d",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "9b42f0c2-6f43-4f78-b445-031a51c87c28",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "a52f955c-ef7e-4f9a-8ac8-7615417e0e8f",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "abf97d78-81f1-4d4e-a394-09dc4d0f5099",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "ac75cce9-144a-4aac-a38d-66c62dc06fe7",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "af57623f-ea5d-4746-9d63-ffff0d497fa6",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "b6f76590-5419-44ad-b571-4f01b9f91c16",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "bbf637ad-672b-4c4c-8088-4fbd17194047",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "dbd8ebdf-f0f5-4209-92bb-ff01e70954a4",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "e8fe1e00-30f0-4926-97e6-5d8eae5471ed",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "eefd66c8-7889-4202-afb8-f74026d94a94",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "f243d8bf-42b8-47ce-bdb5-c029d84409f4",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "f396d0e3-3111-499c-ae4c-8b86d2a540d0",
+        "sidecar_found": false
+      },
+      {
+        "f2p_overlaid": false,
+        "p2p_overlaid": false,
+        "run_id": "fc0842ef-2db4-4755-b0b4-97794855be83",
+        "sidecar_found": false
+      }
+    ],
+    "sidecar_dir": "data/dev/swe/metric_backfills"
+  },
+  "task_set": "main",
+  "task_set_label": "main",
+  "trace_bundle_dir": "data/dev/swe/trace_bundle",
+  "trace_bundle_n_cells": 32
+}

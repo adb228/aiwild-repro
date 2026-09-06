@@ -1,0 +1,21 @@
+% Table 1: Main effects (task-clustered bootstrap, seed=0, B=5000)
+\begin{table}[ht]
+\centering
+\caption{Estimated treatment effects (task-clustered bootstrap, $B=5,000$, seed \texttt{0}).
+  $\hat\tau_0$: effect of crossing a candidate script into the handoff when feedback was withheld.
+  $\hat\tau_1$: effect of crossing a candidate script when feedback was available.
+  $\hat\delta$: interaction (difference of contrasts).
+  95\,\% percentile bootstrap CI.
+  ITT includes 57232 A0 as a zero-valued censored agent outcome (context_window_exceeded).
+}
+\label{tab:effects}
+\begin{tabular}{lccccc}
+\toprule
+Estimand & Point est.\ & Bootstrap SE & 95\,\% CI (lo) & 95\,\% CI (hi) \\
+\midrule
+  $\hat\tau_0$ (P0 $-$ A0) & $+0.080$ & $0.055$ & $+0.000$ & $+0.200$ \\
+  $\hat\tau_1$ (P1 $-$ A1) & $+0.080$ & $0.054$ & $+0.000$ & $+0.200$ \\
+  $\hat\delta$ (interaction) & $+0.000$ & $0.081$ & $-0.160$ & $+0.160$ \\
+\bottomrule
+\end{tabular}
+\end{table}

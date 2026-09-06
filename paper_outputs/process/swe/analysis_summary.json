@@ -1,0 +1,323 @@
+{
+  "draws": 10000,
+  "environment": "swe",
+  "n_episodes": 32,
+  "n_tasks": 8,
+  "out_dir": "<REPO>",
+  "primary": {
+    "a1": {
+      "analysis": "A1",
+      "cells": {
+        "P0": {
+          "candidate_fail_n": 4,
+          "candidate_success_n": 2,
+          "condition": "P0",
+          "d": 0.0,
+          "damage_n": 0,
+          "final_success_n": 2,
+          "final_success_rate": 0.3333333333333333,
+          "identity_holds": true,
+          "n_excluded_missing": 2,
+          "n_observed": 6,
+          "preserve_n": 2,
+          "q": 0.3333333333333333,
+          "r": 0.0,
+          "reconstructed_final_success": 0.3333333333333333,
+          "repair_n": 0,
+          "unrecovered_n": 4
+        },
+        "P1": {
+          "candidate_fail_n": 4,
+          "candidate_success_n": 4,
+          "condition": "P1",
+          "d": 0.0,
+          "damage_n": 0,
+          "final_success_n": 4,
+          "final_success_rate": 0.5,
+          "identity_holds": true,
+          "n_excluded_missing": 0,
+          "n_observed": 8,
+          "preserve_n": 4,
+          "q": 0.5,
+          "r": 0.0,
+          "reconstructed_final_success": 0.5,
+          "repair_n": 0,
+          "unrecovered_n": 4
+        }
+      },
+      "scope": "P cells with both candidate and final observed"
+    },
+    "a2": {
+      "analysis": "A2",
+      "cells": {
+        "P0": {
+          "condition": "P0",
+          "correct_accepted_n": 2,
+          "correct_n": 2,
+          "correct_revised_n": 0,
+          "disposition_source": "handoff.candidate_script_sha256 vs final_script_sha256",
+          "flag_ignored": "accepted_unchanged",
+          "n_with_candidate_hash": 6,
+          "p_damage_given_correct": 0.0,
+          "p_repair_given_wrong": 0.0,
+          "p_revise_given_correct": 0.0,
+          "p_revise_given_wrong": 0.25,
+          "wrong_accepted_n": 3,
+          "wrong_n": 4,
+          "wrong_revised_n": 1
+        },
+        "P1": {
+          "condition": "P1",
+          "correct_accepted_n": 4,
+          "correct_n": 4,
+          "correct_revised_n": 0,
+          "disposition_source": "handoff.candidate_script_sha256 vs final_script_sha256",
+          "flag_ignored": "accepted_unchanged",
+          "n_with_candidate_hash": 8,
+          "p_damage_given_correct": 0.0,
+          "p_repair_given_wrong": 0.0,
+          "p_revise_given_correct": 0.0,
+          "p_revise_given_wrong": 0.5,
+          "wrong_accepted_n": 2,
+          "wrong_n": 4,
+          "wrong_revised_n": 2
+        }
+      },
+      "scope": "P cells with a candidate hash and observed candidate outcome"
+    },
+    "a3": {
+      "analysis": "A3",
+      "cells": {
+        "A0": {
+          "any_verification": 1.0,
+          "any_verification_n": 8,
+          "condition": "A0",
+          "executions_mean": 0.0,
+          "executions_median": 0.0,
+          "inspections_mean": 5.375,
+          "inspections_median": 5.0,
+          "n": 8,
+          "revisions_mean": 15.25,
+          "revisions_median": 12.0,
+          "tokens_after_handoff_mean": 23669.125,
+          "tokens_after_handoff_median": 21840.0
+        },
+        "A1": {
+          "any_verification": 1.0,
+          "any_verification_n": 8,
+          "condition": "A1",
+          "executions_mean": 0.125,
+          "executions_median": 0.0,
+          "inspections_mean": 4.75,
+          "inspections_median": 4.5,
+          "n": 8,
+          "revisions_mean": 12.625,
+          "revisions_median": 13.0,
+          "tokens_after_handoff_mean": 19170.5,
+          "tokens_after_handoff_median": 17976.0
+        },
+        "P0": {
+          "any_verification": 0.875,
+          "any_verification_n": 7,
+          "condition": "P0",
+          "executions_mean": 0.0,
+          "executions_median": 0.0,
+          "inspections_mean": 4.75,
+          "inspections_median": 5.0,
+          "n": 8,
+          "revisions_mean": 18.75,
+          "revisions_median": 13.5,
+          "tokens_after_handoff_mean": 22531.75,
+          "tokens_after_handoff_median": 23721.0
+        },
+        "P1": {
+          "any_verification": 1.0,
+          "any_verification_n": 8,
+          "condition": "P1",
+          "executions_mean": 0.0,
+          "executions_median": 0.0,
+          "inspections_mean": 3.875,
+          "inspections_median": 4.0,
+          "n": 8,
+          "revisions_mean": 9.25,
+          "revisions_median": 8.0,
+          "tokens_after_handoff_mean": 17724.375,
+          "tokens_after_handoff_median": 15031.5
+        }
+      },
+      "scope": "parent verification V on included cells"
+    },
+    "a3_theta": {
+      "analysis": "A3_theta_v",
+      "bootstrap": "task-clustered percentile; a few long tasks cannot dominate as i.i.d. episodes",
+      "metrics": {
+        "any_verification": {
+          "ci": [
+            0.0,
+            0.375
+          ],
+          "draws": 10000,
+          "estimate": 0.125,
+          "formula": "[V(P1)-V(P0)] - [V(A1)-V(A0)]",
+          "metric": "any_verification",
+          "n_tasks": 8,
+          "se": 0.1155733321078416,
+          "seed": 20260902,
+          "unit": "task"
+        },
+        "executions": {
+          "ci": [
+            -0.375,
+            0.0
+          ],
+          "draws": 10000,
+          "estimate": -0.125,
+          "formula": "[V(P1)-V(P0)] - [V(A1)-V(A0)]",
+          "metric": "executions",
+          "n_tasks": 8,
+          "se": 0.1155733321078416,
+          "seed": 20260902,
+          "unit": "task"
+        },
+        "inspections": {
+          "ci": [
+            -2.0,
+            1.75
+          ],
+          "draws": 10000,
+          "estimate": -0.25,
+          "formula": "[V(P1)-V(P0)] - [V(A1)-V(A0)]",
+          "metric": "inspections",
+          "n_tasks": 8,
+          "se": 0.9642696583120014,
+          "seed": 20260902,
+          "unit": "task"
+        },
+        "revisions": {
+          "ci": [
+            -16.375,
+            1.0
+          ],
+          "draws": 10000,
+          "estimate": -6.875,
+          "formula": "[V(P1)-V(P0)] - [V(A1)-V(A0)]",
+          "metric": "revisions",
+          "n_tasks": 8,
+          "se": 4.478635449768623,
+          "seed": 20260902,
+          "unit": "task"
+        },
+        "tokens_after_handoff": {
+          "ci": [
+            -10694.846875,
+            11402.328124999996
+          ],
+          "draws": 10000,
+          "estimate": -308.75,
+          "formula": "[V(P1)-V(P0)] - [V(A1)-V(A0)]",
+          "metric": "tokens_after_handoff",
+          "n_tasks": 8,
+          "se": 5684.126641303772,
+          "seed": 20260902,
+          "unit": "task"
+        }
+      }
+    },
+    "a4": {
+      "analysis": "A4",
+      "delta_f": {
+        "ci": [
+          0.0,
+          0.625
+        ],
+        "draws": 10000,
+        "estimate": 0.25,
+        "formula": "Q_final(P1) - Q_final(P0)",
+        "n_tasks": 8,
+        "se": 0.15225434470746058,
+        "seed": 20260902,
+        "unit": "task"
+      },
+      "delta_w": {
+        "ci": [
+          0.0,
+          0.6666666666666666
+        ],
+        "draws": 10000,
+        "estimate": 0.3333333333333333,
+        "formula": "Q_worker(P1) - Q_worker(P0)",
+        "n_tasks": 6,
+        "se": 0.19189231294133852,
+        "seed": 20260902,
+        "unit": "task"
+      },
+      "gap": {
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "draws": 10000,
+        "estimate": 0.0,
+        "formula": "\u0394_W - \u0394_F",
+        "n_tasks": 6,
+        "se": 0.0,
+        "seed": 20260902,
+        "unit": "task"
+      },
+      "label": "descriptive, not mediation"
+    },
+    "a5": {
+      "analysis": "A5",
+      "cells": {
+        "A0": {
+          "condition": "A0",
+          "context_overflow_n": 0,
+          "empty_final_n": 1,
+          "n": 8,
+          "non_finalized_n": 1,
+          "non_finalized_rate": 0.125,
+          "turns_to_finalize_mean": 59.142857142857146,
+          "turns_to_finalize_median": 57.0,
+          "turns_to_finalize_n": 7
+        },
+        "A1": {
+          "condition": "A1",
+          "context_overflow_n": 0,
+          "empty_final_n": 0,
+          "n": 8,
+          "non_finalized_n": 0,
+          "non_finalized_rate": 0.0,
+          "turns_to_finalize_mean": 61.125,
+          "turns_to_finalize_median": 60.0,
+          "turns_to_finalize_n": 8
+        },
+        "P0": {
+          "condition": "P0",
+          "context_overflow_n": 0,
+          "empty_final_n": 0,
+          "n": 8,
+          "non_finalized_n": 0,
+          "non_finalized_rate": 0.0,
+          "turns_to_finalize_mean": 64.5,
+          "turns_to_finalize_median": 68.0,
+          "turns_to_finalize_n": 8
+        },
+        "P1": {
+          "condition": "P1",
+          "context_overflow_n": 0,
+          "empty_final_n": 0,
+          "n": 8,
+          "non_finalized_n": 0,
+          "non_finalized_rate": 0.0,
+          "turns_to_finalize_mean": 58.125,
+          "turns_to_finalize_median": 59.5,
+          "turns_to_finalize_n": 8
+        }
+      },
+      "scope": "included cells"
+    }
+  },
+  "seed": 20260902,
+  "sensitivity_overflow_missing": null,
+  "with_sensitivity": false
+}

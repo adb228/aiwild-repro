@@ -1,0 +1,23 @@
+[
+  {
+    "estimand":"tau0",
+    "estimate":0.08,
+    "ci_low":0.0,
+    "ci_high":0.2,
+    "bootstrap_se":0.054566346
+  },
+  {
+    "estimand":"tau1",
+    "estimate":0.08,
+    "ci_low":0.0,
+    "ci_high":0.2,
+    "bootstrap_se":0.0543896346
+  },
+  {
+    "estimand":"delta",
+    "estimate":0.0,
+    "ci_low":-0.16,
+    "ci_high":0.16,
+    "bootstrap_se":0.080747498
+  }
+]

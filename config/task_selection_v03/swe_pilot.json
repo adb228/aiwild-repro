@@ -1,0 +1,8 @@
+{
+  "pilot": [
+    "django__django-12155",
+    "scikit-learn__scikit-learn-14983",
+    "matplotlib__matplotlib-25479"
+  ],
+  "seed": 20260902
+}

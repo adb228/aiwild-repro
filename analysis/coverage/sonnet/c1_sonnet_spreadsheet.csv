@@ -1,0 +1,3 @@
+cell,n_wrong,crash,error_cells,empty,silent,replay_failed,replay_disagrees_correct,no_patch,apply_fail,tests_fail_loud,tests_fail_silent
+P0,8,0,4,1,3,0,0,0,0,0,0
+P1,4,0,0,0,4,0,0,0,0,0,0

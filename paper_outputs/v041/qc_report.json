@@ -1,0 +1,65 @@
+{
+  "n_episodes_total": 100,
+  "n_analysis_included": 100,
+  "n_qc_flagged": 3,
+  "n_evaluator_failure": 0,
+  "n_agent_failures": 3,
+  "n_infra_failures": 0,
+  "flag_counts": {
+    "advisory_artifact_leak": 0,
+    "withheld_feedback_call": 0,
+    "production_missing_artifact": 0,
+    "parent_not_finalized": 2,
+    "advisory_scratch_retained": 0,
+    "worker_timeout": 0,
+    "invalid_candidate": 0,
+    "agent_outcome_censored": 1,
+    "record_serialization_gap": 0
+  },
+  "flag_counts_by_condition": {
+    "A0": {
+      "advisory_artifact_leak": 0,
+      "withheld_feedback_call": 0,
+      "production_missing_artifact": 0,
+      "parent_not_finalized": 1,
+      "advisory_scratch_retained": 0,
+      "worker_timeout": 0,
+      "invalid_candidate": 0,
+      "agent_outcome_censored": 1,
+      "record_serialization_gap": 0
+    },
+    "A1": {
+      "advisory_artifact_leak": 0,
+      "withheld_feedback_call": 0,
+      "production_missing_artifact": 0,
+      "parent_not_finalized": 1,
+      "advisory_scratch_retained": 0,
+      "worker_timeout": 0,
+      "invalid_candidate": 0,
+      "agent_outcome_censored": 0,
+      "record_serialization_gap": 0
+    },
+    "P0": {
+      "advisory_artifact_leak": 0,
+      "withheld_feedback_call": 0,
+      "production_missing_artifact": 0,
+      "parent_not_finalized": 0,
+      "advisory_scratch_retained": 0,
+      "worker_timeout": 0,
+      "invalid_candidate": 0,
+      "agent_outcome_censored": 0,
+      "record_serialization_gap": 0
+    },
+    "P1": {
+      "advisory_artifact_leak": 0,
+      "withheld_feedback_call": 0,
+      "production_missing_artifact": 0,
+      "parent_not_finalized": 0,
+      "advisory_scratch_retained": 0,
+      "worker_timeout": 0,
+      "invalid_candidate": 0,
+      "agent_outcome_censored": 0,
+      "record_serialization_gap": 0
+    }
+  }
+}

@@ -1,0 +1,20 @@
+% Table S1: Condition summary
+\begin{table}[ht]
+\centering
+\caption{Per-condition episode counts and success rates.
+  Success rate is the task-weighted mean of \texttt{full\_task\_success}.
+  Evaluator-failure episodes are coerced to 0 (retained per QC contract).
+  Analysis-only ITT rows identify terminal agent outcomes whose
+  \texttt{episode.json} was not serialized.}
+\label{tab:condition_summary}
+\begin{tabular}{lccccc}
+\toprule
+Condition & ITT $n$ & Analysis-only & Success rate & 95\,\% CI (lo) & 95\,\% CI (hi) \\
+\midrule
+  A0 & 25 & 0 & $0.800$ & $0.640$ & $0.960$ \\
+  A1 & 25 & 0 & $0.760$ & $0.560$ & $0.920$ \\
+  P0 & 25 & 0 & $0.880$ & $0.760$ & $1.000$ \\
+  P1 & 25 & 0 & $0.840$ & $0.680$ & $0.960$ \\
+\bottomrule
+\end{tabular}
+\end{table}

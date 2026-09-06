@@ -1,0 +1,17 @@
+model,environment,task_set,cell,task_id,run_id,arm,source_run_id,candidate_success,final_success,error_class,class_source,executions,read_output_range_explicit,inspections_auto,ran_candidate,hash_revised,ast_revised,disposition,parent_finalized,repaired,damaged
+sonnet,swe,main,P1,matplotlib__matplotlib-24149,0a8eef47-5256-4114-945c-a7ad9c71f4bb,,,,0.0,no_patch,stored_harness_and_logs,0,0,0,False,False,,no_candidate,False,False,False
+sonnet,swe,main,P1,django__django-13297,0f4b39ea-9656-4b4d-a966-3b5ac19d01c3,,,1.0,1.0,,,0,6,0,False,False,,accepted_unchanged,True,False,False
+sonnet,swe,main,P1,sympy__sympy-24562,15c51462-4b7c-47c1-9367-894e11f504bf,,,0.0,0.0,tests_fail_loud,stored_harness_and_logs,0,2,0,False,True,,revised,True,False,False
+sonnet,swe,main,P0,sympy__sympy-24562,16bf4093-11ce-49e2-bf29-eb0b8a271394,,,,0.0,no_patch,stored_harness_and_logs,0,0,0,False,False,,no_candidate,False,False,False
+sonnet,swe,main,P1,sympy__sympy-12481,18593dbf-172f-470e-aff7-6e5e599531b5,,,1.0,1.0,,,0,2,0,False,True,,revised,True,False,False
+sonnet,swe,main,P0,matplotlib__matplotlib-24149,40a7ca7f-6d28-45c9-8e39-07fe378ac439,,,,0.0,no_patch,stored_harness_and_logs,0,0,0,False,False,,no_candidate,False,False,False
+sonnet,swe,main,P1,matplotlib__matplotlib-25332,49235be6-4b58-4849-bfcb-73e4f715606c,,,,,tests_fail_loud,stored_harness_and_logs,3,5,0,False,True,,revised,True,False,False
+sonnet,swe,main,P0,django__django-13297,4e2322d6-3b82-4e59-b46b-8e9fe286dd52,,,1.0,1.0,,,0,6,0,False,False,,accepted_unchanged,True,False,False
+sonnet,swe,main,P1,django__django-14855,597a740c-1070-41df-b349-06714cb47023,,,1.0,1.0,,,0,3,0,False,False,,accepted_unchanged,True,False,False
+sonnet,swe,main,P0,django__django-14855,76c3b54a-4d43-4640-b538-367797b5e715,,,1.0,1.0,,,0,3,0,False,False,,accepted_unchanged,True,False,False
+sonnet,swe,main,P0,sympy__sympy-12481,88e194e8-a559-4210-bd0c-0868120475e1,,,,,no_patch,stored_harness_and_logs,0,3,0,False,False,,rebuilt,False,False,False
+sonnet,swe,main,P0,matplotlib__matplotlib-25332,a52f955c-ef7e-4f9a-8ac8-7615417e0e8f,,,,,no_patch,stored_harness_and_logs,0,3,0,False,False,,rebuilt,False,False,False
+sonnet,swe,main,P0,pytest-dev__pytest-10081,af57623f-ea5d-4746-9d63-ffff0d497fa6,,,1.0,1.0,,,0,2,0,False,False,,accepted_unchanged,True,False,False
+sonnet,swe,main,P1,pytest-dev__pytest-10081,e8fe1e00-30f0-4926-97e6-5d8eae5471ed,,,1.0,1.0,,,1,3,0,False,False,,accepted_unchanged,True,False,False
+sonnet,swe,main,P0,scikit-learn__scikit-learn-13496,eefd66c8-7889-4202-afb8-f74026d94a94,,,1.0,1.0,,,0,3,0,False,False,,accepted_unchanged,True,False,False
+sonnet,swe,main,P1,scikit-learn__scikit-learn-13496,fc0842ef-2db4-4755-b0b4-97794855be83,,,1.0,1.0,,,0,2,0,False,False,,accepted_unchanged,True,False,False

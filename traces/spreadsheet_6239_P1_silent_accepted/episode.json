@@ -1,0 +1,128 @@
+{
+  "run_id": "a58abcb7-6aff-4be6-a12e-b08d37842a6c",
+  "task_id": "6239",
+  "task_set": "main_v04",
+  "condition": "P1",
+  "protocol_version": "0.4.1",
+  "replicate": 1,
+  "started_at": "2026-09-03T19:45:31.304015+00:00",
+  "completed_at": "2026-09-03T19:48:34.526589+00:00",
+  "reproducibility": {
+    "schema_git_commit": "<commit>",
+    "benchmark_git_commit": "<commit>",
+    "dataset_archive_sha256": "10ef893dd29cb13ab97143ea787e68cdc9574a13873ab9a54e50b31dc03fc949",
+    "docker_image_digest": "sha256:8c861ae2b9511d19225f4f2433f4366311a32a55ad13dc29735a76c6fd165ffb",
+    "worker_model": "claude-sonnet-4-5-20250929",
+    "parent_model": "claude-sonnet-4-5-20250929",
+    "temperature": 0.0,
+    "git_dirty": false,
+    "workspace_header_used": true,
+    "worker_prompt_hash": "321328a27007aa0a352d5973c56fa92797fa42a331b678ffa56c7ca2d06fc794",
+    "parent_prompt_hash": "0193f4a73fd2c1c837363dd75e890b03e1fba21f221e043f33b5d968c76ef209",
+    "libreoffice_version": "26.8.0.3",
+    "task_selection_package": "config/task_selection_v03",
+    "selection_sha256": "cf818c1c9be7568223245e89a705d94d64aa7d99e4341604414378571f11752d"
+  },
+  "budgets": {
+    "worker": {
+      "max_turns": 40,
+      "max_tool_calls": 100,
+      "max_wall_seconds": 1200,
+      "max_tokens": 8192,
+      "max_input_tokens_safety": 1500000,
+      "max_output_tokens_total": 64000
+    },
+    "parent": {
+      "max_turns": 40,
+      "max_tool_calls": 100,
+      "max_wall_seconds": 1200,
+      "max_tokens": 8192,
+      "max_input_tokens_safety": 1500000,
+      "max_output_tokens_total": 64000
+    }
+  },
+  "usage": {
+    "worker": {
+      "input_tokens": 64,
+      "output_tokens": 8171,
+      "cache_read_input_tokens": 182819,
+      "cache_creation_input_tokens": 39446,
+      "model_calls": 13,
+      "tool_calls": 14,
+      "validation_cycles": 1,
+      "wall_seconds": 141.0,
+      "budget_exhausted": false,
+      "budget_exhausted_on": null,
+      "safety_exhausted": false,
+      "safety_exhausted_on": null,
+      "observed_output_calls": 0,
+      "auto_observations": 1
+    },
+    "parent": {
+      "input_tokens": 35,
+      "output_tokens": 1160,
+      "cache_read_input_tokens": 93385,
+      "cache_creation_input_tokens": 32284,
+      "model_calls": 7,
+      "tool_calls": 8,
+      "validation_cycles": 1,
+      "wall_seconds": 39.184,
+      "budget_exhausted": false,
+      "budget_exhausted_on": null,
+      "safety_exhausted": false,
+      "safety_exhausted_on": null,
+      "observed_output_calls": 0,
+      "auto_observations": 1
+    }
+  },
+  "handoff": {
+    "memo_path": "<REPO>",
+    "memo_sha256": "94bc4557a177f865c344f95756b986df709ec2c2234a3b38b2b05322a60189b6",
+    "candidate_script_path": "<REPO>",
+    "candidate_script_sha256": "a040ecadc49004e05156c2bcc7ab80eb6feb51c0663af4f37bb6b8e6023d6c50",
+    "worker_submitted_memo": true,
+    "worker_submitted_candidate": true,
+    "memo_claims_validation": true
+  },
+  "worker_outcome": {
+    "evaluator_status": "ok",
+    "full_task_success": 0,
+    "target_unit_pass_rate": 0.05555555555555555,
+    "n_units": 18,
+    "output_path": "<REPO>",
+    "evaluator_path": "<REPO>",
+    "output_sha256": "c1299e9390ffb9a283f84535d7e4e8bd347f12ab2a9913c5ce1cb2aa9795414e"
+  },
+  "final_outcome": {
+    "evaluator_status": "ok",
+    "full_task_success": 0,
+    "target_unit_pass_rate": 0.05555555555555555,
+    "n_units": 18,
+    "output_path": "<REPO>",
+    "evaluator_path": "<REPO>",
+    "output_sha256": "3ff902a15fb3c483f391050745f82001f9608e5bbbdd3a59b9d5632971616712"
+  },
+  "unsealed_last_script_score": null,
+  "final_script_path": "<REPO>",
+  "final_script_sha256": "a040ecadc49004e05156c2bcc7ab80eb6feb51c0663af4f37bb6b8e6023d6c50",
+  "accepted_unchanged": true,
+  "failures": [],
+  "compliance": {
+    "artifact_crossed_handoff": true,
+    "worker_feedback_calls": 1,
+    "parent_finalized": true,
+    "worker_scratch_destroyed": true,
+    "worker_submitted": true,
+    "worker_observed_output_calls": 0,
+    "worker_revised_after_observation": false,
+    "worker_auto_observations": 1,
+    "parent_auto_observations": 1,
+    "eligible_worker_run_events": 1,
+    "eligible_parent_run_events": 1,
+    "worker_runs_without_auto_observation": 0,
+    "parent_runs_without_auto_observation": 0
+  },
+  "status": "complete",
+  "analysis_included": true,
+  "analysis_inclusion_reason": "Structurally valid main_v04 episode; inclusion confirmed post-run."
+}

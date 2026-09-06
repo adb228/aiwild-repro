@@ -1,0 +1,21 @@
+% Table 1: Main effects (task-clustered bootstrap, seed=20260902, B=10000)
+\begin{table}[ht]
+\centering
+\caption{Estimated treatment effects (task-clustered bootstrap, $B=10,000$, seed \texttt{20260902}).
+  $\hat\tau_0$: effect of crossing a candidate script into the handoff when feedback was withheld.
+  $\hat\tau_1$: effect of crossing a candidate script when feedback was available.
+  $\hat\delta$: interaction (difference of contrasts).
+  95\,\% percentile bootstrap CI.
+  SWE ITT: evaluator_failure and infrastructure_failure are missing, never 0; pairwise-complete tasks; seed 20260902, $B=10{,}000$.
+}
+\label{tab:effects}
+\begin{tabular}{lccccc}
+\toprule
+Estimand & Point est.\ & Bootstrap SE & 95\,\% CI (lo) & 95\,\% CI (hi) \\
+\midrule
+  $\hat\tau_0$ (P0 $-$ A0) & $-0.125$ & $0.117$ & $-0.375$ & $+0.000$ \\
+  $\hat\tau_1$ (P1 $-$ A1) & $+0.000$ & $0.000$ & $+0.000$ & $+0.000$ \\
+  $\hat\delta$ (interaction) & $+0.125$ & $0.117$ & $+0.000$ & $+0.375$ \\
+\bottomrule
+\end{tabular}
+\end{table}

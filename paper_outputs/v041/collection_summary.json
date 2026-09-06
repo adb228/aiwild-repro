@@ -1,0 +1,13 @@
+{
+  "analysis_included_records": 100,
+  "analysis_only_itt_rows": 0,
+  "analysis_rows": 100,
+  "hard_supplement_exclusions": [],
+  "outside_scope_records": "not enumerated",
+  "runs_dir": "<REPO>",
+  "selected_by_task_set": {
+    "main_v04": 100
+  },
+  "selected_episode_records": 100,
+  "task_set_scope": "main_v04"
+}

@@ -1,0 +1,5 @@
+condition,n_itt,n_tasks,mean_full_task_success,mean_final_score,parent_model_calls_mean,parent_model_calls_total,n_parent_not_finalized,n_parent_budget_exhausted,n_agent_outcome_censored,n_record_serialization_gap,n_infrastructure_pre_execution,n_analysis_only_itt
+A0,25,25,0.8,0.8769107142857143,10.64,266,2,1,2,0,0,0
+A1,25,25,0.76,0.9102488323080429,10.16,254,1,1,1,0,0,0
+P0,25,25,0.88,0.9702434210526314,10.2,255,0,0,0,0,0,0
+P1,25,25,0.84,0.9395013575605681,6.64,166,0,0,0,0,0,0

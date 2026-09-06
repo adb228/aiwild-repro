@@ -1,0 +1,214 @@
+{
+ "package": "swe_selection_v3",
+ "protocol": "swe-0.4",
+ "date": "2026-09-04",
+ "seed": 20260905,
+ "source_dataset_sha256": "7d4f90f4781e756e9e3df04f8372b1e19235bd678321e72c39bdde32cb63ce9b",
+ "filter": "R1-R9 at v0.3 thresholds; A-2 tightening not applied",
+ "max_repo_share": 0.25,
+ "exclusions": {
+  "repos": [
+   "matplotlib/matplotlib"
+  ],
+  "already_used_ids": [
+   "django__django-12155",
+   "django__django-13297",
+   "django__django-13551",
+   "django__django-14752",
+   "django__django-14855",
+   "django__django-16100",
+   "django__django-16877",
+   "matplotlib__matplotlib-20676",
+   "matplotlib__matplotlib-24149",
+   "matplotlib__matplotlib-24970",
+   "matplotlib__matplotlib-25332",
+   "matplotlib__matplotlib-25479",
+   "mwaskom__seaborn-3069",
+   "pydata__xarray-3095",
+   "pylint-dev__pylint-6528",
+   "pytest-dev__pytest-10081",
+   "scikit-learn__scikit-learn-13142",
+   "scikit-learn__scikit-learn-13439",
+   "scikit-learn__scikit-learn-13496",
+   "scikit-learn__scikit-learn-14983",
+   "sympy__sympy-12481",
+   "sympy__sympy-15345",
+   "sympy__sympy-19495",
+   "sympy__sympy-19954",
+   "sympy__sympy-24562"
+  ]
+ },
+ "eligible_pool": 117,
+ "rejection_reasons": {
+  "R4 patch too small (memo == patch)": 191,
+  "R7 issue has link": 113,
+  "R3 patch too large": 3,
+  "R5 FAIL_TO_PASS count out of range": 5,
+  "R6 difficulty excluded": 38,
+  "R9 issue too short": 3,
+  "X2 already used in an earlier protocol": 20,
+  "X1 repo excluded (harness timeouts)": 8,
+  "R2 too many files": 2
+ },
+ "main": [
+  {
+   "instance_id": "pylint-dev__pylint-6386",
+   "repo": "pylint-dev/pylint",
+   "difficulty": "15 min - 1 hour",
+   "files": 4,
+   "changed_lines": 15,
+   "src_lines_changed": 15
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-8593",
+   "repo": "sphinx-doc/sphinx",
+   "difficulty": "15 min - 1 hour",
+   "files": 2,
+   "changed_lines": 60,
+   "src_lines_changed": 60
+  },
+  {
+   "instance_id": "sympy__sympy-12419",
+   "repo": "sympy/sympy",
+   "difficulty": "15 min - 1 hour",
+   "files": 1,
+   "changed_lines": 10,
+   "src_lines_changed": 10
+  },
+  {
+   "instance_id": "django__django-14792",
+   "repo": "django/django",
+   "difficulty": "<15 min fix",
+   "files": 1,
+   "changed_lines": 7,
+   "src_lines_changed": 7
+  },
+  {
+   "instance_id": "sympy__sympy-16766",
+   "repo": "sympy/sympy",
+   "difficulty": "<15 min fix",
+   "files": 1,
+   "changed_lines": 5,
+   "src_lines_changed": 5
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-14087",
+   "repo": "scikit-learn/scikit-learn",
+   "difficulty": "15 min - 1 hour",
+   "files": 1,
+   "changed_lines": 9,
+   "src_lines_changed": 9
+  },
+  {
+   "instance_id": "astropy__astropy-8872",
+   "repo": "astropy/astropy",
+   "difficulty": "15 min - 1 hour",
+   "files": 1,
+   "changed_lines": 11,
+   "src_lines_changed": 11
+  },
+  {
+   "instance_id": "django__django-11292",
+   "repo": "django/django",
+   "difficulty": "15 min - 1 hour",
+   "files": 1,
+   "changed_lines": 11,
+   "src_lines_changed": 11
+  }
+ ],
+ "reserve_in_order": [
+  {
+   "instance_id": "astropy__astropy-7606",
+   "repo": "astropy/astropy",
+   "difficulty": "15 min - 1 hour",
+   "files": 1,
+   "changed_lines": 10,
+   "src_lines_changed": 10
+  },
+  {
+   "instance_id": "sympy__sympy-19783",
+   "repo": "sympy/sympy",
+   "difficulty": "15 min - 1 hour",
+   "files": 2,
+   "changed_lines": 13,
+   "src_lines_changed": 13
+  },
+  {
+   "instance_id": "django__django-13112",
+   "repo": "django/django",
+   "difficulty": "<15 min fix",
+   "files": 1,
+   "changed_lines": 6,
+   "src_lines_changed": 6
+  },
+  {
+   "instance_id": "django__django-14155",
+   "repo": "django/django",
+   "difficulty": "15 min - 1 hour",
+   "files": 1,
+   "changed_lines": 13,
+   "src_lines_changed": 13
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-11445",
+   "repo": "sphinx-doc/sphinx",
+   "difficulty": "15 min - 1 hour",
+   "files": 1,
+   "changed_lines": 14,
+   "src_lines_changed": 14
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-12682",
+   "repo": "scikit-learn/scikit-learn",
+   "difficulty": "15 min - 1 hour",
+   "files": 2,
+   "changed_lines": 90,
+   "src_lines_changed": 90
+  },
+  {
+   "instance_id": "pytest-dev__pytest-7490",
+   "repo": "pytest-dev/pytest",
+   "difficulty": "15 min - 1 hour",
+   "files": 1,
+   "changed_lines": 21,
+   "src_lines_changed": 21
+  },
+  {
+   "instance_id": "astropy__astropy-14096",
+   "repo": "astropy/astropy",
+   "difficulty": "15 min - 1 hour",
+   "files": 1,
+   "changed_lines": 6,
+   "src_lines_changed": 6
+  }
+ ],
+ "replacement_rule": "Gate 0 failure (gold/empty/repeat or harness timeout) \u2192 next reserve in order; log the swap. Never replace on an agent outcome.",
+ "selection_sha256": "e426590d9e9342af60ab48c5e3ddb174a73fbdfb05de5fff7ffb7d348752f0be",
+ "study_assignment": {
+  "protocol": "swe-0.3.5",
+  "pilot": [
+   "astropy__astropy-7606",
+   "sympy__sympy-19783",
+   "django__django-13112"
+  ],
+  "main": [
+   "pylint-dev__pylint-6386",
+   "sphinx-doc__sphinx-8593",
+   "sympy__sympy-12419",
+   "django__django-14792",
+   "sympy__sympy-16766",
+   "scikit-learn__scikit-learn-14087",
+   "astropy__astropy-8872",
+   "django__django-11292"
+  ],
+  "remaining_reserve_in_order": [
+   "django__django-14155",
+   "sphinx-doc__sphinx-11445",
+   "scikit-learn__scikit-learn-12682",
+   "pytest-dev__pytest-7490",
+   "astropy__astropy-14096"
+  ],
+  "remaining_reserve_use": "Gate 0 replacements only",
+  "table_annotation": "files/changed_lines/src_lines_changed from patch_stats; draw unchanged"
+ }
+}

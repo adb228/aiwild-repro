@@ -1,0 +1,17 @@
+model,environment,task_set,cell,n,executions_mean,inspections_mean,parent_model_calls_mean,parent_output_tokens_mean,parent_input_tokens_mean,not_finalized
+sonnet,spreadsheet,main_v04,A0,25,2.72,2.76,10.64,3543.48,54.08,2/25
+sonnet,spreadsheet,main_v04,A1,25,2.6,2.6,10.16,3387.72,52.08,1/25
+sonnet,spreadsheet,main_v04,P0,25,2.48,2.48,10.2,3073.52,52.36,0/25
+sonnet,spreadsheet,main_v04,P1,25,1.12,1.12,6.64,1299.4,34.08,0/25
+sonnet,swe,main_v035,A0,8,0.0,5.375,61.875,23669.125,305.875,1/8
+sonnet,swe,main_v035,A1,8,0.125,4.75,61.125,19170.5,303.375,0/8
+sonnet,swe,main_v035,P0,8,0.0,4.75,64.5,22531.75,319.25,0/8
+sonnet,swe,main_v035,P1,8,0.0,3.875,58.125,17724.375,288.375,0/8
+luna,spreadsheet,main_v04_m2,A0,25,1.12,1.12,4.4,2155.36,32947.68,2/25
+luna,spreadsheet,main_v04_m2,A1,25,1.32,1.32,4.72,1822.24,29452.68,1/25
+luna,spreadsheet,main_v04_m2,P0,25,1.2,1.2,4.48,1769.68,26544.16,0/25
+luna,spreadsheet,main_v04_m2,P1,25,1.16,1.16,4.56,1673.72,28486.08,1/25
+luna,swe,swe_main_m2,A0,8,0.0,4.5,35.875,14917.375,1306499.5,0/8
+luna,swe,swe_main_m2,A1,8,3.125,6.5,31.5,7135.625,1134452.625,0/8
+luna,swe,swe_main_m2,P0,8,0.0,1.375,28.5,6040.75,500772.75,0/8
+luna,swe,swe_main_m2,P1,8,1.5,4.125,22.125,5945.625,655758.0,0/8

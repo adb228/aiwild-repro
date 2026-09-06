@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://<host>/contracts/event_schema.json",
+  "title": "Episode event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["run_id", "sequence", "timestamp", "role", "event_type", "payload"],
+  "properties": {
+    "run_id": {"type": "string", "minLength": 1},
+    "sequence": {"type": "integer", "minimum": 0},
+    "timestamp": {"type": "string", "format": "date-time"},
+    "role": {"enum": ["system", "worker", "parent", "evaluator"]},
+    "event_type": {
+      "enum": [
+        "phase_started",
+        "phase_completed",
+        "model_call",
+        "tool_call",
+        "tool_result",
+        "handoff_sealed",
+        "scratch_destroyed",
+        "artifact_sealed",
+        "evaluation",
+        "failure",
+        "reprompted_on_end_turn",
+        "continued_on_max_tokens",
+        "memo_sealed",
+        "production_artifact_missing"
+      ]
+    },
+    "payload": {"type": "object"}
+  }
+}

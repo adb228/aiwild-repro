@@ -1,0 +1,17 @@
+model,environment,task_set,cell,task_id,run_id,arm,source_run_id,candidate_success,final_success,error_class,class_source,executions,read_output_range_explicit,inspections_auto,ran_candidate,hash_revised,ast_revised,disposition,parent_finalized,repaired,damaged
+luna,swe,swe_main_m2,P1,sympy__sympy-16766,04d1d86c-a3e4-4c9c-b002-e7f310d2aba4,,,1.0,1.0,,,1,9,0,False,False,,accepted_unchanged,True,False,False
+luna,swe,swe_main_m2,P0,astropy__astropy-8872,0a164999-f451-4686-a2d2-29d996d7a01c,,,1.0,1.0,,,0,0,0,False,False,,accepted_unchanged,True,False,False
+luna,swe,swe_main_m2,P0,django__django-11292,4ab8c1d8-c166-4be5-958a-8c594ba21c52,,,1.0,1.0,,,0,0,0,False,False,,accepted_unchanged,True,False,False
+luna,swe,swe_main_m2,P0,sphinx-doc__sphinx-8593,5d986513-187e-4933-9a8f-95365d13652f,,,1.0,1.0,,,0,0,0,False,False,,accepted_unchanged,True,False,False
+luna,swe,swe_main_m2,P1,astropy__astropy-8872,5ecc17bc-81a7-45b7-909d-274f40e31f34,,,1.0,1.0,,,0,2,0,False,False,,accepted_unchanged,True,False,False
+luna,swe,swe_main_m2,P1,sympy__sympy-12419,782f1a06-08c0-4382-baea-046d51380011,,,1.0,1.0,,,4,4,0,False,True,,revised,True,False,False
+luna,swe,swe_main_m2,P0,sympy__sympy-12419,8006fb3f-113c-4cb0-a0cc-4b3edadff5e1,,,1.0,1.0,,,0,5,0,False,True,,revised,True,False,False
+luna,swe,swe_main_m2,P0,django__django-14792,80d642bb-b4e7-4539-a5d5-02b55761a4ef,,,0.0,0.0,tests_fail_silent,stored_harness_and_logs,0,5,0,False,False,,accepted_unchanged,True,False,False
+luna,swe,swe_main_m2,P1,pylint-dev__pylint-6386,8d22652a-b6ea-41f3-9a1e-9edf8b6cb94d,,,1.0,1.0,,,1,9,0,False,False,,accepted_unchanged,True,False,False
+luna,swe,swe_main_m2,P1,scikit-learn__scikit-learn-14087,923bf0ce-cfc9-416e-bb54-02868aef21c6,,,0.0,0.0,tests_fail_loud,stored_harness_and_logs,0,0,0,False,False,,accepted_unchanged,True,False,False
+luna,swe,swe_main_m2,P0,scikit-learn__scikit-learn-14087,b5443e04-056e-4513-b366-8d266d384b32,,,0.0,0.0,tests_fail_loud,stored_harness_and_logs,0,0,0,False,False,,accepted_unchanged,True,False,False
+luna,swe,swe_main_m2,P0,pylint-dev__pylint-6386,b7ea6e84-2abe-45a5-b2f0-1c3e7a50b1fc,,,0.0,1.0,tests_fail_silent,stored_harness_and_logs,0,0,0,False,True,,revised,True,True,False
+luna,swe,swe_main_m2,P1,sphinx-doc__sphinx-8593,d23a7257-0ea3-42fd-9697-91dddf7c3a6a,,,1.0,1.0,,,0,0,0,False,False,,accepted_unchanged,True,False,False
+luna,swe,swe_main_m2,P1,django__django-14792,f285986a-4f8f-4ae2-9f75-4ef02c79fb3e,,,0.0,0.0,tests_fail_loud,stored_harness_and_logs,6,4,0,False,False,,accepted_unchanged,True,False,False
+luna,swe,swe_main_m2,P0,sympy__sympy-16766,f9ac9fa0-1c3c-4142-a25e-7a81d1290dba,,,1.0,1.0,,,0,1,0,False,False,,accepted_unchanged,True,False,False
+luna,swe,swe_main_m2,P1,django__django-11292,fe7b5135-9f35-4223-b511-a26c1111a83f,,,1.0,1.0,,,0,5,0,False,False,,accepted_unchanged,True,False,False

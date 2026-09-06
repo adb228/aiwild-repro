@@ -1,0 +1,5 @@
+condition,n,non_finalized_n,non_finalized_rate,turns_to_finalize_mean,turns_to_finalize_median,turns_to_finalize_n,context_overflow_n,empty_final_n
+A0,8,0,0.0,33.875,34.0,8,0,0
+A1,8,0,0.0,30.875,29.0,8,0,0
+P0,8,0,0.0,26.625,21.5,8,0,0
+P1,8,0,0.0,21.625,18.0,8,0,0

@@ -1,0 +1,16 @@
+% Table S2: QC flags
+\begin{table}[ht]
+\centering
+\caption{QC flag counts by condition.
+  Treatment violations are retained; only malformed records are rejected.}
+\label{tab:qc}
+\begin{tabular}{lccccc}
+\toprule
+Flag & A0 & A1 & P0 & P1 & Total \\
+\midrule
+  \texttt{production\_missing\_artifact} & 0 & 0 & 0 & 1 & 1 \\
+  \texttt{parent\_not\_finalized} & 1 & 0 & 0 & 0 & 1 \\
+  \texttt{invalid\_candidate} & 0 & 0 & 3 & 1 & 4 \\
+\bottomrule
+\end{tabular}
+\end{table}

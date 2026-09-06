@@ -1,0 +1,3 @@
+condition,n_with_candidate_hash,correct_n,wrong_n,correct_accepted_n,correct_revised_n,wrong_accepted_n,wrong_revised_n,p_revise_given_wrong,p_revise_given_correct,p_repair_given_wrong,p_damage_given_correct,disposition_source,flag_ignored
+P0,8,5,3,4,1,2,1,0.3333333333333333,0.2,0.3333333333333333,0.0,handoff.candidate_script_sha256 vs final_script_sha256,accepted_unchanged
+P1,8,6,2,5,1,2,0,0.0,0.16666666666666666,0.0,0.0,handoff.candidate_script_sha256 vs final_script_sha256,accepted_unchanged

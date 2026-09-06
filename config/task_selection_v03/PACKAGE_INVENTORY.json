@@ -1,0 +1,175 @@
+{
+  "package": "task_selection_v03",
+  "source_archive": {
+    "basename": "Task Selection for co-author B (2).zip",
+    "sha256": "4796c4315ca307c96ac87e382556543e24c4376cfa070dd30de9b955cf18e3d9"
+  },
+  "selection_sha256": "cf818c1c9be7568223245e89a705d94d64aa7d99e4341604414378571f11752d",
+  "provenance_timestamp_utc": "2026-09-03T06:37:00Z",
+  "extraction_method": "zipfile.ZipFile byte-for-byte, path-traversal and symlink rejected",
+  "burned_reconciliation_note": "BURNED.md and RECONCILIATION.md were COPIED (not moved) from config/task_selection/ into this package; originals remain intact under the immutable config/task_selection/ directory.",
+  "members": [
+    {
+      "filename": "BURNED.md",
+      "sha256": "3feb6cb84a148a11b7d80a5c60c5c03b098f820adab270f952445747e3769ce2",
+      "size_bytes": 148,
+      "git_tracked": true
+    },
+    {
+      "filename": "README.md",
+      "sha256": "b450fb40d1ad7914b3edc444575192fdeec4eafc98e0ab8ae4b216e4d2b8611d",
+      "size_bytes": 7248,
+      "git_tracked": true
+    },
+    {
+      "filename": "README_stock.md",
+      "sha256": "b105cf03df0e51d953cf92f1b185fd5cc6b1c47f548ff5a28dcb9d07a5118c0a",
+      "size_bytes": 1470,
+      "git_tracked": true
+    },
+    {
+      "filename": "RECONCILIATION.md",
+      "sha256": "5a63b627ecfd9987fdcf2c10a2c0ddf4048b9090a714659eefe51964ec734ace",
+      "size_bytes": 488,
+      "git_tracked": true
+    },
+    {
+      "filename": "analyze_stock.py",
+      "sha256": "a359a87c638a1c1d329b65a77ea52d806735fccbca1c265e9444fcf897995a20",
+      "size_bytes": 2650,
+      "git_tracked": true
+    },
+    {
+      "filename": "appendix_A_swe.md",
+      "sha256": "8c0c08bcb2389441cc1292401f09c99f75f9e5d9420f97ab60208befbfc2c0a7",
+      "size_bytes": 14106,
+      "git_tracked": true
+    },
+    {
+      "filename": "appendix_B_spreadsheet.md",
+      "sha256": "5ea10adbee393cf56b46f4373e26e9da63229343c59d112b4b4c78dd49bf0ba5",
+      "size_bytes": 30611,
+      "git_tracked": true
+    },
+    {
+      "filename": "appendix_C_stockbench.md",
+      "sha256": "ce13e6faff62c0b1b023db2c948d98bbe7ad1e94b471241f4be346605a31601c",
+      "size_bytes": 22839,
+      "git_tracked": true
+    },
+    {
+      "filename": "backtest_trailing.py",
+      "sha256": "802245f67fcde1dc9d042f13863fd2398f6e07cd6c794757806bdcf5c9d04425",
+      "size_bytes": 1746,
+      "git_tracked": true
+    },
+    {
+      "filename": "build_swe_local.py",
+      "sha256": "49bdf197fc40b9c1bb024191d8ec79ec90a76d93d528f3ecf4f86f0a14ee2a51",
+      "size_bytes": 1335,
+      "git_tracked": true
+    },
+    {
+      "filename": "check_memo_compliance.py",
+      "sha256": "e6c7d1ded6e516c5c86cc80a5076489d3626fadd34e1065d261f0b89bc5f89f6",
+      "size_bytes": 1756,
+      "git_tracked": true
+    },
+    {
+      "filename": "llm_client.py",
+      "sha256": "eb181483d6f7b86fe43c4856d59ad296a4d9efd952e748b1cb5cb21a46c1f31d",
+      "size_bytes": 5070,
+      "git_tracked": true
+    },
+    {
+      "filename": "pilot_assessment_spreadsheet.md",
+      "sha256": "06604f9aeb397dca17bd684ac428124dcf8e8d56e77485d9faab840db0219239",
+      "size_bytes": 8246,
+      "git_tracked": true
+    },
+    {
+      "filename": "prompts_stock.json",
+      "sha256": "fcb1193655fe55457e2990d651afdf02417a29eb75b6c8b0ae31a1461b49439c",
+      "size_bytes": 2586,
+      "git_tracked": true
+    },
+    {
+      "filename": "research_proposal.md",
+      "sha256": "a1cba4481feea19f49c11b55705d4eca68e8e7dc841010016c28872ad44e2382",
+      "size_bytes": 15134,
+      "git_tracked": true
+    },
+    {
+      "filename": "run_stock_episode.py",
+      "sha256": "581bf6f4744cd848d17d251ac99d3a89412734f525ff0e36ddefbb58b04ea11c",
+      "size_bytes": 5261,
+      "git_tracked": true
+    },
+    {
+      "filename": "select_spreadsheet_tasks.py",
+      "sha256": "ed299d7dac3bcccfb78a21ecd417cda66c7ec36e7fabd0338f9caa50f8c8fcd8",
+      "size_bytes": 14740,
+      "git_tracked": true
+    },
+    {
+      "filename": "select_stock_dates.py",
+      "sha256": "4e2fcb56cca5a40d646f2c165f062964dae82990ef1e210e24d6522c18a441f1",
+      "size_bytes": 5863,
+      "git_tracked": true
+    },
+    {
+      "filename": "select_swe_tasks.py",
+      "sha256": "5e89e1b5d2e2ba2ef4ae1a6662c0df92fa178e0dd4e6cc76fd07c1cfd26c52e7",
+      "size_bytes": 10327,
+      "git_tracked": true
+    },
+    {
+      "filename": "ss_pilot.json",
+      "sha256": "748cad2a9735c6e71f37630a1d6eb81b7ef9755a381e5134e4abbe289337bbdf",
+      "size_bytes": 74,
+      "git_tracked": true
+    },
+    {
+      "filename": "ss_task_selection.json",
+      "sha256": "371ec9c40795ae15475f4ffc4306040d68d15101686a646b3acf98035cff70e2",
+      "size_bytes": 17920,
+      "git_tracked": true
+    },
+    {
+      "filename": "stock_date_selection.json",
+      "sha256": "6beeb65f5d1a064276402fc2ac4e3703e24367ac9fbedcc9c2ac6e6f7b21e3bc",
+      "size_bytes": 1455,
+      "git_tracked": true
+    },
+    {
+      "filename": "stock_pilot.json",
+      "sha256": "8071d0f72fe985ee64b62722eb46eabb0adbed210d6acf6600426e40e9e4374a",
+      "size_bytes": 73,
+      "git_tracked": true
+    },
+    {
+      "filename": "stockbench_snapshot.py",
+      "sha256": "ddd9d0ed196640678ec6429b6537fdb3498cce748c41a68f7fbf17b89117fc5d",
+      "size_bytes": 10456,
+      "git_tracked": true
+    },
+    {
+      "filename": "swe_pilot.json",
+      "sha256": "756c01eec86f0a80ef0110d4075d717329bcef89e4d14203d960531f707bb974",
+      "size_bytes": 143,
+      "git_tracked": true
+    },
+    {
+      "filename": "swe_task_selection.json",
+      "sha256": "a1478669e98fef18f09dde2b63ce5d46587ee857c3cfb017991d82dd1e9ad5e4",
+      "size_bytes": 4171,
+      "git_tracked": true
+    },
+    {
+      "filename": "swe_verified_local.json",
+      "sha256": "7d4f90f4781e756e9e3df04f8372b1e19235bd678321e72c39bdde32cb63ce9b",
+      "size_bytes": 8115256,
+      "git_tracked": false
+    }
+  ]
+}

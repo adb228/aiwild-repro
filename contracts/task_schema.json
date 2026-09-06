@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://<host>/contracts/task_schema.json",
+  "title": "Prepared SpreadsheetBench task",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "task_id",
+    "instruction",
+    "instruction_type",
+    "answer_position",
+    "input_filename",
+    "input_sha256"
+  ],
+  "properties": {
+    "task_id": {"type": "string", "minLength": 1},
+    "instruction": {"type": "string", "minLength": 1},
+    "instruction_type": {"type": "string", "minLength": 1},
+    "answer_position": {"type": "string", "minLength": 1},
+    "input_filename": {"const": "input.xlsx"},
+    "input_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+  }
+}

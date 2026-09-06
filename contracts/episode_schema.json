@@ -1,0 +1,817 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://<host>/contracts/episode_schema.json",
+  "title": "Delegation episode",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "run_id",
+    "task_id",
+    "task_set",
+    "condition",
+    "protocol_version",
+    "replicate",
+    "started_at",
+    "completed_at",
+    "reproducibility",
+    "budgets",
+    "usage",
+    "handoff",
+    "worker_outcome",
+    "final_outcome",
+    "unsealed_last_script_score",
+    "failures",
+    "compliance",
+    "status",
+    "analysis_included",
+    "analysis_inclusion_reason"
+  ],
+  "properties": {
+    "run_id": {"type": "string", "minLength": 1},
+    "task_id": {"type": "string", "minLength": 1},
+    "task_set": {"type": "string", "enum": ["development", "engineering", "pilot", "main", "hard", "main_v04", "solo_v04"]},
+    "condition": {"enum": ["A0", "A1", "P0", "P1", "SOLO"]},
+    "protocol_version": {"type": "string", "pattern": "^(0\\.[0-9]+(\\.[0-9]+)?|swe-[0-9]+\\.[0-9]+(\\.[0-9]+)?)$"},
+    "replicate": {"type": "integer", "minimum": 1},
+    "started_at": {"type": "string", "format": "date-time"},
+    "completed_at": {"type": "string", "format": "date-time"},
+    "reproducibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_git_commit",
+        "benchmark_git_commit",
+        "dataset_archive_sha256",
+        "docker_image_digest",
+        "worker_model",
+        "parent_model",
+        "temperature",
+        "git_dirty",
+        "workspace_header_used",
+        "worker_prompt_hash",
+        "parent_prompt_hash",
+        "libreoffice_version",
+        "task_selection_package",
+        "selection_sha256"
+      ],
+      "properties": {
+        "schema_git_commit": {
+          "type": "string",
+          "minLength": 1
+        },
+        "benchmark_git_commit": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "dataset_archive_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "docker_image_digest": {
+          "type": "string",
+          "minLength": 1
+        },
+        "worker_model": {
+          "type": "string",
+          "minLength": 1
+        },
+        "parent_model": {
+          "type": "string",
+          "minLength": 1
+        },
+        "temperature": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "git_dirty": {
+          "type": "boolean"
+        },
+        "workspace_header_used": {
+          "type": "boolean"
+        },
+        "worker_prompt_hash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "parent_prompt_hash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "libreoffice_version": {
+          "oneOf": [
+            {
+              "const": "26.8.0.3"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "task_selection_package": {
+          "type": "string",
+          "minLength": 1
+        },
+        "selection_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      }
+    },
+    "budgets": {
+      "$ref": "#/$defs/role_budgets"
+    },
+    "usage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "worker",
+        "parent"
+      ],
+      "properties": {
+        "worker": {
+          "$ref": "#/$defs/role_usage"
+        },
+        "parent": {
+          "$ref": "#/$defs/role_usage"
+        }
+      }
+    },
+    "handoff": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "memo_path",
+        "memo_sha256",
+        "candidate_script_path",
+        "candidate_script_sha256",
+        "worker_submitted_memo",
+        "worker_submitted_candidate"
+      ],
+      "properties": {
+        "memo_path": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "memo_sha256": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          ]
+        },
+        "candidate_script_path": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "candidate_script_sha256": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          ]
+        },
+        "worker_submitted_memo": {"type": "boolean"},
+        "worker_submitted_candidate": {"type": "boolean"},
+        "memo_claims_validation": {"type": "boolean"}
+      }
+    },
+    "worker_outcome": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/outcome"
+        }
+      ]
+    },
+    "final_outcome": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/outcome"
+        }
+      ]
+    },
+    "unsealed_last_script_score": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/unsealed_score"
+        }
+      ]
+    },
+    "failures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source",
+          "code",
+          "message"
+        ],
+        "properties": {
+          "source": {
+            "enum": [
+              "agent",
+              "infrastructure"
+            ]
+          },
+          "code": {
+            "type": "string",
+            "minLength": 1
+          },
+          "message": {
+            "type": "string"
+          },
+          "rerun_eligible": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "compliance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "artifact_crossed_handoff",
+        "worker_feedback_calls",
+        "parent_finalized",
+        "worker_scratch_destroyed"
+      ],
+      "properties": {
+        "artifact_crossed_handoff": {"type": "boolean"},
+        "worker_feedback_calls": {"type": "integer", "minimum": 0},
+        "parent_finalized": {"type": "boolean"},
+        "worker_scratch_destroyed": {"type": "boolean"},
+        "worker_submitted": {"type": "boolean"},
+        "worker_observed_output_calls": {"type": "integer", "minimum": 0},
+        "worker_revised_after_observation": {"type": "boolean"},
+        "worker_auto_observations": {"type": "integer", "minimum": 0},
+        "parent_auto_observations": {"type": "integer", "minimum": 0},
+        "eligible_worker_run_events": {"type": "integer", "minimum": 0},
+        "eligible_parent_run_events": {"type": "integer", "minimum": 0},
+        "worker_runs_without_auto_observation": {"type": "integer", "minimum": 0},
+        "parent_runs_without_auto_observation": {"type": "integer", "minimum": 0}
+      }
+    },
+    "final_script_path": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "final_script_sha256": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      ]
+    },
+    "accepted_unchanged": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "complete",
+        "infrastructure_failure"
+      ]
+    },
+    "rerun_eligible": {
+      "type": "boolean"
+    },
+    "analysis_included": {
+      "type": "boolean"
+    },
+    "analysis_inclusion_reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "benchmark": {
+      "type": "string",
+      "minLength": 1
+    },
+    "env_metrics": {
+      "type": "object",
+      "properties": {
+        "swebench": {
+          "type": "object",
+          "properties": {
+            "fail_to_pass_fraction": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 1
+            },
+            "pass_to_pass_fraction": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 1
+            },
+            "applies_cleanly": {
+              "type": "boolean"
+            },
+            "candidate_resolved": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 1
+            },
+            "final_resolved": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 1
+            },
+            "candidate_harness_seconds": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "final_harness_seconds": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "candidate_report_sha256": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "final_report_sha256": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "f2p_numerator": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "f2p_denominator": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "p2p_numerator": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "p2p_denominator": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "f2p_p2p_null_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "candidate_f2p_fraction": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 1
+            },
+            "candidate_p2p_fraction": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 1
+            },
+            "image_tag": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "image_digest": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "git_head": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "git_remote": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "clean_tree": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "swe_protocol_usage": {
+      "type": "object",
+      "properties": {
+        "worker": {
+          "type": "object",
+          "properties": {
+            "reprompted_on_end_turn": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "end_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "seal_source": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "memo_source": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "continued_on_max_tokens": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "unexpected_stop_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "parent": {
+          "type": "object",
+          "properties": {
+            "reprompted_on_end_turn": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "end_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "seal_source": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "continued_on_max_tokens": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "unexpected_stop_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "caps_loosened": {
+          "type": "boolean"
+        },
+        "prior_swe02_max_turns": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "prior_swe02_max_tool_calls": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "production_artifact_missing": {
+          "type": "boolean"
+        }
+      }
+    },
+    "swe_observation": {
+      "type": "object",
+      "properties": {
+        "note": {
+          "type": "string"
+        },
+        "max_turns_override": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_tool_calls_override": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "task_set": {
+          "type": "string"
+        },
+        "caps_loosened": {
+          "type": "boolean"
+        },
+        "prior_swe02_max_turns": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "prior_swe02_max_tool_calls": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    }
+  },
+  "$defs": {
+    "role_budgets": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "worker",
+        "parent"
+      ],
+      "properties": {
+        "worker": {
+          "$ref": "#/$defs/budget"
+        },
+        "parent": {
+          "$ref": "#/$defs/budget"
+        }
+      }
+    },
+    "budget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "max_turns",
+        "max_tool_calls",
+        "max_wall_seconds",
+        "max_tokens",
+        "max_output_tokens_total",
+        "max_input_tokens_safety"
+      ],
+      "properties": {
+        "max_turns": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_tool_calls": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_wall_seconds": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_tokens": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_output_tokens_total": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_input_tokens_safety": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "role_usage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "input_tokens",
+        "output_tokens",
+        "cache_read_input_tokens",
+        "cache_creation_input_tokens",
+        "model_calls",
+        "tool_calls",
+        "validation_cycles",
+        "wall_seconds",
+        "budget_exhausted",
+        "budget_exhausted_on",
+        "safety_exhausted",
+        "safety_exhausted_on"
+      ],
+      "properties": {
+        "input_tokens": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "output_tokens": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "cache_read_input_tokens": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "cache_creation_input_tokens": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "model_calls": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "tool_calls": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "validation_cycles": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "wall_seconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "budget_exhausted": {
+          "type": "boolean"
+        },
+        "budget_exhausted_on": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "enum": [
+                "max_output_tokens_total",
+                "max_turns",
+                "max_tool_calls",
+                "max_wall_seconds"
+              ]
+            }
+          ]
+        },
+        "safety_exhausted": {
+          "type": "boolean"
+        },
+        "safety_exhausted_on": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "const": "max_input_tokens_safety"
+            }
+          ]
+        },
+        "observed_output_calls": {"type": "integer", "minimum": 0},
+        "auto_observations": {"type": "integer", "minimum": 0}
+      }
+    },
+    "outcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evaluator_status",
+        "full_task_success",
+        "target_unit_pass_rate",
+        "n_units",
+        "output_path",
+        "evaluator_path"
+      ],
+      "properties": {
+        "evaluator_status": {
+          "enum": [
+            "ok",
+            "evaluator_failure",
+            "not_finalized"
+          ]
+        },
+        "full_task_success": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "target_unit_pass_rate": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "n_units": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "output_path": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evaluator_path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "output_sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      }
+    },
+    "unsealed_score": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "score",
+        "n_units"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "ok",
+            "evaluator_failure"
+          ]
+        },
+        "score": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "n_units": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}

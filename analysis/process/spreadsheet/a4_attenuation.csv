@@ -1,0 +1,4 @@
+contrast,formula,primary_estimate,primary_ci,primary_se,primary_n_tasks,primary_seed,primary_draws,primary_unit,sensitivity_overflow_missing_estimate,sensitivity_overflow_missing_ci,sensitivity_overflow_missing_se,sensitivity_overflow_missing_n_tasks,sensitivity_overflow_missing_seed,sensitivity_overflow_missing_draws,sensitivity_overflow_missing_unit
+delta_w,Q_worker(P1) - Q_worker(P0),0.16,"[0.0, 0.36]",0.09319349173998295,25,20260902,10000,task,0.16,"[0.0, 0.36]",0.09319349173998295,25,20260902,10000,task
+delta_f,Q_final(P1) - Q_final(P0),-0.04,"[-0.12, 0.0]",0.039111729349867334,25,20260902,10000,task,-0.04,"[-0.12, 0.0]",0.039111729349867334,25,20260902,10000,task
+gap,Δ_W - Δ_F,0.2,"[0.07900000000000092, 0.36]",0.080279449917198,25,20260902,10000,task,0.2,"[0.07900000000000092, 0.36]",0.080279449917198,25,20260902,10000,task

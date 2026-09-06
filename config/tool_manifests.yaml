@@ -1,0 +1,71 @@
+common_inspection:
+  - list_sheets
+  - workbook_metadata
+  - read_range
+  - search_workbook
+
+conditions:
+  A0:
+    worker:
+      - list_sheets
+      - workbook_metadata
+      - read_range
+      - search_workbook
+      - submit_memo
+    handoff:
+      - memo.json
+  A1:
+    worker:
+      - list_sheets
+      - workbook_metadata
+      - read_range
+      - search_workbook
+      - run_ephemeral_python
+      - read_output_range
+      - submit_memo
+    handoff:
+      - memo.json
+    destroy_worker_scratch_at_handoff: true
+  P0:
+    worker:
+      - list_sheets
+      - workbook_metadata
+      - read_range
+      - search_workbook
+      - write_solution
+      - submit_memo
+      - submit_solution
+    handoff:
+      - memo.json
+      - solution.py
+  P1:
+    worker:
+      - list_sheets
+      - workbook_metadata
+      - read_range
+      - search_workbook
+      - write_solution
+      - run_solution
+      - read_output_range
+      - submit_memo
+      - submit_solution
+    handoff:
+      - memo.json
+      - solution.py
+
+parent:
+  tools:
+    - list_sheets
+    - workbook_metadata
+    - read_range
+    - search_workbook
+    - write_solution
+    - run_solution
+    - read_output_range
+    - submit_solution
+  starts_from_clean_input: true
+  receives_worker_trace: false
+  receives_worker_evaluator_output: false
+
+tool_descriptions:
+  read_range: "Reads the ORIGINAL INPUT workbook. To inspect what your script produced, use read_output_range."

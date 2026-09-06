@@ -1,0 +1,4 @@
+contrast,formula,estimate,ci,se,n_tasks,seed,draws,unit
+delta_w,Q_worker(P1) - Q_worker(P0),0.125,"[0.0, 0.375]",0.1155733321078416,8,20260902,10000,task
+delta_f,Q_final(P1) - Q_final(P0),0.0,"[0.0, 0.0]",0.0,8,20260902,10000,task
+gap,Δ_W - Δ_F,0.125,"[0.0, 0.375]",0.1155733321078416,8,20260902,10000,task

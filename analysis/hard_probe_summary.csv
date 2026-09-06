@@ -1,0 +1,6 @@
+condition,tasks,episodes,valid_episodes,success_rate
+A0,5,5,5,0.4
+A1,5,5,5,0.2
+P0,5,5,5,0.8
+P1,5,5,5,0.8
+SOLO,5,5,5,0.6

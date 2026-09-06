@@ -1,0 +1,5 @@
+condition,primary_n,primary_non_finalized_n,primary_non_finalized_rate,primary_turns_to_finalize_mean,primary_turns_to_finalize_median,primary_turns_to_finalize_n,primary_context_overflow_n,primary_empty_final_n,sensitivity_overflow_missing_n,sensitivity_overflow_missing_non_finalized_n,sensitivity_overflow_missing_non_finalized_rate,sensitivity_overflow_missing_turns_to_finalize_mean,sensitivity_overflow_missing_turns_to_finalize_median,sensitivity_overflow_missing_turns_to_finalize_n,sensitivity_overflow_missing_context_overflow_n,sensitivity_overflow_missing_empty_final_n
+A0,25,2,0.08,8.869565217391305,7.0,23,1,2,24,1,0.041666666666666664,8.869565217391305,7.0,23,0,1
+A1,25,1,0.04,8.916666666666666,7.0,24,0,1,25,1,0.04,8.916666666666666,7.0,24,0,1
+P0,25,0,0.0,10.2,7.0,25,0,0,25,0,0.0,10.2,7.0,25,0,0
+P1,25,0,0.0,6.64,6.0,25,0,0,25,0,0.0,6.64,6.0,25,0,0

@@ -1,0 +1,670 @@
+{
+  "dataset": "SpreadsheetBench Verified 400",
+  "design": "A0/A1/P0/P1 on every task; one replicate",
+  "allocation": "equal across strata; no per-stratum claims at n=5; report both design-weighted and benchmark-weighted (post-stratified) aggregates",
+  "replacement_rule": "next unused reserve of the SAME stratum, in list order; fall back to any stratum only if exhausted",
+  "libreoffice_version": "[CHECK - pin before freeze]",
+  "amendments": [
+    {
+      "rule": "R10 min_answer_cells",
+      "removed": "333-29",
+      "removed_cells": 1,
+      "replaced_by": "599-9",
+      "stratum": "sheet/multi",
+      "same_stratum": true
+    },
+    {
+      "rule": "R10 min_answer_cells",
+      "removed": 48608,
+      "removed_cells": 4,
+      "replaced_by": 37229,
+      "stratum": "cell/single",
+      "same_stratum": true
+    },
+    {
+      "rule": "R10 min_answer_cells",
+      "removed": 8942,
+      "removed_cells": 1,
+      "replaced_by": 44296,
+      "stratum": "cell/multi",
+      "same_stratum": true
+    },
+    {
+      "rule": "R10 min_answer_cells",
+      "removed": 59358,
+      "removed_cells": 3,
+      "replaced_by": 44389,
+      "stratum": "cell/single",
+      "same_stratum": true
+    }
+  ],
+  "seed": 20260902,
+  "filter": {
+    "min_instr_chars": 80,
+    "max_instr_chars": 1500,
+    "max_init_kb": 200,
+    "max_sheets": 6,
+    "max_answer_cells": 2000,
+    "exclude_links": true,
+    "exclude_image_refs": true,
+    "exclude_author_flagged": true,
+    "require_standard_layout": true,
+    "max_stratum_share": 0.6,
+    "min_answer_cells_post_draw": 5,
+    "dev_burned_excluded_post_draw": [
+      "343-20",
+      "79-7"
+    ],
+    "strata": "instruction_type x single/multi-sheet"
+  },
+  "total_rows": 400,
+  "eligible_pool": 357,
+  "pool_by_stratum": {
+    "cell/single": 208,
+    "sheet/multi": 40,
+    "sheet/single": 65,
+    "cell/multi": 44
+  },
+  "rejection_reasons": {
+    "R4 workbook too large": 9,
+    "R6 answer range whole-column, unparseable, or too large": 16,
+    "R5 too many sheets": 4,
+    "R2 nonstandard file layout": 4,
+    "R7 instruction has link": 1,
+    "R9 instruction too long": 5,
+    "R9 instruction too short": 1,
+    "R8 instruction references image": 1,
+    "R1 author-flagged exclude": 2
+  },
+  "pilot": [
+    {
+      "id": 55965,
+      "stratum": "cell/multi",
+      "instruction_type": "Cell-Level Manipulation",
+      "n_sheets": 2,
+      "n_answer_cells": 17,
+      "init_kb": 11,
+      "spreadsheet_path": "spreadsheet/55965"
+    },
+    {
+      "id": "469-9",
+      "stratum": "sheet/single",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 20,
+      "init_kb": 9,
+      "spreadsheet_path": "spreadsheet/469-9"
+    },
+    {
+      "id": 48643,
+      "stratum": "cell/single",
+      "instruction_type": "Cell-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 39,
+      "init_kb": 11,
+      "spreadsheet_path": "spreadsheet/48643"
+    }
+  ],
+  "main": [
+    {
+      "id": 57232,
+      "stratum": "cell/multi",
+      "instruction_type": "Cell-Level Manipulation",
+      "n_sheets": 2,
+      "n_answer_cells": 190,
+      "init_kb": 20,
+      "spreadsheet_path": "spreadsheet/57232"
+    },
+    {
+      "id": 42216,
+      "stratum": "cell/single",
+      "instruction_type": "Cell-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 320,
+      "init_kb": 16,
+      "spreadsheet_path": "spreadsheet/42216"
+    },
+    {
+      "id": "567-21",
+      "stratum": "sheet/single",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 182,
+      "init_kb": 5,
+      "spreadsheet_path": "spreadsheet/567-21"
+    },
+    {
+      "id": "599-9",
+      "stratum": "sheet/multi",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 2,
+      "n_answer_cells": 18,
+      "init_kb": 7,
+      "spreadsheet_path": "spreadsheet/599-9"
+    },
+    {
+      "id": 46121,
+      "stratum": "cell/multi",
+      "instruction_type": "Cell-Level Manipulation",
+      "n_sheets": 2,
+      "n_answer_cells": 48,
+      "init_kb": 21,
+      "spreadsheet_path": "spreadsheet/46121"
+    },
+    {
+      "id": 37229,
+      "stratum": "cell/single",
+      "instruction_type": "Cell-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 60,
+      "init_kb": 10,
+      "spreadsheet_path": "spreadsheet/37229"
+    },
+    {
+      "id": "408-5",
+      "stratum": "sheet/single",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 685,
+      "init_kb": 14,
+      "spreadsheet_path": "spreadsheet/408-5"
+    },
+    {
+      "id": "267-21",
+      "stratum": "sheet/multi",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 3,
+      "n_answer_cells": 20,
+      "init_kb": 7,
+      "spreadsheet_path": "spreadsheet/267-21"
+    },
+    {
+      "id": 54474,
+      "stratum": "cell/multi",
+      "instruction_type": "Cell-Level Manipulation",
+      "n_sheets": 2,
+      "n_answer_cells": 6,
+      "init_kb": 12,
+      "spreadsheet_path": "spreadsheet/54474"
+    },
+    {
+      "id": 6239,
+      "stratum": "cell/single",
+      "instruction_type": "Cell-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 18,
+      "init_kb": 11,
+      "spreadsheet_path": "spreadsheet/6239"
+    },
+    {
+      "id": "416-27",
+      "stratum": "sheet/single",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 22,
+      "init_kb": 5,
+      "spreadsheet_path": "spreadsheet/416-27"
+    },
+    {
+      "id": "388-47",
+      "stratum": "sheet/multi",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 2,
+      "n_answer_cells": 35,
+      "init_kb": 6,
+      "spreadsheet_path": "spreadsheet/388-47"
+    },
+    {
+      "id": 44296,
+      "stratum": "cell/multi",
+      "instruction_type": "Cell-Level Manipulation",
+      "n_sheets": 2,
+      "n_answer_cells": 102,
+      "init_kb": 16,
+      "spreadsheet_path": "spreadsheet/44296"
+    },
+    {
+      "id": 58723,
+      "stratum": "cell/single",
+      "instruction_type": "Cell-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 40,
+      "init_kb": 13,
+      "spreadsheet_path": "spreadsheet/58723"
+    },
+    {
+      "id": "97-36",
+      "stratum": "sheet/single",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 22,
+      "init_kb": 14,
+      "spreadsheet_path": "spreadsheet/97-36"
+    },
+    {
+      "id": "534-26",
+      "stratum": "sheet/multi",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 2,
+      "n_answer_cells": 35,
+      "init_kb": 10,
+      "spreadsheet_path": "spreadsheet/534-26"
+    },
+    {
+      "id": 44266,
+      "stratum": "cell/multi",
+      "instruction_type": "Cell-Level Manipulation",
+      "n_sheets": 2,
+      "n_answer_cells": 11,
+      "init_kb": 12,
+      "spreadsheet_path": "spreadsheet/44266"
+    },
+    {
+      "id": 44389,
+      "stratum": "cell/single",
+      "instruction_type": "Cell-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 6,
+      "init_kb": 11,
+      "spreadsheet_path": "spreadsheet/44389"
+    },
+    {
+      "id": "402-43",
+      "stratum": "sheet/single",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 330,
+      "init_kb": 10,
+      "spreadsheet_path": "spreadsheet/402-43"
+    },
+    {
+      "id": "341-14",
+      "stratum": "sheet/multi",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 2,
+      "n_answer_cells": 56,
+      "init_kb": 10,
+      "spreadsheet_path": "spreadsheet/341-14"
+    }
+  ],
+  "reserve_in_order": [
+    {
+      "id": "91-34",
+      "stratum": "sheet/single",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 574,
+      "init_kb": 7,
+      "spreadsheet_path": "spreadsheet/91-34"
+    },
+    {
+      "id": "160-6",
+      "stratum": "sheet/single",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 72,
+      "init_kb": 5,
+      "spreadsheet_path": "spreadsheet/160-6"
+    },
+    {
+      "id": "423-16",
+      "stratum": "sheet/multi",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 2,
+      "n_answer_cells": 34,
+      "init_kb": 14,
+      "spreadsheet_path": "spreadsheet/423-16"
+    },
+    {
+      "id": 48975,
+      "stratum": "cell/multi",
+      "instruction_type": "Cell-Level Manipulation",
+      "n_sheets": 2,
+      "n_answer_cells": 7,
+      "init_kb": 65,
+      "spreadsheet_path": "spreadsheet/48975"
+    },
+    {
+      "id": 42526,
+      "stratum": "cell/single",
+      "instruction_type": "Cell-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 15,
+      "init_kb": 10,
+      "spreadsheet_path": "spreadsheet/42526"
+    },
+    {
+      "id": "493-5",
+      "stratum": "sheet/single",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 60,
+      "init_kb": 5,
+      "spreadsheet_path": "spreadsheet/493-5"
+    },
+    {
+      "id": "408-39",
+      "stratum": "sheet/multi",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 2,
+      "n_answer_cells": 5,
+      "init_kb": 8,
+      "spreadsheet_path": "spreadsheet/408-39"
+    },
+    {
+      "id": 55049,
+      "stratum": "cell/multi",
+      "instruction_type": "Cell-Level Manipulation",
+      "n_sheets": 2,
+      "n_answer_cells": 21,
+      "init_kb": 27,
+      "spreadsheet_path": "spreadsheet/55049"
+    },
+    {
+      "id": "367-23",
+      "stratum": "sheet/single",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 20,
+      "init_kb": 5,
+      "spreadsheet_path": "spreadsheet/367-23"
+    },
+    {
+      "id": "325-44",
+      "stratum": "sheet/multi",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 2,
+      "n_answer_cells": 70,
+      "init_kb": 10,
+      "spreadsheet_path": "spreadsheet/325-44"
+    },
+    {
+      "id": 1818,
+      "stratum": "cell/multi",
+      "instruction_type": "Cell-Level Manipulation",
+      "n_sheets": 2,
+      "n_answer_cells": 132,
+      "init_kb": 10,
+      "spreadsheet_path": "spreadsheet/1818"
+    },
+    {
+      "id": 41348,
+      "stratum": "cell/single",
+      "instruction_type": "Cell-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 10,
+      "init_kb": 10,
+      "spreadsheet_path": "spreadsheet/41348"
+    },
+    {
+      "id": "192-22",
+      "stratum": "sheet/single",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 70,
+      "init_kb": 16,
+      "spreadsheet_path": "spreadsheet/192-22"
+    },
+    {
+      "id": "382-29",
+      "stratum": "sheet/multi",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 4,
+      "n_answer_cells": 25,
+      "init_kb": 27,
+      "spreadsheet_path": "spreadsheet/382-29"
+    },
+    {
+      "id": 52532,
+      "stratum": "cell/single",
+      "instruction_type": "Cell-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 7,
+      "init_kb": 9,
+      "spreadsheet_path": "spreadsheet/52532"
+    },
+    {
+      "id": "374-18",
+      "stratum": "sheet/single",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 35,
+      "init_kb": 5,
+      "spreadsheet_path": "spreadsheet/374-18"
+    },
+    {
+      "id": "84-40",
+      "stratum": "sheet/multi",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 4,
+      "n_answer_cells": 12,
+      "init_kb": 13,
+      "spreadsheet_path": "spreadsheet/84-40"
+    },
+    {
+      "id": 9448,
+      "stratum": "cell/multi",
+      "instruction_type": "Cell-Level Manipulation",
+      "n_sheets": 2,
+      "n_answer_cells": 10,
+      "init_kb": 14,
+      "spreadsheet_path": "spreadsheet/9448"
+    },
+    {
+      "id": "440-24",
+      "stratum": "sheet/single",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 20,
+      "init_kb": 8,
+      "spreadsheet_path": "spreadsheet/440-24"
+    },
+    {
+      "id": "194-19",
+      "stratum": "sheet/multi",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 2,
+      "n_answer_cells": 740,
+      "init_kb": 28,
+      "spreadsheet_path": "spreadsheet/194-19"
+    },
+    {
+      "id": 53161,
+      "stratum": "cell/single",
+      "instruction_type": "Cell-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 208,
+      "init_kb": 14,
+      "spreadsheet_path": "spreadsheet/53161"
+    },
+    {
+      "id": "353-6",
+      "stratum": "sheet/single",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 680,
+      "init_kb": 12,
+      "spreadsheet_path": "spreadsheet/353-6"
+    },
+    {
+      "id": "130-9",
+      "stratum": "sheet/multi",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 3,
+      "n_answer_cells": 132,
+      "init_kb": 36,
+      "spreadsheet_path": "spreadsheet/130-9"
+    },
+    {
+      "id": 16511,
+      "stratum": "cell/single",
+      "instruction_type": "Cell-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 9,
+      "init_kb": 9,
+      "spreadsheet_path": "spreadsheet/16511"
+    },
+    {
+      "id": "142-12",
+      "stratum": "sheet/single",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 75,
+      "init_kb": 10,
+      "spreadsheet_path": "spreadsheet/142-12"
+    },
+    {
+      "id": "188-39",
+      "stratum": "sheet/multi",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 2,
+      "n_answer_cells": 33,
+      "init_kb": 12,
+      "spreadsheet_path": "spreadsheet/188-39"
+    },
+    {
+      "id": 47827,
+      "stratum": "cell/multi",
+      "instruction_type": "Cell-Level Manipulation",
+      "n_sheets": 2,
+      "n_answer_cells": 15,
+      "init_kb": 11,
+      "spreadsheet_path": "spreadsheet/47827"
+    },
+    {
+      "id": 35739,
+      "stratum": "cell/single",
+      "instruction_type": "Cell-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 99,
+      "init_kb": 11,
+      "spreadsheet_path": "spreadsheet/35739"
+    },
+    {
+      "id": "382-10",
+      "stratum": "sheet/single",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 1,
+      "n_answer_cells": 19,
+      "init_kb": 5,
+      "spreadsheet_path": "spreadsheet/382-10"
+    },
+    {
+      "id": "409-45",
+      "stratum": "sheet/multi",
+      "instruction_type": "Sheet-Level Manipulation",
+      "n_sheets": 2,
+      "n_answer_cells": 95,
+      "init_kb": 6,
+      "spreadsheet_path": "spreadsheet/409-45"
+    },
+    {
+      "id": 9391,
+      "stratum": "cell/multi",
+      "instruction_type": "Cell-Level Manipulation",
+      "n_sheets": 2,
+      "n_answer_cells": 22,
+      "init_kb": 10,
+      "spreadsheet_path": "spreadsheet/9391"
+    }
+  ],
+  "hard_extension": {
+    "trigger": "pooled full_task_success on main wave 1 > 0.85",
+    "stratum": "sheet-level AND (answer cells >= 100 OR multi-sheet init)",
+    "pool_size": 37,
+    "sealed_ids": [
+      {
+        "id": "108-24",
+        "stratum": "sheet/multi",
+        "instruction_type": "Sheet-Level Manipulation",
+        "n_sheets": 3,
+        "n_answer_cells": 88,
+        "init_kb": 10,
+        "spreadsheet_path": "spreadsheet/108-24"
+      },
+      {
+        "id": "157-4",
+        "stratum": "sheet/single",
+        "instruction_type": "Sheet-Level Manipulation",
+        "n_sheets": 1,
+        "n_answer_cells": 675,
+        "init_kb": 7,
+        "spreadsheet_path": "spreadsheet/157-4"
+      },
+      {
+        "id": "230-16",
+        "stratum": "sheet/multi",
+        "instruction_type": "Sheet-Level Manipulation",
+        "n_sheets": 2,
+        "n_answer_cells": 12,
+        "init_kb": 9,
+        "spreadsheet_path": "spreadsheet/230-16"
+      },
+      {
+        "id": "60-7",
+        "stratum": "sheet/multi",
+        "instruction_type": "Sheet-Level Manipulation",
+        "n_sheets": 4,
+        "n_answer_cells": 45,
+        "init_kb": 13,
+        "spreadsheet_path": "spreadsheet/60-7"
+      },
+      {
+        "id": "17-35",
+        "stratum": "sheet/single",
+        "instruction_type": "Sheet-Level Manipulation",
+        "n_sheets": 1,
+        "n_answer_cells": 1450,
+        "init_kb": 28,
+        "spreadsheet_path": "spreadsheet/17-35"
+      },
+      {
+        "id": "177-6",
+        "stratum": "sheet/multi",
+        "instruction_type": "Sheet-Level Manipulation",
+        "n_sheets": 2,
+        "n_answer_cells": 144,
+        "init_kb": 13,
+        "spreadsheet_path": "spreadsheet/177-6"
+      },
+      {
+        "id": "13-1",
+        "stratum": "sheet/multi",
+        "instruction_type": "Sheet-Level Manipulation",
+        "n_sheets": 2,
+        "n_answer_cells": 120,
+        "init_kb": 12,
+        "spreadsheet_path": "spreadsheet/13-1"
+      },
+      {
+        "id": "61-4",
+        "stratum": "sheet/multi",
+        "instruction_type": "Sheet-Level Manipulation",
+        "n_sheets": 2,
+        "n_answer_cells": 98,
+        "init_kb": 17,
+        "spreadsheet_path": "spreadsheet/61-4"
+      },
+      {
+        "id": "66-24",
+        "stratum": "sheet/multi",
+        "instruction_type": "Sheet-Level Manipulation",
+        "n_sheets": 2,
+        "n_answer_cells": 18,
+        "init_kb": 6,
+        "spreadsheet_path": "spreadsheet/66-24"
+      },
+      {
+        "id": "384-4",
+        "stratum": "sheet/multi",
+        "instruction_type": "Sheet-Level Manipulation",
+        "n_sheets": 3,
+        "n_answer_cells": 7,
+        "init_kb": 11,
+        "spreadsheet_path": "spreadsheet/384-4"
+      }
+    ],
+    "reporting": "separate from main; never pooled without a flag"
+  },
+  "selection_sha256": "cf818c1c9be7568223245e89a705d94d64aa7d99e4341604414378571f11752d"
+}

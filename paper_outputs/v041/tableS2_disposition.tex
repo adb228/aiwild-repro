@@ -1,0 +1,21 @@
+% Table S2: ITT disposition and parent effort
+\begin{table}[ht]
+\centering
+\caption{ITT disposition, censoring, and parent effort by condition.
+  Parent effort is the pre-declared number of successful parent model calls.
+  Censored agent outcomes are retained at their observed call count and as
+  full-task failures. The 57232 A0 context-window exhaustion is an
+  analysis-side \texttt{agent\_failure} retained at ITT zero.}
+\label{tab:itt_disposition}
+\begin{tabular}{lrrrrr}
+\toprule
+Condition & ITT $n$ & Not finalized & Censored agent outcomes &
+Serialization gaps & Mean parent calls \\
+\midrule
+  A0 & 25 & 2 & 2 & 0 & 10.64 \\
+  A1 & 25 & 1 & 1 & 0 & 10.16 \\
+  P0 & 25 & 0 & 0 & 0 & 10.20 \\
+  P1 & 25 & 0 & 0 & 0 & 6.64 \\
+\bottomrule
+\end{tabular}
+\end{table}

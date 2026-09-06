@@ -1,0 +1,70 @@
+{
+  "dataset": "StockBench offline cache (ChenYXxxx/stockbench)",
+  "calendar": {
+    "first": "2024-12-13",
+    "last": "2025-07-31",
+    "n": 148
+  },
+  "design": "A0/A1/P0/P1 on every date; one replicate; parent submits final allocation",
+  "filter": {
+    "horizon_trading_days": 10,
+    "lookback_main": 60,
+    "lookback_pilot": 40,
+    "min_news_symbols_t-2..t": 15,
+    "universe": [
+      "AAPL",
+      "AMGN",
+      "AMZN",
+      "AXP",
+      "BA",
+      "CAT",
+      "CRM",
+      "GS",
+      "HD",
+      "HON",
+      "IBM",
+      "JNJ",
+      "JPM",
+      "MCD",
+      "MSFT",
+      "PG",
+      "SHW",
+      "TRV",
+      "UNH",
+      "V"
+    ],
+    "benchmark": "equal-weight basket, rebalanced at t",
+    "spacing": "non-overlapping H-day windows, greedy from earliest eligible date",
+    "reserve": "midpoints of main windows; OVERLAP main windows -> block bootstrap if used"
+  },
+  "eligible_dates": 78,
+  "eligible_range": [
+    "2025-03-26",
+    "2025-07-17"
+  ],
+  "pilot": [
+    "2025-02-26",
+    "2025-03-03",
+    "2025-03-06"
+  ],
+  "main": [
+    "2025-03-26",
+    "2025-04-09",
+    "2025-04-24",
+    "2025-05-08",
+    "2025-05-22",
+    "2025-06-06",
+    "2025-06-23",
+    "2025-07-08"
+  ],
+  "reserve_in_order": [
+    "2025-04-02",
+    "2025-04-16",
+    "2025-05-01",
+    "2025-05-15",
+    "2025-05-30",
+    "2025-06-13",
+    "2025-06-30"
+  ],
+  "selection_sha256": "7055e699f382da784a139f7acdb548860ee2af615b6b636eda21aa24f8f82785"
+}

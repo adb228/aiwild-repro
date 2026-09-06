@@ -1,0 +1,845 @@
+{
+  "analysis_only_itt_rows": [],
+  "bootstrap": {
+    "delta_ci": [
+      -0.16,
+      0.08
+    ],
+    "delta_se": 0.06833642503598407,
+    "tau0_ci": [
+      0.0,
+      0.12
+    ],
+    "tau0_se": 0.03946411207178189,
+    "tau1_ci": [
+      -0.12,
+      0.12
+    ],
+    "tau1_se": 0.05590968600608423
+  },
+  "condition_summary": [
+    {
+      "condition": "A0",
+      "mean_final_score": 0.8982857142857142,
+      "mean_full_task_success": 0.88,
+      "n_agent_outcome_censored": 2,
+      "n_analysis_only_itt": 0,
+      "n_infrastructure_pre_execution": 0,
+      "n_itt": 25,
+      "n_parent_budget_exhausted": 2,
+      "n_parent_not_finalized": 2,
+      "n_record_serialization_gap": 0,
+      "n_tasks": 25,
+      "parent_model_calls_mean": 4.4,
+      "parent_model_calls_total": 110
+    },
+    {
+      "condition": "A1",
+      "mean_final_score": 0.9379107142857143,
+      "mean_full_task_success": 0.88,
+      "n_agent_outcome_censored": 1,
+      "n_analysis_only_itt": 0,
+      "n_infrastructure_pre_execution": 0,
+      "n_itt": 25,
+      "n_parent_budget_exhausted": 1,
+      "n_parent_not_finalized": 1,
+      "n_record_serialization_gap": 0,
+      "n_tasks": 25,
+      "parent_model_calls_mean": 4.72,
+      "parent_model_calls_total": 118
+    },
+    {
+      "condition": "P0",
+      "mean_final_score": 0.9779107142857143,
+      "mean_full_task_success": 0.92,
+      "n_agent_outcome_censored": 0,
+      "n_analysis_only_itt": 0,
+      "n_infrastructure_pre_execution": 0,
+      "n_itt": 25,
+      "n_parent_budget_exhausted": 0,
+      "n_parent_not_finalized": 0,
+      "n_record_serialization_gap": 0,
+      "n_tasks": 25,
+      "parent_model_calls_mean": 4.48,
+      "parent_model_calls_total": 112
+    },
+    {
+      "condition": "P1",
+      "mean_final_score": 0.9379107142857143,
+      "mean_full_task_success": 0.88,
+      "n_agent_outcome_censored": 1,
+      "n_analysis_only_itt": 0,
+      "n_infrastructure_pre_execution": 0,
+      "n_itt": 25,
+      "n_parent_budget_exhausted": 1,
+      "n_parent_not_finalized": 1,
+      "n_record_serialization_gap": 0,
+      "n_tasks": 25,
+      "parent_model_calls_mean": 4.56,
+      "parent_model_calls_total": 114
+    }
+  ],
+  "cost_summary": {
+    "cost_per_episode": [
+      {
+        "condition": "P0",
+        "cost_usd_exact": "0.01622836",
+        "run_id": "016af5bf-f897-4881-9e0f-6f98e1f927c5",
+        "task_id": "567-21"
+      },
+      {
+        "condition": "P0",
+        "cost_usd_exact": "0.00963936",
+        "run_id": "021f481b-de69-4340-adb3-c8ff392db947",
+        "task_id": "42526"
+      },
+      {
+        "condition": "P0",
+        "cost_usd_exact": "0.00609536",
+        "run_id": "08456cfa-0975-4480-a2be-8384c72d8ea8",
+        "task_id": "97-36"
+      },
+      {
+        "condition": "A0",
+        "cost_usd_exact": "0.00824932",
+        "run_id": "09a6441a-235d-4c9c-ad9b-f086a6045904",
+        "task_id": "388-47"
+      },
+      {
+        "condition": "P0",
+        "cost_usd_exact": "0.00895876",
+        "run_id": "0a814e1f-16e7-495c-a493-3e4a5c3dfc55",
+        "task_id": "37229"
+      },
+      {
+        "condition": "A0",
+        "cost_usd_exact": "0.01335952",
+        "run_id": "185e0983-3b3e-489d-933e-3a754abf5c00",
+        "task_id": "58723"
+      },
+      {
+        "condition": "P1",
+        "cost_usd_exact": "0.06197716",
+        "run_id": "1d525b21-e5d7-44e1-9ea6-7cd9b740810c",
+        "task_id": "6239"
+      },
+      {
+        "condition": "A1",
+        "cost_usd_exact": "0.0182584",
+        "run_id": "1f0a0af0-b572-41f1-8cb4-31f27351fe3c",
+        "task_id": "402-43"
+      },
+      {
+        "condition": "A1",
+        "cost_usd_exact": "0.0125226",
+        "run_id": "206edc59-40ee-4836-a75b-95650a3372ee",
+        "task_id": "534-26"
+      },
+      {
+        "condition": "P0",
+        "cost_usd_exact": "0.01517632",
+        "run_id": "2103dc29-e7b6-4845-b852-18fcbff03ad5",
+        "task_id": "44266"
+      },
+      {
+        "condition": "A0",
+        "cost_usd_exact": "0.02090852",
+        "run_id": "2c22da16-195d-4f93-8f5e-e75d31e53dcd",
+        "task_id": "408-5"
+      },
+      {
+        "condition": "P0",
+        "cost_usd_exact": "0.00892104",
+        "run_id": "2da578f1-627b-40be-9e4c-d764687a4717",
+        "task_id": "54474"
+      },
+      {
+        "condition": "P0",
+        "cost_usd_exact": "0.05775032",
+        "run_id": "2e6f08cc-5f95-4f43-ab64-5d81e31870c6",
+        "task_id": "42216"
+      },
+      {
+        "condition": "A1",
+        "cost_usd_exact": "0.01859176",
+        "run_id": "35020672-3c17-4616-82ed-42a1f76a942a",
+        "task_id": "44389"
+      },
+      {
+        "condition": "P1",
+        "cost_usd_exact": "0.01393636",
+        "run_id": "352269ce-a9dc-4f6b-a086-7a4299025da2",
+        "task_id": "534-26"
+      },
+      {
+        "condition": "A0",
+        "cost_usd_exact": "0.01045892",
+        "run_id": "35617938-a884-454f-b976-0eba06f018c6",
+        "task_id": "54474"
+      },
+      {
+        "condition": "P1",
+        "cost_usd_exact": "0.00908742",
+        "run_id": "3895f90f-d6f2-4322-a0c1-9ffd3453ccd7",
+        "task_id": "416-27"
+      },
+      {
+        "condition": "A1",
+        "cost_usd_exact": "0.00642564",
+        "run_id": "3eae5c73-7d39-4134-adef-f774a47f9dd6",
+        "task_id": "97-36"
+      },
+      {
+        "condition": "A1",
+        "cost_usd_exact": "0.00709464",
+        "run_id": "3f846c1d-d9d9-4754-abb3-a7e9533ebe1d",
+        "task_id": "341-14"
+      },
+      {
+        "condition": "P1",
+        "cost_usd_exact": "0.01346442",
+        "run_id": "42f3dede-9eef-4a07-b08b-589047e54c35",
+        "task_id": "48975"
+      },
+      {
+        "condition": "A0",
+        "cost_usd_exact": "0.01249792",
+        "run_id": "441edde9-2a18-41d3-9e7e-72bddc7dfdc4",
+        "task_id": "534-26"
+      },
+      {
+        "condition": "P1",
+        "cost_usd_exact": "0.00781784",
+        "run_id": "44dc52d4-6e3a-40bf-a3f3-29649e4200a5",
+        "task_id": "341-14"
+      },
+      {
+        "condition": "P0",
+        "cost_usd_exact": "0.01555932",
+        "run_id": "47b6e1c3-4d9f-468f-8ecc-3dce3fca4a79",
+        "task_id": "534-26"
+      },
+      {
+        "condition": "A0",
+        "cost_usd_exact": "0.01022292",
+        "run_id": "4810f53f-cc6e-420b-8d39-c0e1179f7ee9",
+        "task_id": "267-21"
+      },
+      {
+        "condition": "A1",
+        "cost_usd_exact": "0.00983464",
+        "run_id": "4c3997eb-bcde-494c-8c00-fbf7224e8939",
+        "task_id": "44266"
+      },
+      {
+        "condition": "A0",
+        "cost_usd_exact": "0.02469952",
+        "run_id": "50c72b2f-3a78-491d-ad86-316a79048b08",
+        "task_id": "44389"
+      },
+      {
+        "condition": "A0",
+        "cost_usd_exact": "0.01305612",
+        "run_id": "51419e14-b821-48e8-876e-e36e50b2c763",
+        "task_id": "46121"
+      },
+      {
+        "condition": "A1",
+        "cost_usd_exact": "0.01065584",
+        "run_id": "51be3088-5d5b-40fe-9e36-63f9865c7765",
+        "task_id": "46121"
+      },
+      {
+        "condition": "P0",
+        "cost_usd_exact": "0.01595636",
+        "run_id": "5eaef76c-f49f-475a-9a06-fa1dbcfbeb82",
+        "task_id": "44389"
+      },
+      {
+        "condition": "A0",
+        "cost_usd_exact": "0.01521292",
+        "run_id": "618fa0d2-acc6-43fe-9f7a-dea7baf06314",
+        "task_id": "567-21"
+      },
+      {
+        "condition": "A0",
+        "cost_usd_exact": "0.00740032",
+        "run_id": "693ef986-88f1-4b6e-b0da-52b435f7b2ce",
+        "task_id": "599-9"
+      },
+      {
+        "condition": "A1",
+        "cost_usd_exact": "0.02273992",
+        "run_id": "6a80c3cf-e4ae-4317-92ba-83e8b728d12f",
+        "task_id": "6239"
+      },
+      {
+        "condition": "P1",
+        "cost_usd_exact": "0.02194424",
+        "run_id": "7187a833-f2e6-4ffa-b932-e37cbecae8ad",
+        "task_id": "408-5"
+      },
+      {
+        "condition": "P0",
+        "cost_usd_exact": "0.0231894",
+        "run_id": "719619c7-1ead-4886-9bc4-c177fa7cd4e2",
+        "task_id": "423-16"
+      },
+      {
+        "condition": "P1",
+        "cost_usd_exact": "0.01166944",
+        "run_id": "71e06fd4-ea3a-4f45-8dbb-d28c27c34d69",
+        "task_id": "267-21"
+      },
+      {
+        "condition": "P0",
+        "cost_usd_exact": "0.0150774",
+        "run_id": "78bfbe94-d01e-410a-b3d2-f2ed91c99082",
+        "task_id": "402-43"
+      },
+      {
+        "condition": "P1",
+        "cost_usd_exact": "0.02403822",
+        "run_id": "7af5f126-0758-49d0-89a1-fb0367140283",
+        "task_id": "37229"
+      },
+      {
+        "condition": "A1",
+        "cost_usd_exact": "0.02797508",
+        "run_id": "809033d5-5e1b-428f-aa3c-e0311fbe1f32",
+        "task_id": "58723"
+      },
+      {
+        "condition": "A1",
+        "cost_usd_exact": "0.0133062",
+        "run_id": "81b1a615-2a5c-46eb-a854-03dda66ef34c",
+        "task_id": "91-34"
+      },
+      {
+        "condition": "P1",
+        "cost_usd_exact": "0.03492438",
+        "run_id": "88120b0f-0f3d-4c3a-a21c-99f0a171c754",
+        "task_id": "44389"
+      },
+      {
+        "condition": "P0",
+        "cost_usd_exact": "0.02652424",
+        "run_id": "8bc5c699-685f-44ff-9dc9-f7a97b2e81e9",
+        "task_id": "408-5"
+      },
+      {
+        "condition": "P0",
+        "cost_usd_exact": "0.01050436",
+        "run_id": "8f297d87-2c8e-47db-bd5a-dc0819bf720e",
+        "task_id": "599-9"
+      },
+      {
+        "condition": "P1",
+        "cost_usd_exact": "0.0267922",
+        "run_id": "969e849f-c991-4639-afe0-55a88afe93e5",
+        "task_id": "44296"
+      },
+      {
+        "condition": "A0",
+        "cost_usd_exact": "0.01019132",
+        "run_id": "96c0a0cf-9852-4f0a-9606-433b9ee91e74",
+        "task_id": "160-6"
+      },
+      {
+        "condition": "P0",
+        "cost_usd_exact": "0.02051336",
+        "run_id": "973298b2-6b30-425a-8fa0-345521b5d32b",
+        "task_id": "44296"
+      },
+      {
+        "condition": "A1",
+        "cost_usd_exact": "0.02094284",
+        "run_id": "a1a8e637-1b12-4d94-89cb-599f75d604b9",
+        "task_id": "408-5"
+      },
+      {
+        "condition": "P1",
+        "cost_usd_exact": "0.01102862",
+        "run_id": "a2891e1c-b040-486d-b9b1-d854d4058297",
+        "task_id": "599-9"
+      },
+      {
+        "condition": "A0",
+        "cost_usd_exact": "0.01470012",
+        "run_id": "a34881d6-3dbb-4c96-a112-dce3e32776c0",
+        "task_id": "402-43"
+      },
+      {
+        "condition": "A0",
+        "cost_usd_exact": "0.00772072",
+        "run_id": "a57c10e6-5659-4b17-9bc5-df90547b128d",
+        "task_id": "97-36"
+      },
+      {
+        "condition": "A1",
+        "cost_usd_exact": "0.010664",
+        "run_id": "a903519b-df45-47a6-9c0c-6f14d769594b",
+        "task_id": "160-6"
+      },
+      {
+        "condition": "P1",
+        "cost_usd_exact": "0.01401582",
+        "run_id": "a96bd370-63ed-43de-b8d0-7f5236e06815",
+        "task_id": "44266"
+      },
+      {
+        "condition": "P1",
+        "cost_usd_exact": "0.01139526",
+        "run_id": "aa6e0a2a-332c-4854-84c7-c4c8a7031215",
+        "task_id": "54474"
+      },
+      {
+        "condition": "A1",
+        "cost_usd_exact": "0.01087864",
+        "run_id": "aa80fb7f-96af-48be-bab1-6c36f50a909b",
+        "task_id": "599-9"
+      },
+      {
+        "condition": "A0",
+        "cost_usd_exact": "0.0726766",
+        "run_id": "ae38447a-7f3d-458b-9a1f-a890fc4d9f2e",
+        "task_id": "42216"
+      },
+      {
+        "condition": "A1",
+        "cost_usd_exact": "0.01192704",
+        "run_id": "b22b99c0-6870-4c52-9c9c-bada959f2ef4",
+        "task_id": "416-27"
+      },
+      {
+        "condition": "A1",
+        "cost_usd_exact": "0.01212596",
+        "run_id": "b4bc748e-bcda-4206-af29-3f9a64062398",
+        "task_id": "54474"
+      },
+      {
+        "condition": "A0",
+        "cost_usd_exact": "0.01274672",
+        "run_id": "b53664ab-742b-492f-9b58-0efa5685690e",
+        "task_id": "37229"
+      },
+      {
+        "condition": "P0",
+        "cost_usd_exact": "0.007458",
+        "run_id": "b78caefb-97b3-4a1b-846e-a9581df4c282",
+        "task_id": "388-47"
+      },
+      {
+        "condition": "P0",
+        "cost_usd_exact": "0.01584156",
+        "run_id": "bbcec8c8-c6b6-4f74-9d35-8343d8b0929c",
+        "task_id": "91-34"
+      },
+      {
+        "condition": "A1",
+        "cost_usd_exact": "0.0110168",
+        "run_id": "bc8afb08-9e3e-4003-b830-a0222b99ce74",
+        "task_id": "267-21"
+      },
+      {
+        "condition": "P0",
+        "cost_usd_exact": "0.02266952",
+        "run_id": "bcd1bd4a-ec5a-49e7-9dbf-356665c74eef",
+        "task_id": "6239"
+      },
+      {
+        "condition": "P1",
+        "cost_usd_exact": "0.0152284",
+        "run_id": "bd3b71cb-cba5-4f90-9bed-54c7da19d331",
+        "task_id": "423-16"
+      },
+      {
+        "condition": "P1",
+        "cost_usd_exact": "0.0497538",
+        "run_id": "bdf135ea-042e-4690-aca5-5ea2c1b4c9cf",
+        "task_id": "57232"
+      },
+      {
+        "condition": "P0",
+        "cost_usd_exact": "0.00836316",
+        "run_id": "c1f8655a-06b3-4631-81d6-44287a604664",
+        "task_id": "267-21"
+      },
+      {
+        "condition": "P1",
+        "cost_usd_exact": "0.02805162",
+        "run_id": "c4639107-99e1-4930-b090-05641c4a3180",
+        "task_id": "46121"
+      },
+      {
+        "condition": "P0",
+        "cost_usd_exact": "0.00996324",
+        "run_id": "c66b346f-7c8d-44ec-9bd5-ec1a2167eaca",
+        "task_id": "160-6"
+      },
+      {
+        "condition": "P1",
+        "cost_usd_exact": "0.01355938",
+        "run_id": "c83011c1-b60e-40aa-828f-149bdcd899d6",
+        "task_id": "42526"
+      },
+      {
+        "condition": "P0",
+        "cost_usd_exact": "0.03036752",
+        "run_id": "c885528a-a7c7-48f6-8101-1c2f8701898b",
+        "task_id": "46121"
+      },
+      {
+        "condition": "P0",
+        "cost_usd_exact": "0.01794424",
+        "run_id": "c9ff242d-7b09-4bef-975c-fdcf99a72d28",
+        "task_id": "58723"
+      },
+      {
+        "condition": "A1",
+        "cost_usd_exact": "0.01528688",
+        "run_id": "caf10915-95e1-478a-8c4f-5a8fcee33001",
+        "task_id": "37229"
+      },
+      {
+        "condition": "A1",
+        "cost_usd_exact": "0.01555504",
+        "run_id": "cb00e7d4-1c4b-4538-bed5-65c3d4077602",
+        "task_id": "567-21"
+      },
+      {
+        "condition": "P1",
+        "cost_usd_exact": "0.02864944",
+        "run_id": "ce7987e7-7d6b-4153-9b83-eb8480a96953",
+        "task_id": "42216"
+      },
+      {
+        "condition": "A0",
+        "cost_usd_exact": "0.00695592",
+        "run_id": "cec49cd3-f960-4b24-be9d-e9cfc2b746fe",
+        "task_id": "341-14"
+      },
+      {
+        "condition": "A0",
+        "cost_usd_exact": "0.00920872",
+        "run_id": "d2313544-8e4d-497e-877f-2f4bc900ce5b",
+        "task_id": "42526"
+      },
+      {
+        "condition": "A0",
+        "cost_usd_exact": "0.0128272",
+        "run_id": "d2ee4827-82fb-490d-8f74-130cd8a4ab97",
+        "task_id": "48975"
+      },
+      {
+        "condition": "A0",
+        "cost_usd_exact": "0.01071112",
+        "run_id": "d351a48e-6bb2-46b1-999e-2248635568ef",
+        "task_id": "416-27"
+      },
+      {
+        "condition": "P0",
+        "cost_usd_exact": "0.00668776",
+        "run_id": "d375eb2c-d2f1-4744-9870-33e97113a4f7",
+        "task_id": "341-14"
+      },
+      {
+        "condition": "A1",
+        "cost_usd_exact": "0.00912864",
+        "run_id": "d59c7171-7ef7-48d2-b8ea-cf31750dce6d",
+        "task_id": "388-47"
+      },
+      {
+        "condition": "P1",
+        "cost_usd_exact": "0.020505",
+        "run_id": "d6f6089f-2e69-4bbd-a992-c2922f7ba874",
+        "task_id": "58723"
+      },
+      {
+        "condition": "A0",
+        "cost_usd_exact": "0.04041016",
+        "run_id": "d7787694-96c4-471e-b628-3f34ca197a56",
+        "task_id": "57232"
+      },
+      {
+        "condition": "A0",
+        "cost_usd_exact": "0.01179932",
+        "run_id": "d90d84e8-7269-4539-9454-507d397adcf0",
+        "task_id": "44296"
+      },
+      {
+        "condition": "P1",
+        "cost_usd_exact": "0.00811938",
+        "run_id": "dad72ce5-894f-401f-94fc-a3b5ace1b9bc",
+        "task_id": "160-6"
+      },
+      {
+        "condition": "A0",
+        "cost_usd_exact": "0.01742272",
+        "run_id": "dff01215-dede-4432-aa31-552d3f86199a",
+        "task_id": "423-16"
+      },
+      {
+        "condition": "A1",
+        "cost_usd_exact": "0.04603144",
+        "run_id": "e05ec32c-3d86-4743-ba3a-8dba6e9a9787",
+        "task_id": "57232"
+      },
+      {
+        "condition": "A0",
+        "cost_usd_exact": "0.01169772",
+        "run_id": "e50c21dd-b4cc-4fff-9b0a-b8d7f8a599f9",
+        "task_id": "91-34"
+      },
+      {
+        "condition": "P1",
+        "cost_usd_exact": "0.00608104",
+        "run_id": "e71a6106-e7d7-48bd-a28b-912935c7b0e9",
+        "task_id": "388-47"
+      },
+      {
+        "condition": "P0",
+        "cost_usd_exact": "0.01161484",
+        "run_id": "e9bfa343-5229-44b0-bce1-dbd5457abedf",
+        "task_id": "48975"
+      },
+      {
+        "condition": "A1",
+        "cost_usd_exact": "0.01294036",
+        "run_id": "ebedc2d4-6f30-4d52-9bdf-f9566694c23a",
+        "task_id": "42526"
+      },
+      {
+        "condition": "A1",
+        "cost_usd_exact": "0.012144",
+        "run_id": "efde356c-afc9-4132-9be8-910749ccd583",
+        "task_id": "423-16"
+      },
+      {
+        "condition": "P1",
+        "cost_usd_exact": "0.02298298",
+        "run_id": "f0b5c7df-57bb-442b-ad2c-d49816dcb422",
+        "task_id": "567-21"
+      },
+      {
+        "condition": "P1",
+        "cost_usd_exact": "0.00555782",
+        "run_id": "f100e49e-ed00-4142-b3d1-5e8408710c30",
+        "task_id": "97-36"
+      },
+      {
+        "condition": "P1",
+        "cost_usd_exact": "0.01454064",
+        "run_id": "f2fb9091-f1b1-4020-b029-b94c156f1907",
+        "task_id": "91-34"
+      },
+      {
+        "condition": "A0",
+        "cost_usd_exact": "0.01951272",
+        "run_id": "f30bf25d-2f46-4242-9bec-259fef6fb070",
+        "task_id": "6239"
+      },
+      {
+        "condition": "A1",
+        "cost_usd_exact": "0.02695044",
+        "run_id": "f39bc82a-ad4d-4867-837c-63e368b51acd",
+        "task_id": "48975"
+      },
+      {
+        "condition": "A1",
+        "cost_usd_exact": "0.01345",
+        "run_id": "f53eda76-156f-4779-8279-ddae70b2a3d6",
+        "task_id": "44296"
+      },
+      {
+        "condition": "P0",
+        "cost_usd_exact": "0.05242932",
+        "run_id": "f5b7ca27-3ecb-46c5-a693-0c45f00d533a",
+        "task_id": "57232"
+      },
+      {
+        "condition": "P1",
+        "cost_usd_exact": "0.01300262",
+        "run_id": "fc8ffbef-83ff-4e7a-8106-4b8e78b6de13",
+        "task_id": "402-43"
+      },
+      {
+        "condition": "P0",
+        "cost_usd_exact": "0.00868024",
+        "run_id": "fccfd630-400b-435a-9f90-534a0b7f426f",
+        "task_id": "416-27"
+      },
+      {
+        "condition": "A0",
+        "cost_usd_exact": "0.01175332",
+        "run_id": "fd38fc2d-9113-460f-8474-d4f76a5ada84",
+        "task_id": "44266"
+      },
+      {
+        "condition": "A1",
+        "cost_usd_exact": "0.02901656",
+        "run_id": "fd3ae74f-bb27-4cf2-88bb-abbb8811ebe5",
+        "task_id": "42216"
+      }
+    ],
+    "formula": "(uncached_input*0.20 + cached_input*0.02 + output_incl_reasoning*1.20) / 1,000,000",
+    "model": "gpt-5.6-luna",
+    "note": "different model; not pooled",
+    "rates_per_million_usd": {
+      "cache_creation_input_tokens": "0.20",
+      "cache_read_input_tokens": "0.02",
+      "input_tokens": "0.20",
+      "output_tokens": "1.20"
+    },
+    "spend_ceiling_usd": "350",
+    "token_totals": {
+      "cache_creation_input_tokens": 14411,
+      "cache_read_input_tokens": 761131,
+      "input_tokens": 6112111,
+      "output_tokens": 547235
+    },
+    "total_cost_usd_exact": "1.89720902"
+  },
+  "draws": 10000,
+  "estimates": {
+    "delta": -0.04,
+    "tau0": 0.04,
+    "tau1": 0.0
+  },
+  "fig3_generated": false,
+  "fig3_reason": "omitted deterministically: no stock records",
+  "hard_supplement_exclusions": [],
+  "n_analysis_included": 100,
+  "n_hard": 0,
+  "n_hard_valid": 0,
+  "n_main": 100,
+  "n_records": 100,
+  "n_solo": 0,
+  "p0_p1_handoff": {
+    "accepted_unchanged_p1_minus_p0": 0.0,
+    "accepted_unchanged_p1_minus_p0_ci": [
+      0.0,
+      0.0
+    ],
+    "accepted_unchanged_p1_minus_p0_se": 0.0,
+    "cells": {
+      "P0": {
+        "accepted_unchanged_n": 0,
+        "accepted_unchanged_rate": 0.0,
+        "candidate_success_n": 21,
+        "candidate_success_rate": 0.84,
+        "n": 25,
+        "parent_cache_creation_input_tokens_total": 2464,
+        "parent_cache_read_input_tokens_total": 104720,
+        "parent_damage_n": 0,
+        "parent_input_tokens_total": 663604,
+        "parent_model_calls_mean": 4.48,
+        "parent_model_calls_total": 112,
+        "parent_output_tokens_total": 44242,
+        "parent_repair_n": 2,
+        "parent_tool_calls_mean": 7.2,
+        "parent_tool_calls_total": 180,
+        "parent_wall_seconds_mean": 21.460480000000004,
+        "parent_wall_seconds_total": 536.5120000000001,
+        "revised_n": 25
+      },
+      "P1": {
+        "accepted_unchanged_n": 0,
+        "accepted_unchanged_rate": 0.0,
+        "candidate_success_n": 21,
+        "candidate_success_rate": 0.9130434782608695,
+        "n": 25,
+        "parent_cache_creation_input_tokens_total": 3696,
+        "parent_cache_read_input_tokens_total": 105952,
+        "parent_damage_n": 0,
+        "parent_input_tokens_total": 712152,
+        "parent_model_calls_mean": 4.56,
+        "parent_model_calls_total": 114,
+        "parent_output_tokens_total": 41843,
+        "parent_repair_n": 0,
+        "parent_tool_calls_mean": 7.6,
+        "parent_tool_calls_total": 190,
+        "parent_wall_seconds_mean": 20.8298,
+        "parent_wall_seconds_total": 520.745,
+        "revised_n": 23
+      }
+    },
+    "convention": "study bootstrap seed 20260902, B=10000; no prior accepted-unchanged contrast convention existed in analyze.py",
+    "draws": 10000,
+    "n_tasks": 23,
+    "n_tasks_null_accepted_dropped": 2,
+    "seed": 20260902,
+    "task_set": "main_v04_m2"
+  },
+  "protocol_version": "0.4.1",
+  "qc_report": {
+    "flag_counts": {
+      "advisory_artifact_leak": 0,
+      "advisory_scratch_retained": 0,
+      "agent_outcome_censored": 0,
+      "invalid_candidate": 0,
+      "parent_not_finalized": 4,
+      "production_missing_artifact": 2,
+      "record_serialization_gap": 0,
+      "withheld_feedback_call": 0,
+      "worker_timeout": 0
+    },
+    "flag_counts_by_condition": {
+      "A0": {
+        "advisory_artifact_leak": 0,
+        "advisory_scratch_retained": 0,
+        "agent_outcome_censored": 0,
+        "invalid_candidate": 0,
+        "parent_not_finalized": 2,
+        "production_missing_artifact": 0,
+        "record_serialization_gap": 0,
+        "withheld_feedback_call": 0,
+        "worker_timeout": 0
+      },
+      "A1": {
+        "advisory_artifact_leak": 0,
+        "advisory_scratch_retained": 0,
+        "agent_outcome_censored": 0,
+        "invalid_candidate": 0,
+        "parent_not_finalized": 1,
+        "production_missing_artifact": 0,
+        "record_serialization_gap": 0,
+        "withheld_feedback_call": 0,
+        "worker_timeout": 0
+      },
+      "P0": {
+        "advisory_artifact_leak": 0,
+        "advisory_scratch_retained": 0,
+        "agent_outcome_censored": 0,
+        "invalid_candidate": 0,
+        "parent_not_finalized": 0,
+        "production_missing_artifact": 0,
+        "record_serialization_gap": 0,
+        "withheld_feedback_call": 0,
+        "worker_timeout": 0
+      },
+      "P1": {
+        "advisory_artifact_leak": 0,
+        "advisory_scratch_retained": 0,
+        "agent_outcome_censored": 0,
+        "invalid_candidate": 0,
+        "parent_not_finalized": 1,
+        "production_missing_artifact": 2,
+        "record_serialization_gap": 0,
+        "withheld_feedback_call": 0,
+        "worker_timeout": 0
+      }
+    },
+    "n_agent_failures": 8,
+    "n_analysis_included": 100,
+    "n_episodes_total": 100,
+    "n_evaluator_failure": 0,
+    "n_infra_failures": 0,
+    "n_qc_flagged": 5
+  },
+  "record_source": "explicit episode records",
+  "runs_dir": "<REPO>",
+  "seed": 20260902,
+  "solo_summary": {},
+  "task_set_scope": "main_v04_m2"
+}
